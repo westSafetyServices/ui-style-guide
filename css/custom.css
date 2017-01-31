@@ -347,7 +347,7 @@ input[type="radio"]:disabled + label::before {
 }
 
 .btn-primary {
-                background-color: #005DAC;
+                background-color: #000000;
                 border-color: #1B4478;
                 color: #FFFFFF;
 }
