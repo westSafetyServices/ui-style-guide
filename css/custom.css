@@ -1,4 +1,4 @@
-/*****************************************
+*****************************************
 *  //Copyright West Safety Services, Inc. 2016
 *
 *  Universal CSS
@@ -347,7 +347,7 @@ input[type="radio"]:disabled + label::before {
 }
 
 .btn-primary {
-                background-color: #000000;
+                background-color: #005DAC;
                 border-color: #1B4478;
                 color: #FFFFFF;
 }
