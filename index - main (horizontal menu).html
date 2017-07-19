@@ -4,11 +4,11 @@
   <title>Style Guide Test</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <!-- Header -->
 <nav class="navbar navbar-inverse" id="headerBar">
@@ -52,6 +52,99 @@
 <div style="height:50px" id="placeholderForFrontify"></div>
 
 <body>
+
+<!-- Icons -->
+<div class= "container-fluid">
+  <div class="table-responsive">
+    <table id="grid-basic" class="table">
+    <thead>
+        <tr>
+          <th class="th-passive" data-column-id="id">Icon </th>
+          <th class="th-passive" data-column-id="type">Font Awesome ID </th>
+          <th class="th-passive" data-column-id="status">Usage </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-user"></i></td>
+          <td>user</td>
+          <td>Profile menu</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-cog"></i></td>
+          <td>cog</td>
+          <td>Settings menu, Admin operations</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-chevron-right"></i></td>
+          <td>chevron-right</td>
+          <td>Expand</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-chevron-down"></i></td>
+          <td>chevron-down</td>
+          <td>Collapse</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-home"></i></td>
+          <td>home</td>
+          <td>Expand</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-calendar"></i></td>
+          <td>calendar</td>
+          <td>Date picker</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-comment-o"></i></td>
+          <td>comment-o</td>
+          <td>Comments</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-check"></i></td>
+          <td>check</td>
+          <td>Success, Complete, Verified</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-info-circle"></i></td>
+          <td>info-circle</td>
+          <td>Info</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-exclamation-triangle"></i></td>
+          <td>exclamation-triangle</td>
+          <td>Warning</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-times-circle"></i></td>
+          <td>times-circle</td>
+          <td>Error</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-pencil"></i></td>
+          <td>pencil</td>
+          <td>Edit</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-trash"></i></td>
+          <td>trash</td>
+          <td>Delete</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-remove"></i></td>
+          <td>remove</td>
+          <td>Close</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-sign-out"></i></td>
+          <td>sign-out</td>
+          <td>Logout</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 <!-- Button Style Breadcrumbs -->
 <div class="container-fluid">
     <div class="btn-group btn-breadcrumb">
@@ -195,29 +288,27 @@
 <div class="container-fluid">
 <br>
 <!-- Buttons -->
-<div>
-  <div class="btn btn-primary">Action</div>
-  <div class="btn btn-default">Action</div>
-  <div class="btn btn-primary" disabled>Action</div>
-  <div class="btn btn-default" disabled>Action</div>
+<div style="background-color: #FFFFFF; padding: 1%">
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-default">Secondary</button>
+  <button class="btn btn-primary" disabled>Disabled Primary</button>
+  <button class="btn btn-default" disabled>Disabled Secondary</button>
 </div>
 <br>
 <!-- Buttons on dark background-->
-<div style="background-color: #000000">
-   <br>
+<div style="background-color: #000000; padding: 1%">
    <button class="btn btn-primary btn-dark-background">Primary</button>
    <button class="btn btn-default btn-dark-background">Secondary</button>
    <button class="btn btn-primary btn-dark-background" disabled>Disabled Primary</button>
    <button class="btn btn-default btn-dark-background" disabled>Disabled Secondary</button>
-   <br></br>
 </div>
 <br>
 <!-- Buttons with icons -->
-<div>
-   <div class="btn btn-primary"><i class="fa fa-trash fa-lg fa-fw"></i> Action</div>
-   <div class="btn btn-default"><i class="fa fa-trash fa-lg fa-fw"></i> Action</div>
-   <div class="btn btn-primary" disabled><i class="fa fa-trash fa-lg fa-fw"></i> Action</div>
-   <div class="btn btn-default" disabled><i class="fa fa-trash fa-lg fa-fw"></i> Action</div>
+<div style="background-color: #FFFFFF; padding: 1%">
+   <button class="btn btn-primary"><i class="fa fa-trash fa-lg fa-fw"></i> Primary</button>
+   <button class="btn btn-default"><i class="fa fa-trash fa-lg fa-fw"></i> Secondary</button>
+   <button class="btn btn-primary" disabled><i class="fa fa-trash fa-lg fa-fw"></i> Disabled Primary</button>
+   <button class="btn btn-default" disabled><i class="fa fa-trash fa-lg fa-fw"></i> Disabled Secondary</button>
 </div>
 <br>
 <!-- Alerts -->
@@ -290,6 +381,7 @@
 </div>
 <br></br><br></br>
 <!-- Radio Buttons -->
+<div style="padding: 1%"> <!-- padding for Frontify-->
 <div class="form-group col-sm-12">
   <ul class="wss-unstyled-list"> 
     <li>
@@ -301,6 +393,7 @@
       <label for="option2">Option 2</label>
     </li>
   </ul>
+</div>
 </div>
 <br>
 <!-- Checkboxes -->
@@ -318,25 +411,27 @@
 </div>
 <br>
 <!-- Links -->
-<a href="#" target="_blank" class="link-default">Link</a>
-<br></br>
-<a href="#" target="_blank"><i class="fa fa-fw fa-lg fa-user"></i>Link with icon</a>
-<br></br>
-<a href="#" target="_blank" class="link-default link-active">Active Link</a>
-<br></br>
-<a href="#" target="_blank" class="link-default link-visited">Visited Link</a>
-<br>
+<div style="background-color: #FFFFFF; padding: 1%">
+  <a href="#" target="_blank" class="link-default">Link</a>
+  <br></br>
+  <a href="#" target="_blank"><i class="fa fa-fw fa-lg fa-user"></i>Link with icon</a>
+  <br></br>
+  <a href="#" target="_blank" class="link-default link-active">Active Link</a>
+  <br></br>
+  <a href="#" target="_blank" class="link-default link-visited">Visited Link</a>
+  <br>
+</div>
 <!-- Links on dark background-->
-<div style="background-color: #000000">
-   <br>
-	<a href="#" target="_blank" class="link-default link-dark-background">Link</a>
-	<br></br>
-	<a href="#" target="_blank" class="link-dark-background"><i class="fa fa-fw fa-lg fa-user"></i>Link with icon</a>
-	<br></br>
-	<a href="#" target="_blank" class="link-default link-dark-background link-dark-background-active">Active Link</a>
-	<br></br>
-	<a href="#" target="_blank" class="link-default link-dark-background link-dark-background-visited">Visited Link</a>
-   <br></br>
+<div style="background-color: #000000; padding: 1%">
+  <br>
+  <a href="#" target="_blank" class="link-default link-dark-background">Link</a>
+  <br></br>
+  <a href="#" target="_blank" class="link-dark-background"><i class="fa fa-fw fa-lg fa-user"></i>Link with icon</a>
+  <br></br>
+  <a href="#" target="_blank" class="link-default link-dark-background link-dark-background-active">Active Link</a>
+  <br></br>
+  <a href="#" target="_blank" class="link-default link-dark-background link-dark-background-visited">Visited Link</a>
+  <br></br>
 </div>
 <br>
 
