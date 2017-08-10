@@ -19,15 +19,15 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span> 
     </button>
-    <a class="navbar-brand" id="logoLink" href="#" ><img src="https://cdn.rawgit.com/wssStyleGuide/ui-style-guide/ecb7864c/images/west_logo.png" id="westLogo">Application Title</a>
+    <a class="navbar-brand" id="logoLink" href="#" ><img src="https://cdn.rawgit.com/wssStyleGuide/ui-style-guide/ecb7864c/images/west_logo.png" id="westLogo" alt="West logo">Application Title</a>
   </div>
   <div class="collapse navbar-collapse" id="userProfileDropdown">
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="userProfileMenu"><i class="fa fa-user" ></i> <label class="loginUserLabel">username</label><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#"><i class="fa fa-info-circle"></i> Help <span class="fa fa-external-link"></span></a></li>
-            <li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="userProfileMenu"><i class="fa fa-user" aria-hidden="true"></i><span class="loginUserLabel"> username</span><span class="caret"></span></a>
+		  <ul class="dropdown-menu">
+            <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> Help <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
           </ul>
         </li>
     </ul>
@@ -49,14 +49,28 @@
     </ul>
   </div>
 </nav>
-<div style="height:50px" id="placeholderForFrontify"></div>
+<div style="height:50px" id="placeholderForFrontify2"></div>
 
 <body>
+<div class="container-fluid">
+  <h1>West Safety Services UI Style Guide</h1>
+<!-- Headings -->
+  <h2>01 Headings</h2>
+<div class="container-fluid">
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  <p>Paragraph</p>
+</div>
 
 <!-- Icons -->
-<div class= "container-fluid">
+  <h2>02 Icons</h2>
+<div class="container-fluid">
   <div class="table-responsive">
-    <table id="grid-basic" class="table">
+    <table id="grid-basic-icon-example" class="table">
     <thead>
         <tr>
           <th class="th-passive" data-column-id="id">Icon </th>
@@ -66,77 +80,77 @@
       </thead>
       <tbody>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-user"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-user" aria-hidden="true"></i></td>
           <td>user</td>
           <td>Profile menu</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-cog"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-cog" aria-hidden="true"></i></td>
           <td>cog</td>
           <td>Settings menu, Admin operations</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-chevron-right"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-chevron-right" aria-hidden="true"></i></td>
           <td>chevron-right</td>
           <td>Expand</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-chevron-down"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-chevron-down" aria-hidden="true"></i></td>
           <td>chevron-down</td>
           <td>Collapse</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-home"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-home" aria-hidden="true"></i></td>
           <td>home</td>
           <td>Expand</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-calendar"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-calendar" aria-hidden="true"></i></td>
           <td>calendar</td>
           <td>Date picker</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-comment-o"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-comment-o" aria-hidden="true"></i></td>
           <td>comment-o</td>
           <td>Comments</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-check"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-check" aria-hidden="true"></i></td>
           <td>check</td>
           <td>Success, Complete, Verified</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-info-circle"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-info-circle" aria-hidden="true"></i></td>
           <td>info-circle</td>
           <td>Info</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-exclamation-triangle"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-exclamation-triangle" aria-hidden="true"></i></td>
           <td>exclamation-triangle</td>
           <td>Warning</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-times-circle"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-times-circle" aria-hidden="true"></i></td>
           <td>times-circle</td>
           <td>Error</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-pencil"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-pencil" aria-hidden="true"></i></td>
           <td>pencil</td>
           <td>Edit</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-trash"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-trash" aria-hidden="true"></i></td>
           <td>trash</td>
           <td>Delete</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-remove"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-remove" aria-hidden="true"></i></td>
           <td>remove</td>
           <td>Close</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-sign-out"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-sign-out" aria-hidden="true"></i></td>
           <td>sign-out</td>
           <td>Logout</td>
         </tr>
@@ -146,9 +160,10 @@
 </div>
 
 <!-- Button Style Breadcrumbs -->
+  <h2>03 Breadcrumbs</h2>
 <div class="container-fluid">
     <div class="btn-group btn-breadcrumb">
-        <a href="#" class="btn btn-default"><i class="fa fa-fw fa-lg fa-home"></i> Home</a>
+        <a href="#" class="btn btn-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i> Home</a>
         <a href="#" class="btn btn-default">Level 1</a>
         <a href="#" class="btn btn-default">Level 2</a>
         <a href="#" class="btn btn-primary active">Page Title</a>
@@ -158,7 +173,7 @@
 
 <!-- Link Style Breadcrumbs -->
 <ul class="breadcrumb">
-    <li><a href="#"><i class="fa fa-fw fa-lg fa-home"></i>Home</a></li>
+    <li><a href="#"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a></li>
     <li><a href="#">Level 1</a></li>
 	<li><a href="#">Level 2</a></li>
     <li class="active">Page Title</li>
@@ -166,6 +181,7 @@
 <br>
 
 <!-- Accordions (Standard) -->
+  <h2>04 Accordions</h2>
 <div class="container-fluid">
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
@@ -187,13 +203,13 @@
 <div class="container-fluid">
   <div class="panel-group" id="accordionMin">
     <div class="panel panel-default panelMin">
-      <div class="panel-heading accordionPanelMin clearfix" data-toggle="collapse" data-target="#collapse1"><a href="#"><i class="chevron fa fa-fw"></i>Label</a><hr class="horizontalLine"></div>
+      <div class="panel-heading accordionPanelMin clearfix" data-toggle="collapse" data-target="#collapse1"><a href="#"><i class="chevron fa fa-fw" aria-hidden="true"></i>Label</a><hr class="horizontalLine"></div>
         <div class="collapse in" id="collapse1">
           <p class="accordionContentMin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
     </div>
     <div class="panel panel-default panelMin">
-      <div class="panel-heading accordionPanelMin collapsed clearfix" data-toggle="collapse" data-target="#collapse2"><a href="#"><i class="chevron fa fa-fw"></i>Label</a><hr class="horizontalLine"></div>
+      <div class="panel-heading accordionPanelMin collapsed clearfix" data-toggle="collapse" data-target="#collapse2"><a href="#"><i class="chevron fa fa-fw" aria-hidden="true"></i>Label</a><hr class="horizontalLine"></div>
         <div class="collapse" id="collapse2">
           <p class="accordionContentMin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
@@ -202,13 +218,14 @@
 </div>
 
 <!-- Sign In Example (light background) -->
+  <h2>05 Sign In</h2>
 <div class="container-fluid">
     <div class="panel panel-default" id="signInForm">
         <div class="panel-body">
             <form role="form" data-toggle="validator">
                 <div class="row">
                     <div class="form-group col-sm-3">
-                        <img src="https://cdn.rawgit.com/westSafetyServices/ui-style-guide/7c47b598/images/west_logo_white_lg.png" id="westLogo">
+                        <img src="https://cdn.rawgit.com/westSafetyServices/ui-style-guide/7c47b598/images/west_logo_white_lg.png" id="westLogoBlackLetters" alt="West logo with black letters">
                     </div>
                     <div class="form-group col-sm-9">
                         <h3>Application Title</h3>
@@ -242,52 +259,10 @@
         </div>
     </div>
 </div>
-
-<!-- Sign In Example (dark background) -->
-<div class="container-fluid">
-    <div class="panel panel-default" id="signInForm">
-        <div class="panel-body darkBackground">
-            <form role="form" data-toggle="validator">
-                <div class="row">
-                    <div class="form-group col-sm-3">
-                        <img src="https://cdn.rawgit.com/westSafetyServices/ui-style-guide/98e61004/images/west_logo_dk_lg.png" id="westLogo" style="height: 60px; width: 60px;">
-                    </div>
-                    <div class="form-group col-sm-9">
-                        <h3 class="whiteFont">Application Title</h3>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="form-group col-sm-12">
-                        <label for="username2" class="whiteFont">Username</label>
-                        <input type="text" class="form-control" id="username2" data-error="Required" required maxlength="40">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="form-group col-sm-12">
-                        <label for="password2" class="whiteFont">Password</label>
-                        <input type="text" class="form-control" id="password2" data-error="Required" required maxlength="40">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="form-group col-sm-12">
-                        <button type="submit" class="btn btn-primary col-sm-12">Sign In</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-sm-12">
-                        <a href="#" class="link-dark-background">Forgot username or password?</a>
-                    </div>
-                </div> 
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid">
+  
 <br>
 <!-- Buttons -->
+  <h2>06 Buttons</h2>
 <div style="background-color: #FFFFFF; padding: 1%">
   <button class="btn btn-primary">Primary</button>
   <button class="btn btn-default">Secondary</button>
@@ -305,39 +280,43 @@
 <br>
 <!-- Buttons with icons -->
 <div style="background-color: #FFFFFF; padding: 1%">
-   <button class="btn btn-primary"><i class="fa fa-trash fa-lg fa-fw"></i> Primary</button>
-   <button class="btn btn-default"><i class="fa fa-trash fa-lg fa-fw"></i> Secondary</button>
-   <button class="btn btn-primary" disabled><i class="fa fa-trash fa-lg fa-fw"></i> Disabled Primary</button>
-   <button class="btn btn-default" disabled><i class="fa fa-trash fa-lg fa-fw"></i> Disabled Secondary</button>
+   <button class="btn btn-primary"><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Primary</button>
+   <button class="btn btn-default"><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Secondary</button>
+   <button class="btn btn-primary" disabled><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Disabled Primary</button>
+   <button class="btn btn-default" disabled><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Disabled Secondary</button>
 </div>
 <br>
+  
 <!-- Alerts -->
+  <h2>07 Alerts</h2>
 <div>
-  <div class="alert alert-success"><i class="fa fa-check fa-lg fa-fw"></i>Indicates a successful or positive action.</div>
-  <div class="alert alert-info"><i class="fa fa-info-circle fa-lg fa-fw"></i>Indicates a neutral informative change or action.</div>
-  <div class="alert alert-warning"><i class="fa fa-exclamation-triangle fa-lg fa-fw"></i>Indicates a warning that might need attention.</div>
-  <div class="alert alert-danger"><i class="fa fa-times-circle fa-lg fa-fw"></i>Indicates an error or potentially negative action.</div>
+  <div class="alert alert-success"><i class="fa fa-check fa-lg fa-fw" aria-hidden="true"></i>Indicates a successful or positive action.</div>
+  <div class="alert alert-info"><i class="fa fa-info-circle fa-lg fa-fw" aria-hidden="true"></i>Indicates a neutral informative change or action.</div>
+  <div class="alert alert-warning"><i class="fa fa-exclamation-triangle fa-lg fa-fw" aria-hidden="true"></i>Indicates a warning that might need attention.</div>
+  <div class="alert alert-danger"><i class="fa fa-times-circle fa-lg fa-fw" aria-hidden="true"></i>Indicates an error or potentially negative action.</div>
 </div>
 <br>
+
 <!-- Inputs -->
 <!-- Text Fields (Top-Aligned labels)-->
+  <h2>08 Text Fields</h2>
 <form>
 <div class="row">
     <div class="form-group col-sm-12">
-        <label for="example">Label</label>
-        <input type="text" class="form-control" id="example">
+        <label for="example1">Label</label>
+        <input type="text" class="form-control" id="example1">
    </div>
 </div>
 <div class="row">
     <div class="form-group col-sm-12">
-        <label for="example">Label Required <span class="requiredField"> *</span></label>
-        <input type="text" class="form-control" id="example" required data-error="Required">
+        <label for="example2">Label Required <span class="requiredField"> *</span></label>
+        <input type="text" class="form-control" id="example2" required data-error="Required">
    </div>
 </div>
 <div class="row">
     <div class="form-group col-sm-12 has-error">
-        <label for="example">Label Required <span class="requiredField"> *</span></label>
-        <input type="text" class="form-control" id="example" required data-error="Required">
+        <label for="example3">Form Validation Fails <span class="requiredField"> *</span></label>
+        <input type="text" class="form-control" id="example3" required data-error="Required">
 		<div class="help-block with-errors">Required</div>
    </div>
 </div>
@@ -347,22 +326,22 @@
 <!-- Text Fields (Left-Aligned labels)-->
 <form class="form-horizontal">
 <div class="form-group">
-    <label class="control-label col-sm-2" for="example">Label</label>
+    <label class="control-label col-sm-2" for="example4">Label</label>
 	<div class="col-sm-10">
-		<input type="text" class="form-control" id="example">
+		<input type="text" class="form-control" id="example4">
 	</div>	
 </div>
 <div class="form-group">
-    <label class="control-label col-sm-2" for="example">Label Required <span class="requiredField"> *</span></label>
+    <label class="control-label col-sm-2" for="example5">Label Required <span class="requiredField"> *</span></label>
 	<div class="col-sm-10">
-        <input type="text" class="form-control" id="example" required data-error="Required">
+        <input type="text" class="form-control" id="example5" required data-error="Required">
 		<div class="help-block with-errors"></div>
    </div>
 </div>
 <div class="form-group">
-    <label class="control-label col-sm-2" for="example">Label Required <span class="requiredField"> *</span></label>
+    <label class="control-label col-sm-2" for="example6">Form Validation Fails <span class="requiredField"> *</span></label>
 	<div class="col-sm-10 has-error">
-        <input type="text" class="form-control" id="example" required data-error="Required">
+        <input type="text" class="form-control" id="example6" required data-error="Required">
 		<div class="help-block with-errors">Required</div>
    </div>
 </div>
@@ -370,6 +349,7 @@
 <br>
 
 <!-- Dropdowns -->
+  <h2>09 Dropdowns</h2>
 <div class="form-group col-sm-4">
     <label for="buildingType">Fruit</label>
     <select class="form-control dropdown-caret" id="buildingType">
@@ -380,9 +360,13 @@
     </select>
 </div>
 <br></br><br></br>
+
 <!-- Radio Buttons -->
+  <h2>10 Radio Buttons</h2>
 <div style="padding: 1%"> <!-- padding for Frontify-->
 <div class="form-group col-sm-12">
+  <fieldset>
+  <legend class="sr-only">Radio button example</legend>
   <ul class="wss-unstyled-list"> 
     <li>
       <input id="option1" type="radio" name="myOptions" value="Option 1" checked/>
@@ -393,10 +377,13 @@
       <label for="option2">Option 2</label>
     </li>
   </ul>
+  </fieldset>
 </div>
 </div>
 <br>
+
 <!-- Checkboxes -->
+  <h2>11 Checkboxes</h2>
 <div class="form-group col-sm-12">
 	<ul class="wss-unstyled-list">
 		<li>
@@ -410,11 +397,13 @@
 	</ul>
 </div>
 <br>
+
 <!-- Links -->
+  <h2>12 Links</h2>
 <div style="background-color: #FFFFFF; padding: 1%">
-  <a href="#" target="_blank" class="link-default">Link</a>
+  <a href="#" target="_blank" class="link-default">Example Link</a>
   <br></br>
-  <a href="#" target="_blank"><i class="fa fa-fw fa-lg fa-user"></i>Link with icon</a>
+  <a href="#" target="_blank"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i>Link with icon</a>
   <br></br>
   <a href="#" target="_blank" class="link-default link-active">Active Link</a>
   <br></br>
@@ -424,9 +413,9 @@
 <!-- Links on dark background-->
 <div style="background-color: #000000; padding: 1%">
   <br>
-  <a href="#" target="_blank" class="link-default link-dark-background">Link</a>
+  <a href="#" target="_blank" class="link-default link-dark-background">Example Link</a>
   <br></br>
-  <a href="#" target="_blank" class="link-dark-background"><i class="fa fa-fw fa-lg fa-user"></i>Link with icon</a>
+  <a href="#" target="_blank" class="link-dark-background"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i>Link with icon</a>
   <br></br>
   <a href="#" target="_blank" class="link-default link-dark-background link-dark-background-active">Active Link</a>
   <br></br>
@@ -436,29 +425,30 @@
 <br>
 
 <!-- Processing Indicator -->
-<div style="height:250px" id="placeholderForFrontify">
+  <h2>13 Processing Indicator</h2>
+<div style="height:250px" id="placeholderForFrontify1">
 <div id="editModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
         <div class="modal-header defaultModalHeader">
-            <h4 class="modal-title">Validating...</h4>
+            <h4 class="modal-title">Loading...</h4>
         </div>
         <div class="modal-body">
              <br>
-             <i class="fa fa-spinner fa-spin fa-3x"></i><br><br>
-             <p>Address validation may take a few seconds.</p>
+             <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i><br><br>
+             <p>Explanation for delay.</p>
         </div>
     </div>
-</div>
 </div>
 </div>
 </div>
 <br>
 
 <!-- Tables (Active) -->
+  <h2>14 Tables</h2>
 <div class= "container-fluid">
   <div class="table-responsive">
-    <table id="grid-basic" class="table table-striped table-hover">
+    <table id="grid-basic-example1" class="table table-striped table-hover">
       <thead>
         <tr>
           <th class="th-active" data-column-id="id">Column 1 </th>
@@ -512,7 +502,7 @@
 <!-- Tables (Passive) -->
 <div class= "container-fluid">
   <div class="table-responsive">
-    <table id="grid-basic" class="table">
+    <table id="grid-basic-example2" class="table">
     <thead>
         <tr>
           <th class="th-passive" data-column-id="id">Column 1 </th>
@@ -563,22 +553,8 @@
   </div>
 </div>
 
-<!--<script>$('#accordion .accordion-toggle').click(function (e){
-  var chevState = $(e.target).siblings("i.indicator").toggleClass('fa-chevron-down fa-chevron-right');
-  $("i.indicator").not(chevState).removeClass("fa-chevron-down").addClass("fa-chevron-right");
-});
-$( function() {
-  $('.accordion.panel-heading').click( function() {
-      $(this).toggleClass('on');
-} )
-}); 
-$( function() {
-  $('.accordion.panel-title').click( function() {
-      $(this).toggleClass('on');
-} )
-});
-</script>-->
-
+ <h2>15 Footer</h2>
+</div>
 </body>
 <!-- Footer -->
 <footer id="footer" class="container-fluid text-right">
