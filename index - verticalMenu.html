@@ -12,7 +12,7 @@
 </head>
 
 <!-- Header -->
-<nav class="navbar navbar-inverse" id="headerBar">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="headerBar">
   <div class="navbar-header" id="myNavbar1">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#userProfileDropdown, .sidebar-navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -36,7 +36,7 @@
 </nav>
 <div class="row sidebarRow">
   <div class="col-sm-3 col-md-2">
-    <div class="sidebar-nav sidebar">
+    <div class="sidebar-nav sidebar" id="leftSideBar">
 	  <div class="navbar navbar-inverse" role="navigation" id="sideNavBar">
 	    <div class="navbar-collapse collapse sidebar-navbar-collapse">
 		  <ul class="nav navbar-nav">
@@ -57,11 +57,13 @@
 	</div>
   </div>
   <div class="col-sm-9 col-md-10"</div>
-    <div class="container-fluid">
+    <div class="container-fluid verticalNavPage" id="pageContent">
 	  <h1>Page Title</h1>
 	  <p>Example page content</p>
 	</div>
-	<div style="height:500px" id="placeholderForFrontify"></div>
+	
+	<div style="height:50px" id="placeholderForFrontify"></div>
+	
   </div>
 </div>
 <body>
