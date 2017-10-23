@@ -208,7 +208,7 @@ body {
   .sidebar {
     position: fixed;
     top: 50px; /* extend from bottom of header */
-    bottom: 40px; /* extend to bottom of footer */
+    bottom: 0px; /* extend to bottom of footer */
     left: 0;
     z-index: 1000;
     display: block;
@@ -247,29 +247,29 @@ body {
   
 	.sidebar-nav .navbar-inverse .navbar-nav > li > a {
 		border: 1px solid #000000;
-		border-left: 2px solid #666666;
+		/*border-left: 2px solid #666666;*/
 		padding-left: 14px;
 		font-weight: normal;
-		margin-left: 4px;
+		/*margin-left: 4px;*/
 		background-color: #444444;
 	}
 
 	.sidebar-nav .navbar-inverse .navbar-nav > li > a:hover,
 	.sidebar-nav .navbar-inverse .navbar-nav > li > a:focus {
-		border-left: 2px solid #009EE1;
+		border-right: 10px solid #009EE1;
 		padding-left: 14px;
 		background-color: #232323;
 		font-weight: bold;
-		margin-left: 4px;
+		/*margin-left: 4px;*/
 		color: #FFFFFF;
 	}
 
 	.sidebar-nav .navbar-inverse .navbar-nav>.active>a {
-		border-left: 2px solid #009EE1;
+		border-right: 10px solid #009EE1;
 		padding-left: 14px;
 		background-color: #444444;
 		font-weight: bold;
-		margin-left: 4px;
+		/*margin-left: 4px;*/
 	}
 	
 	.sidebar-nav .navbar-inverse .navbar-nav>.open>a {
@@ -281,6 +281,11 @@ body {
 	.sidebarRow {
 		margin-right: 0px;
 	}
+	
+	/* adjust username profile menu positioning when using a fixed nav for the vertical menus */
+	.navbar-right{
+			margin-right: 0px;
+	}
 }
 
 /* Style for mobile devices */
@@ -288,6 +293,10 @@ body {
 	#sideNavBar {
 		min-height: 0px;
 	}
+}
+
+.verticalNavPage {
+	padding-top: 50px;
 }
 
 /*****************************************
