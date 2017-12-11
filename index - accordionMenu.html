@@ -14,7 +14,7 @@
 <!-- Header -->
 <nav class="navbar navbar-inverse" id="headerBar">
   <div class="navbar-header" id="myNavbar1">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#userProfileDropdown, #innerSideNavBar">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#userProfileDropdown, .sidebar-navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -39,27 +39,47 @@
 </nav>
 
 <div class="row sidebarRow">
-  <div class="col-sm-3 col-md-2">
-    <div class="sidebar-nav sidebar" id="leftSideBar">
+  <div class="col-md-2">
+      
+      <!-- menu -->
+      <div class="sidebar-nav sidebar" id="leftSideBar">
 	  <div class="navbar navbar-inverse" role="navigation" id="sideNavBar">
-	    <div class="navbar-collapse collapse sidebar-navbar-collapse" id="innerSideNavBar">
-		  <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Menu Item 1</a></li>
-            <li><a href="#">Menu Item 2</a></li>
-            <li><a href="#">Menu Item 3</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu 4 <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
-              </ul>
-            </li>
+	    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+		<ul class="nav navbar-nav" id="accordionNav">
+			<li class="panel-group" id="accordion">
+				  <div class="panel panel-default">
+					<div class="panel-heading accordionPanel topMenu"><a href="#"> Menu Item 1</a></div>
+					  <div class="collapse in" id="collapseOrderItems1">
+					    <div class="">
+							<div class="subMenu"><a href="#"> Sub-Menu 1</a></div>
+							<div>
+								<div class="panel panel-default noBorder">
+							       <div class="panel-heading accordionPanel secondaryAccordion" data-toggle="collapse" data-target="#collapseOrderItemsSub2"><a href="#"><i class="chevron fa fa-fw"></i> Sub-Menu 2</a></div>
+							       <div class="collapse in" id="collapseOrderItemsSub2">
+								     <div class="subSubMenu"><a href="#">Sub-Menu 2.1</a></div>
+								     <div class="subSubMenu"><a href="#">Sub-Menu 2.2</a></div>
+								     <div class="subSubMenu"><a href="#">Sub-Menu 2.3</a></div>
+							       </div>
+							     </div>
+							</div>
+							<div>
+								<div class="panel panel-default noBorder">
+							       <div class="panel-heading accordionPanel secondaryAccordion" data-toggle="collapse" data-target="#collapseOrderItemsSub3"><a href="#"><i class="chevron fa fa-fw"></i> Sub-Menu 3</a></div>
+							       <div class="collapse in" id="collapseOrderItemsSub3">
+								     <div class="subSubMenu"><a href="#">Sub-Menu 3.1</a></div>
+								     <div class="subSubMenu"><a href="#">Sub-Menu 3.2</a></div>
+								     <div class="subSubMenu active"><a href="#">Sub-Menu 3.3</a></div>
+							       </div>
+							     </div>
+							</div>
+						</div>
+					  </div>
+					</div>	
+		    </li>
           </ul>
-		</div>
-	  </div>
-	</div>
-  </div>
+		 </div>
+	   </div>
+	   </div>
   <div class="col-sm-9 col-md-10">
     <div class="container-fluid verticalNavPage" id="pageContent">
 	  <h1>Page Title</h1>
@@ -68,10 +88,11 @@
 	<div style="height:50px" id="placeholderForFrontify"></div>
   </div>
 </div>
+</div>
 <body>
 </body>
 <!-- Footer -->
-<footer id="footer" class="text-left">
+<footer id="footer" class=" text-left">
   <p id="footerText" class="leftNavFooter">&copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.west.com" target="_blank">West Corporation</a>. All Rights Reserved.</p>		
 </footer>
 </html>
