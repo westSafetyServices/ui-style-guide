@@ -319,10 +319,6 @@ body {
 	}
 }
 
-.verticalNavPage {
-	padding-top: 50px;
-}
-
 /* adjust margin on row to remove horizontal scrollbar */
 	.sidebarRow {
 		margin-right: 0px;
@@ -735,6 +731,12 @@ input[type="radio"]:disabled + label::before {
 @media (min-width: 768px) {
 .leftNavFooter {
 	padding-left: 15%;
+}
+}
+
+@media (min-width: 768px) {
+.accordionNavFooter {
+	padding-left: 20%;
 }
 }
 
