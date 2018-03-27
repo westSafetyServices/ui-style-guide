@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Horizontal Menu - Main Style Guide</title>
+  <title>Horizontal Menu - Main UI Style Guide</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="icon" href="images/west_favicon.png" type="image/png">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script> <!--for popup initialization (Frontify workaround)--> 
   </head>
 <!-- Header -->
@@ -20,16 +21,16 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span> 
     </button>
-    <a class="navbar-brand" id="logoLink" href="#" ><img src="https://cdn.rawgit.com/wssStyleGuide/ui-style-guide/ecb7864c/images/west_logo.png" id="westLogo" alt="West logo">Application Title</a>
+    <a class="navbar-brand" id="logoLink" href="#" ><img src="images/west_logo.png" id="westLogo" alt="West logo">Application Title</a>
   </div>
   <div class="collapse navbar-collapse" id="userProfileDropdown">
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="userProfileMenu"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i><span class="loginUserLabel"> username </span><i class="fa fa-fw fa-chevron-down" aria-hidden="true"></i></a>
 		  <ul class="dropdown-menu">
-            <li><a href="#" class="userProfileMenuOption"><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i> Help</a></li>
+            <li><a href="javascript:void(0);" class="userProfileMenuOption"><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i> Help</a></li>
 			<li role="separator" class="divider"></li>
-            <li><a href="#" class="userProfileMenuOption"><i class="fa fa-fw fa-lg fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
+            <li><a href="javascript:void(0);" class="userProfileMenuOption"><i class="fa fa-fw fa-lg fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
           </ul>
         </li>
     </ul>
@@ -37,16 +38,16 @@
   <div id="menuDividerBar" class="container-fluid"></div>
   <div class="collapse navbar-collapse" id="mainNav2">
     <ul class="nav navbar-nav" id="horizontalMainMenu">
-      <li class="active"><a href="#">Menu 1</a></li>
-      <li><a href="#">Menu 2</a></li> 
-      <li><a href="#">Menu 3</a></li>
+      <li class="active"><a href="javascript:void(0);">Menu 1</a></li>
+      <li><a href="javascript:void(0);">Menu 2</a></li> 
+      <li><a href="javascript:void(0);">Menu 3</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 4
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
+          <li><a href="javascript:void(0);">Page 1</a></li>
+          <li><a href="javascript:void(0);">Page 2</a></li>
+          <li><a href="javascript:void(0);">Page 3</a></li>
         </ul>
       </li>
     </ul>
@@ -57,6 +58,7 @@
 <body>
 <div class="container-fluid">
   <h1>West Safety Services UI Style Guide</h1>
+    
 <!-- Headings -->
   <h2>01 Headings</h2>
 <div class="container-fluid">
@@ -68,7 +70,7 @@
   <h6>Heading 6</h6>
   <p>Paragraph</p>
 </div>
-
+<!-- Bah Humbug -->
 <!-- Icons -->
   <h2>02 Icons</h2>
 <div class="container-fluid">
@@ -82,6 +84,11 @@
         </tr>
       </thead>
       <tbody>
+	    <tr>
+          <td><i class="fa fa-lg fa-fw fa-user-circle-o" aria-hidden="true"></i></td>
+          <td>user-circle-o</td>
+          <td>Account Info</td>
+        </tr>
         <tr>
           <td><i class="fa fa-lg fa-fw fa-plus" aria-hidden="true"></i></td>
           <td>plus</td>
@@ -112,6 +119,11 @@
           <td>comment-o</td>
           <td>Comments</td>
         </tr>
+				<tr>
+          <td><i class="fa fa-lg fa-fw fa-arrow-circle-right" aria-hidden="true"></i></td>
+          <td>arrow-circle-right</td>
+          <td>Continue</td>
+        </tr>
         <tr>
           <td><i class="fa fa-lg fa-fw fa-calendar" aria-hidden="true"></i></td>
           <td>calendar</td>
@@ -121,6 +133,11 @@
           <td><i class="fa fa-lg fa-fw fa-trash" aria-hidden="true"></i></td>
           <td>trash</td>
           <td>Delete</td>
+        </tr>
+				<tr>
+          <td><i class="fa fa-lg fa-fw fa-download" aria-hidden="true"></i></td>
+          <td>download</td>
+          <td>Download</td>
         </tr>
         <tr>
           <td><i class="fa fa-lg fa-fw fa-pencil" aria-hidden="true"></i></td>
@@ -192,6 +209,11 @@
           <td>check</td>
           <td>Success, Complete, Verified</td>
         </tr>
+		<tr>
+          <td><i class="fa fa-lg fa-fw fa-wrench" aria-hidden="true"></i></td>
+          <td>wrench</td>
+          <td>Tools</td>
+        </tr>
         <tr>
           <td><i class="fa fa-lg fa-fw fa-question-circle" aria-hidden="true"></i></td>
           <td>question-circle</td>
@@ -207,7 +229,12 @@
           <td>info-circle</td>
           <td>Tooltip, Info</td>
         </tr>
-        <tr>
+		<tr>
+          <td><i class="fa fa-lg fa-fw fa-video-camera" aria-hidden="true"></i></td>
+          <td>video-camera</td>
+          <td>Video</td>
+        </tr>
+		<tr>
           <td><i class="fa fa-lg fa-fw fa-exclamation-triangle" aria-hidden="true"></i></td>
           <td>exclamation-triangle</td>
           <td>Warning</td>
@@ -222,25 +249,47 @@
   </div>
 </div>
 
-<!-- Button Style Breadcrumbs -->
+<!-- Button Style Breadcrumbs on light background-->
   <h2>03 Breadcrumbs</h2>
-<div class="container-fluid">
+<div class="whiteBackground" style="padding: 1%">
     <div class="btn-group btn-breadcrumb">
-        <a href="#" class="btn btn-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i> Home</a>
-        <a href="#" class="btn btn-default">Level 1</a>
-        <a href="#" class="btn btn-default">Level 2</a>
-        <a href="#" class="btn btn-primary active">Page Title</a>
+        <a href="javascript:void(0);" class="btn btn-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a>
+        <a href="javascript:void(0);" class="btn btn-default">Level 1</a>
+        <a href="javascript:void(0);" class="btn btn-default">Level 2</a>
+        <a href="javascript:void(0);" class="btn btn-primary active">Page Title</a>
+    </div>
+</div>
+
+<!-- Button Style Breadcrumbs on dark background-->
+<div class="blackBackground" style="padding: 1%">
+    <div class="btn-group btn-breadcrumb">
+        <a href="javascript:void(0);" class="btn btn-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a>
+        <a href="javascript:void(0);" class="btn btn-default">Level 1</a>
+        <a href="javascript:void(0);" class="btn btn-default">Level 2</a>
+        <a href="javascript:void(0);" class="btn btn-default active">Page Title</a>
     </div>
 </div>
 <br>
 
-<!-- Link Style Breadcrumbs -->
-<ul class="breadcrumb">
-    <li><a href="#" class="link-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a></li>
-    <li><a href="#" class="link-default">Level 1</a></li>
-    <li><a href="#" class="link-default">Level 2</a></li>
+<!-- Link Style Breadcrumbs on light background -->
+<div class="whiteBackground" style="padding: 1%">
+  <ul class="breadcrumb">
+    <li><a href="javascript:void(0);" class="link-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a></li>
+    <li><a href="javascript:void(0);" class="link-default">Level 1</a></li>
+    <li><a href="javascript:void(0);" class="link-default">Level 2</a></li>
     <li class="active">Page Title</li>
-</ul>
+  </ul>
+</div>
+
+<!-- Link Style Breadcrumbs on dark background-->
+<div class="blackBackground" style="padding: 1%">
+  <ul class="breadcrumb dark-background">
+    <li><a href="javascript:void(0);" class="link-default link-dark-background"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a></li>
+    <li><a href="javascript:void(0);" class="link-default link-dark-background">Level 1</a></li>
+    <li><a href="javascript:void(0);" class="link-default link-dark-background">Level 2</a></li>
+    <li class="active">Page Title</li>
+  </ul>
+</div>
 <br>
 
 <!-- Accordions (Standard) -->
@@ -283,39 +332,39 @@
 <!-- Sign In Example (light background) -->
   <h2>05 Sign In</h2>
 <div class="container-fluid">
-    <div class="panel panel-default" id="signInForm">
-        <div class="panel-body">
+    <div class="panel panel-default" id="signInPanel">
+        <div class="panel-body" id="signInForm">
             <form role="form" data-toggle="validator">
                 <div class="row">
                     <div class="form-group col-sm-3">
-                        <img src="https://cdn.rawgit.com/westSafetyServices/ui-style-guide/7c47b598/images/west_logo_white_lg.png" id="westLogoBlackLetters" alt="West logo with black letters">
+                        <img src="images/west_logo_white_lg.png" id="westLogoBlackLetters" alt="West logo with black letters">
                     </div>
                     <div class="form-group col-sm-9">
-                        <h3>Application Title</h3>
+                        <h4 id="signInTitle">Application Title</h4>
                     </div>
                 </div> 
                 <div class="row">
-                    <div class="form-group col-sm-12">
+                    <div class="form-group col-sm-12 signInPadding">
                         <label for="username">Username</label>
                         <input type="text" class="form-control" id="username" data-error="Required" required maxlength="40">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div> 
                 <div class="row">
-                    <div class="form-group col-sm-12">
+                    <div class="form-group col-sm-12 signInPadding">
                         <label for="password">Password</label>
                         <input type="text" class="form-control" id="password" data-error="Required" required maxlength="40">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div> 
                 <div class="row">
-                    <div class="form-group col-sm-12">
+                    <div class="form-group col-sm-12 signInPadding">
                         <button type="submit" class="btn btn-primary col-sm-12">Sign In</button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-sm-12">
-                        <a href="#">Forgot username or password?</a>
+                    <div class="form-group col-sm-12 signInPadding">
+                        <a href="javascript:void(0);" class="signInLink">Forgot username or password?</a>
                     </div>
                 </div> 
             </form>
@@ -326,7 +375,7 @@
 <br>
 <!-- Buttons -->
   <h2>06 Buttons</h2>
-<div style="background-color: #FFFFFF; padding: 1%">
+<div class="whiteBackground" style="padding: 1%">
   <button class="btn btn-primary">Primary</button>
   <button class="btn btn-default">Secondary</button>
   <button class="btn btn-primary" disabled>Disabled Primary</button>
@@ -334,7 +383,7 @@
 </div>
 <br>
 <!-- Buttons on dark background-->
-<div style="background-color: #000000; padding: 1%">
+<div class="blackBackground" style="padding: 1%">
    <button class="btn btn-primary btn-dark-background">Primary</button>
    <button class="btn btn-default btn-dark-background">Secondary</button>
    <button class="btn btn-primary btn-dark-background" disabled>Disabled Primary</button>
@@ -342,7 +391,7 @@
 </div>
 <br>
 <!-- Buttons with icons -->
-<div style="background-color: #FFFFFF; padding: 1%">
+<div class="whiteBackground" style="padding: 1%">
    <button class="btn btn-primary"><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Primary</button>
    <button class="btn btn-default"><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Secondary</button>
    <button class="btn btn-primary" disabled><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Disabled Primary</button>
@@ -414,8 +463,9 @@
 <!-- Dropdowns -->
   <h2>09 Dropdowns</h2>
 <div class="form-group col-sm-4">
-    <label for="buildingType">Fruit</label>
-    <select class="form-control dropdown-caret" id="buildingType">
+    <label for="dropdown1">Fruit Dropdown</label>
+    <select class="form-control dropdown-caret" id="dropdown1">
+	    <option></option>
         <option>Apple</option>
         <option>Banana</option>
         <option>Citrus</option>
@@ -426,8 +476,9 @@
 
 <!-- Radio Buttons -->
   <h2>10 Radio Buttons</h2>
-<div style="padding: 1%"> <!-- padding for Frontify-->
+<!--<div style="padding: 1%"> <!-- padding for Frontify-->
 <div class="form-group col-sm-12">
+  <label>Radio Button Options</label>
   <fieldset>
   <legend class="sr-only">Radio button example</legend>
   <ul class="wss-unstyled-list"> 
@@ -441,13 +492,29 @@
     </li>
   </ul>
   </fieldset>
+  
+  <label>Disabled Radio Button Example</label>
+  <fieldset>
+  <legend class="sr-only">Radio button example</legend>
+  <ul class="wss-unstyled-list"> 
+	<li>
+      <input id="option3" type="radio" name="myOptions" value="Option 3" disabled/>
+      <label for="option3">Option 3</label>
+    </li>
+	<li>
+      <input id="option4" type="radio" name="myOptions" value="Option 4" disabled checked/>
+      <label for="option4">Option 4</label>
+    </li>
+  </ul>
+  </fieldset>
 </div>
-</div>
+<!--</div>-->
 <br>
 
 <!-- Checkboxes -->
   <h2>11 Checkboxes</h2>
 <div class="form-group col-sm-12">
+  <label>Checkbox Options</label>
   <ul class="wss-unstyled-list">
     <li>
       <input id="check1" type="checkbox" value="Option 1" checked/>
@@ -458,31 +525,43 @@
       <label for="check2">Option 2</label>
     </li>
   </ul>
+  
+  <label>Disabled Checkbox Options</label>
+  <ul class="wss-unstyled-list">
+	<li>
+      <input id="check3" type="checkbox" value="Option 3" disabled/>
+      <label for="check3">Option 3</label>
+    </li>
+	<li>
+      <input id="check4" type="checkbox" value="Option 4" disabled checked/>
+      <label for="check4">Option 4</label>
+    </li>
+  </ul>
 </div>
 <br>
 
 <!-- Links -->
   <h2>12 Links</h2>
-<div style="background-color: #FFFFFF; padding: 1%">
-  <a href="#" target="_blank" class="link-default">Example Link</a>
+<div class="whiteBackground" style="padding: 1%">
+  <a href="javascript:void(0);" target="_blank" class="link-default">Example Link</a>
   <br></br>
-  <a href="#" target="_blank"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i>Link with icon</a>
+  <a href="javascript:void(0);" target="_blank"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i>Link with icon</a>
   <br></br>
-  <a href="#" target="_blank" class="link-default link-active">Active Link</a>
+  <a href="javascript:void(0);" target="_blank" class="link-default link-active">Active Link</a>
   <br></br>
-  <a href="#" target="_blank" class="link-default link-visited">Visited Link</a>
+  <a href="javascript:void(0);" target="_blank" class="link-default link-visited">Visited Link</a>
   <br>
 </div>
 <!-- Links on dark background-->
-<div style="background-color: #000000; padding: 1%">
+<div class="blackBackground" style="padding: 1%">
   <br>
-  <a href="#" target="_blank" class="link-default link-dark-background">Example Link</a>
+  <a href="javascript:void(0);" target="_blank" class="link-default link-dark-background">Example Link</a>
   <br></br>
-  <a href="#" target="_blank" class="link-dark-background"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i>Link with icon</a>
+  <a href="javascript:void(0);" target="_blank" class="link-dark-background"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i>Link with icon</a>
   <br></br>
-  <a href="#" target="_blank" class="link-default link-dark-background link-dark-background-active">Active Link</a>
+  <a href="javascript:void(0);" target="_blank" class="link-default link-dark-background link-dark-background-active">Active Link</a>
   <br></br>
-  <a href="#" target="_blank" class="link-default link-dark-background link-dark-background-visited">Visited Link</a>
+  <a href="javascript:void(0);" target="_blank" class="link-default link-dark-background link-dark-background-visited">Visited Link</a>
   <br></br>
 </div>
 <br>
@@ -509,10 +588,10 @@
 
 <!-- Popup Windows -->
   <h2>14 Popup Windows</h2>
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#successModal" >Success Modal</button>
-<button type="button" class="btn btn-info" data-toggle="modal" data-target="#infoModal" >Info Modal</button>
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#warningModal" >Warning Modal</button>
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#errorModal" >Error Modal</button>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#successModal" >Success Modal</button>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoModal" >Info Modal</button>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#warningModal" >Warning Modal</button>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#errorModal" >Error Modal</button>
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#neutralModal" >Neutral Modal</button>
 <div style="height:450px" id="placeholderForFrontify2"></div>
 
@@ -609,12 +688,40 @@
 
 <!-- Tooltips -->
   <h2>15 Tooltips</h2>
-<a tabindex="0" id="popover1" class="btn btn-default" role="button" data-toggle="popover" data-trigger="focus" rel="popover" data-style="success" data-placement="top" data-html="true" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Success" >Success Tooltip</a>
-<a tabindex="0" id="popover2" class="btn btn-default" role="button" data-toggle="popover" data-trigger="focus" rel="popover" data-style="info" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" >Info Tooltip</a>
-<a tabindex="0" id="popover3" class="btn btn-default" role="button" data-toggle="popover" data-trigger="focus" rel="popover" data-style="warning" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Warning" >Warning Tooltip</a>
-<a tabindex="0" id="popover4" class="btn btn-default" role="button" data-toggle="popover" data-trigger="focus" rel="popover" data-style="error" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Error" >Error Tooltip</a>
-<a tabindex="0" id="popover5" class="btn btn-default" role="button" data-toggle="popover" data-trigger="focus" rel="popover" data-style="neutral" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Neutral" >Neutral Tooltip</a>
-<br>
+<div class="whiteBackground" style="padding: 1%">
+<form>
+  <div class="row">
+    <div class="form-group col-sm-12">
+      <label for="tooltip1">Success tooltip<span class="requiredField"> *</span></label><button type="button" id="popover1" class="btn btn-link" data-toggle="popover" data-style="success" data-html="true" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Success" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="tooltip1" required data-error="Required">
+	  
+	  <label for="tooltip2">Info tooltip<span class="requiredField"> *</span></label><button type="button" id="popover2" class="btn btn-link" data-toggle="popover" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="tooltip2" required data-error="Required">
+	  
+	  <label for="tooltip3">Warning tooltip<span class="requiredField"> *</span></label><button type="button" id="popover3" class="btn btn-link" data-toggle="popover" data-style="warning" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Warning" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="tooltip3" required data-error="Required">
+	  
+	  <label for="tooltip4">Error tooltip<span class="requiredField"> *</span></label><button type="button" id="popover4" class="btn btn-link" data-toggle="popover" data-style="error" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Error" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="tooltip4" required data-error="Required">
+	  
+	  <label for="tooltip5">Neutral tooltip<span class="requiredField"> *</span></label><button type="button" id="popover5" class="btn btn-link" data-toggle="popover" data-style="neutral" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Neutral" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="tooltip5" required data-error="Required">
+	 
+    </div>
+  </div>
+</form>
+</div>
+
+<div class="blackBackground" style="padding: 1%">
+<form>
+  <div class="row">
+    <div class="form-group col-sm-12">	  
+	  <label class="whiteFont" for="darkToolTip">Info tooltip<span class="requiredField whiteFont"> *</span></label><button type="button" id="popover2" class="btn btn-link" data-toggle="popover" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fa fa-question-circle fa-lg popoverIcon whiteFont"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="darkToolTip" required data-error="Required">	 
+    </div>
+  </div>
+</form>
+</div>
 
 <!-- Tables (Active) -->
   <h2>16 Tables</h2>
@@ -725,9 +832,143 @@
   </div>
 </div>
 
- <h2>17 Footer</h2>
+<!-- Tabs -->
+  <h2>17 Tabs</h2>
+<div class= "container-fluid">
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a data-toggle="tab" href="#tab1">Tab 1</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tab2">Tab 2</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tab3">Tab 3</a></li>
+	<li role="presentation"><a data-toggle="tab" href="#tab4">Tab 4</a></li>
+  </ul>
+  
+  <div class="tab-content">
+	  <div id="tab1" class="tab-pane fade in active container-fluid">
+		<h4>Tab Content</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+	  </div>
+	  <div id="tab2" class="tab-pane fade container-fluid">
+		<h4>Tab 2</h4>
+		<p>Some content in tab 2.</p>
+	  </div>
+	  <div id="tab3" class="tab-pane fade container-fluid">
+		<h4>Tab 3</h4>
+		<p>Some content in tab 3.</p>
+	  </div>
+	  <div id="tab4" class="tab-pane fade container-fluid">
+		<h4>Tab 4</h4>
+		<p>Some content in tab 4.</p>
+	  </div>
+   </div>
+</div>
+
+<!-- Background Colors -->
+  <h2>18 Background Colors</h2>
+    <div class="container-fluid"> 
+	  <div class="row">
+	    <div class="col-sm-4">
+		  <div class="panel panel-default">
+            <div class="panel-body whiteBackground">
+			  <form>
+				  <div class="row">
+					<div class="form-group col-sm-12">
+					  <label for="labelExample1">Label</label>
+					  <input type="text" class="form-control" id="labelExample1">
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="form-group col-sm-12">
+					  <label for="labelExample2">Label</label>
+					  <input type="text" class="form-control" id="labelExample2" required data-error="Required">
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="form-group col-sm-12">
+					  <button type="submit" class="btn btn-primary col-sm-12">Button</button>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="form-group col-sm-12">
+					  <a href="javascript:void(0);" class="signInLink">Forgot your password?</a>
+					</div>
+				  </div>  
+			  </form>
+			 </div>
+		   </div>
+		</div>
+		<div class="col-sm-4">
+		  <div class="panel panel-default" id="">
+            <div class="panel-body blackBackground">
+				<form>
+					  <div class="row">
+						<div class="form-group col-sm-12">
+						  <label class="whiteFont" for="labelExample3">Label</label>
+						  <input type="text" class="form-control" id="labelExample3">
+						</div>
+					  </div>
+					  <div class="row">
+						<div class="form-group col-sm-12">
+						  <label class="whiteFont" for="labelExample4">Label</label>
+						  <input type="text" class="form-control" id="labelExample4" required data-error="Required">
+						</div>
+					  </div>
+					  <div class="row">
+						<div class="form-group col-sm-12">
+						  <button type="submit" class="btn btn-primary btn-dark-background col-sm-12">Button</button>
+						</div>
+					  </div>
+					  <div class="row">
+						<div class="form-group col-sm-12">
+						  <a href="javascript:void(0);" class="signInLink link-dark-background">Forgot your password?</a>
+						</div>
+					  </div>  
+				  </form>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-body greyBackground">
+					<form>
+						  <div class="row">
+							<div class="form-group col-sm-12">
+							  <label for="labelExample5">Label</label>
+							  <input type="text" class="form-control" id="labelExample5">
+							</div>
+						  </div>
+						  <div class="row">
+							<div class="form-group col-sm-12">
+							  <label for="labelExample6">Label</label>
+							  <input type="text" class="form-control" id="labelExample6" required data-error="Required">
+							</div>
+						  </div>
+						  <div class="row">
+							<div class="form-group col-sm-12">
+							  <button type="submit" class="btn btn-primary col-sm-12">Button</button>
+							</div>
+						  </div>
+						  <div class="row">
+							<div class="form-group col-sm-12">
+							  <a href="javascript:void(0);" class="signInLink">Forgot your password?</a>
+							</div>
+						  </div>  
+					  </form>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+	
+ <!-- Footer -->
+ <h2>19 Footer</h2>
 </div>
 </body>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+
+</script>
 <!-- Standard Footer-->
 <div style="height:50px" id="placeholderForFrontify2"></div>
 <footer id="footer" class="container-fluid text-left">
