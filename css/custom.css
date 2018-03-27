@@ -1,5 +1,5 @@
 /***************************************
-*  //Copyright West Safety Services, Inc. 2016
+*  //Copyright West Safety Services, Inc. 2018
 *
 *  Universal CSS
 *
@@ -21,6 +21,53 @@ html {
 
 body {
 	font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif !important;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 32px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 21px;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+h5 {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+h6 {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/*****************************************
+*  
+*  Background Colors
+*  
+******************************************/
+.whiteBackground {
+	background-color: #FFFFFF;
+}
+
+.blackBackground {
+	background-color: #000000;
+}
+
+.greyBackground {
+	background-color: #E4E4E4;
 }
 
 /*****************************************
@@ -159,7 +206,7 @@ body {
 ******************************************/
 
 #mainNav2 {
-	background-color: #444444;
+	background-color: #2D383F;
 }
 
 @media (min-width: 768px) {
@@ -178,14 +225,14 @@ body {
 .navbar-inverse .navbar-nav > li > a:focus {
 	font-style: italic;
 	padding-top: 14px;
-	background-color: #1B1B1B;
+	background-color: #000000;
 	font-weight: bold;
 }
 
 .navbar-inverse .navbar-nav>.active>a {
 	border-top: 2px solid #009EE1;
 	padding-top: 14px;
-	background-color: #444444;
+	background-color: #2D383F;
 	font-weight: bold;
 }
 
@@ -203,7 +250,7 @@ body {
 	}
 
 	.navbar-inverse .navbar-nav>.active>a {
-		background-color: #444444;
+		background-color: #2D383F;
 		border-top: 1px solid #000000;
 	}
 }
@@ -239,7 +286,7 @@ body {
     padding: 0px;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #444444;
+    background-color: #2D383F;
     border-right: 1px solid #eee;
 	min-width: 15%; /* preserve minimum width for menu items */
   }
@@ -280,14 +327,14 @@ body {
 		padding-left: 14px;
 		font-weight: bold;
 		/*margin-left: 4px;*/
-		background-color: #444444;
+		background-color: #2D383F;
 	}
 
 	.sidebar-nav .navbar-inverse .navbar-nav > li > a:hover,
 	.sidebar-nav .navbar-inverse .navbar-nav > li > a:focus {
 		font-style: italic;
 		padding-left: 14px;
-		background-color: #1B1B1B;
+		background-color: #000000;
 		font-weight: bold;
 		/*margin-left: 4px;*/
 		color: #FFFFFF;
@@ -296,7 +343,7 @@ body {
 	.sidebar-nav .navbar-inverse .navbar-nav>.active>a {
 		border-right: 10px solid #009EE1;
 		padding-left: 14px;
-		background-color: #444444;
+		background-color: #2D383F;
 		font-weight: bold;
 		/*margin-left: 4px;*/
 	}
@@ -331,7 +378,7 @@ body {
 ******************************************/
 
 #accordionNav {
-	background-color: #444444;
+	background-color: #2D383F;
 }
 
 .topMenu {
@@ -378,7 +425,67 @@ body {
 .noBorder {
 	border: none;
 }
-	
+
+/* Place expand/collapse icons on right for Accordion Menu */
+.accordionMenuIcon{
+	float: right;
+	padding-top: 3px;
+}
+
+/*****************************************
+*  
+*  Tabs
+*  
+******************************************/
+
+.nav-tabs {
+	border-bottom: none;
+}
+
+.nav-tabs >li > a {
+  border: 1px solid #000000;
+  border-bottom: none;
+  color: #FFFFFF;
+  background-color: #2D383F;
+  border-radius: 0px;
+  line-height: 0px;
+  margin-right: 0px;
+  padding: 15px 15px;
+  font-weight: bold;
+  min-width: 150px;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  border-color: #000000;
+  border-bottom: none;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.nav-tabs >li.active > a {
+  font-style: normal;
+  /*box-shadow: 1px 4px 0 #fff;*/
+  /*box-shadow: 0px -12px 0px 0px red inset;*/
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #000000;
+  background-color: #FFFFFF;
+  border-color: #797979;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+.tab-content {
+  border: 1px solid #666666;
+}
+
+
 /*****************************************
 *  
 *  Links
@@ -424,6 +531,8 @@ a:active, .link-visited {
 
 .breadcrumb {
 	font-size: 12px;
+	background: none;
+	margin-bottom: 5px;
 }
 
 .breadcrumb > li + li:before {
@@ -433,6 +542,15 @@ a:active, .link-visited {
 .breadcrumb > .active {
   color: #000000;
   font-weight: bold;
+}
+
+/* Styling for breadcrumbs on dark backgrounds */
+.breadcrumb.dark-background > li + li:before {
+  color: #FFFFFF;
+}
+
+.breadcrumb.dark-background > .active {
+  color: #FFFFFF;
 }
 
 /** Button-style breadcrumbs **/
@@ -457,7 +575,7 @@ a:active, .link-visited {
   height: 0;
   border-top: 17px solid transparent;
   border-bottom: 17px solid transparent;
-  border-left: 10px solid rgb(173, 173, 173);
+  border-left: 10px solid #000000;
   position: absolute;
   top: 50%;
   margin-top: -17px;
@@ -479,20 +597,45 @@ a:active, .link-visited {
 
 /** Default button **/
 .btn-breadcrumb .btn.btn-default:not(:last-child):after {
-  /*border-left: 10px solid #fff;*/
   border-left: 10px solid #DDDDDD;
 }
 .btn-breadcrumb .btn.btn-default:not(:last-child):before {
-  /*border-left: 10px solid #ccc;*/
   border-left: 10px solid #000000;
 }
 .btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
-  /*border-left: 10px solid #ebebeb;*/
   border-left: 10px solid #DDDDDD;
 }
 .btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
-  /*border-left: 10px solid #adadad;*/
   border-left: 10px solid #000000;
+}
+
+/* Disable standard box shadow for buttons since this causes undesired button overlap */
+/* Just underline text link instead */
+.btn-breadcrumb .btn.btn-default:hover, .btn-breadcrumb .btn.btn-default:focus {
+	box-shadow: none;
+	text-decoration: underline;
+}
+
+.btn-breadcrumb .btn.btn-default.active:hover{
+	text-decoration: none;
+}
+
+.btn-breadcrumb .btn.btn-primary.active:hover, .btn-breadcrumb .btn.btn-primary.active:focus {
+	box-shadow: none;
+	background-color: #1B4478;;
+}
+
+/* Disable hover behavior for active button (dark backgrounds only) */
+.btn-breadcrumb .btn.btn-default.active:hover, .btn-breadcrumb .btn.btn-default.active:focus, .btn-breadcrumb .btn.btn-default.active {
+	background-color: #A1A1A1;
+	border-color: #000000;
+	box-shadow: none;
+	color: #000000;
+}
+
+/* Prevents undesired button overlap on hover */
+.btn-breadcrumb>.btn:hover, .btn-breadcrumb>.btn:focus{
+	z-index: auto;
 }
 
 /*****************************************
@@ -505,6 +648,7 @@ a:active, .link-visited {
 	padding: 5px;
 }
 
+/* Accordion icons */
 .panel-heading .chevron:after {
     content: "\f078";   
 }
@@ -523,14 +667,14 @@ a:active, .link-visited {
 }
 
 .panel-heading.accordionPanel.collapsed {
-	background-color: #444444;
+	background-color: #2D383F;
 	color: #FFFFFF;
 	border-radius: 0px;
 	border-color: #000000
 }
 
 .panel-heading.accordionPanel {
-	background-color: #444444;
+	background-color: #2D383F;
 	color: #FFFFFF;
 	border-radius: 0px;
 	border-color: #000000;
@@ -631,43 +775,41 @@ input[type="radio"] + label {
   cursor: pointer;
   font-weight: normal;
   margin-bottom: 1em;
+  padding-left: 8px;
+  padding-right: 5px;
+  border: 1px solid transparent;
 }
 
 input[type="checkbox"] + label::before,
 input[type="radio"] + label::before {
   background: #ffffff;
   border-radius: 0.3rem;
-  box-shadow: 0 0 0 1px #333333;
+  box-shadow: 0 0 0 1px #797979;
   content: '\a0';
   display: inline-block;
-  height: 1.4rem;
-  line-height: 1.4rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
   margin-right: 0.8em;
   text-indent: 0.15em;
   vertical-align: middle\0;
-  width: 1.4rem;
+  width: 1.3rem;
 }
 
 input[type="radio"] + label::before {
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #333333;
-  height: 1.2rem;
-  line-height: 1.2rem;
-  width: 1.2rem;
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #797979;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  width: 0.7rem;
   border-radius: 100%;
 }
 
 input[type="checkbox"]:checked + label::before,
 input[type="radio"]:checked + label::before {
-  background-color: #005dac;
-  /*box-shadow: 0 0 0 1px #000000;*/
+  background-color: #005DAC;
 }
 
 input[type="radio"]:checked + label::before {
-  box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #005dac;
-}
-
-input[type="radio"]:focus + label::before {
-  box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #005dac, 0 0 3px 4px #3e94cf, 0 0 7px 4px #3e94cf;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #005DAC;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -677,29 +819,34 @@ input[type="checkbox"]:checked + label::before {
   background-repeat: no-repeat;
 }
 
-input[type="checkbox"]:focus + label::before {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #0071bc;
-}
-
-input[type="checkbox"]:disabled + label {
-  color: #5b616b;
+/* Disabled checkbox and radio buttons */
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  color: #C9C9C9;
 }
 
 input[type="checkbox"]:disabled + label::before,
 input[type="radio"]:disabled + label::before {
-  background: #d6d7d9;
-  box-shadow: 0 0 0 1px #aeb0b5;
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #C9C9C9;
   cursor: not-allowed;
 }
-  
- #horizontalCheckbox {
-	 display: inline-flex;
-	 padding-right: 10px;
- }
- 
- .wss-unstyled-list {
+
+input[type="checkbox"]:checked:disabled + label::before,
+input[type="radio"]:checked:disabled + label::before {
+  background-color: 276AA2;
+  opacity: .65;
+}
+
+/* Focus checkbox and radio buttons */
+input[type="checkbox"]:focus + label,
+input[type="radio"]:focus + label {
+  border: 1px solid #009EE1;
+  border-radius: 5px;
+}
+
+.wss-unstyled-list {
 	list-style-type: none;
-	margin: 0;
+	margin-left: 5px;
 	padding: 0;
  }
  
@@ -854,26 +1001,22 @@ input[type="radio"]:disabled + label::before {
 
 .alert-danger {
                 background-color: #F2DEDE;
-                border-color: #ED1C24;
+                border: 2px solid #ED1C24;
 }
 
 .alert-success {
                 background-color: #DFF0D8;
-                border-color: #00A262;
+                border: 2px solid #00A262;
 }
 
 .alert-info {
-                margin-bottom: 20px;
 			    background-color: #D9EDF7;
 			    border: 2px solid #009EE1;
-			    font-weight: bold;
-			    box-shadow: 3px 3px 5px 0px rgba(163, 157, 163, 1);
-			    padding: 5px;
 }
 
 .alert-warning {
                 background-color: #FCF8E3;
-                border-color: #F8C70F;
+                border: 2px solid #F8C70F;
 }
 
 .alert .glyphicon {
@@ -892,12 +1035,30 @@ input[type="radio"]:disabled + label::before {
 *  
 ******************************************/
 
-#signInForm {
+#signInPanel {
 	max-width: 450px;
+    border-radius: 0px;
+}
+
+#signInTitle {
+	padding-top: 10px;
+}
+
+#signInForm {
+	padding-bottom: 0px;
+}
+
+.signInPadding {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.signInLink {
+	font-size: 12px;
 }
 
 .whiteFont {
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 }
 
 .darkBackground {
@@ -1088,6 +1249,12 @@ select {
 *  
 ******************************************/
 
+/* Supports accessibility so button is not empty */
+.tooltipButtonLabel {
+	font-size: 0;
+	font-color: transparent;
+}
+
 .popover {
 	padding: 0px;
 	background:  #FFFFFF;
@@ -1098,6 +1265,12 @@ select {
 .popover-title {
 	font-weight: bold;
 	text-align: left;
+}
+
+.popoverIcon {
+	color: #005dac;
+	display:inline-block; /* chrome-fix */
+	cursor: pointer;
 }
 
 /* Success Tooltips */
