@@ -5,3 +5,4 @@
 	$('#popover4').popover();
 	$('#popover5').popover();
     });
+	$('[data-toggle="popover"]').popover();
