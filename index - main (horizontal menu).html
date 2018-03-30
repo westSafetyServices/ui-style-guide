@@ -27,9 +27,9 @@
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="userProfileMenu"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i><span class="loginUserLabel"> username </span><i class="fa fa-fw fa-chevron-down" aria-hidden="true"></i></a>
-		  <ul class="dropdown-menu">
+         <ul class="dropdown-menu">
             <li><a href="javascript:void(0);" class="userProfileMenuOption"><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i> Help</a></li>
-			<li role="separator" class="divider"></li>
+            <li role="separator" class="divider"></li>
             <li><a href="javascript:void(0);" class="userProfileMenuOption"><i class="fa fa-fw fa-lg fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
           </ul>
         </li>
@@ -53,7 +53,6 @@
     </ul>
   </div>
 </nav>
-<div style="height:50px" id="placeholderForFrontify2"></div>
 
 <body>
 <div class="container-fluid">
@@ -70,7 +69,7 @@
   <h6>Heading 6</h6>
   <p>Paragraph</p>
 </div>
-<!-- Bah Humbug -->
+
 <!-- Icons -->
   <h2>02 Icons</h2>
 <div class="container-fluid">
@@ -84,7 +83,7 @@
         </tr>
       </thead>
       <tbody>
-	    <tr>
+        <tr>
           <td><i class="fa fa-lg fa-fw fa-user-circle-o" aria-hidden="true"></i></td>
           <td>user-circle-o</td>
           <td>Account Info</td>
@@ -119,7 +118,7 @@
           <td>comment-o</td>
           <td>Comments</td>
         </tr>
-				<tr>
+        <tr>
           <td><i class="fa fa-lg fa-fw fa-arrow-circle-right" aria-hidden="true"></i></td>
           <td>arrow-circle-right</td>
           <td>Continue</td>
@@ -134,7 +133,7 @@
           <td>trash</td>
           <td>Delete</td>
         </tr>
-				<tr>
+        <tr>
           <td><i class="fa fa-lg fa-fw fa-download" aria-hidden="true"></i></td>
           <td>download</td>
           <td>Download</td>
@@ -209,7 +208,7 @@
           <td>check</td>
           <td>Success, Complete, Verified</td>
         </tr>
-		<tr>
+        <tr>
           <td><i class="fa fa-lg fa-fw fa-wrench" aria-hidden="true"></i></td>
           <td>wrench</td>
           <td>Tools</td>
@@ -229,12 +228,12 @@
           <td>info-circle</td>
           <td>Tooltip, Info</td>
         </tr>
-		<tr>
+        <tr>
           <td><i class="fa fa-lg fa-fw fa-video-camera" aria-hidden="true"></i></td>
           <td>video-camera</td>
           <td>Video</td>
         </tr>
-		<tr>
+        <tr>
           <td><i class="fa fa-lg fa-fw fa-exclamation-triangle" aria-hidden="true"></i></td>
           <td>exclamation-triangle</td>
           <td>Warning</td>
@@ -465,7 +464,7 @@
 <div class="form-group col-sm-4">
     <label for="dropdown1">Fruit Dropdown</label>
     <select class="form-control dropdown-caret" id="dropdown1">
-	    <option></option>
+        <option></option>
         <option>Apple</option>
         <option>Banana</option>
         <option>Citrus</option>
@@ -476,7 +475,6 @@
 
 <!-- Radio Buttons -->
   <h2>10 Radio Buttons</h2>
-<!--<div style="padding: 1%"> <!-- padding for Frontify-->
 <div class="form-group col-sm-12">
   <label>Radio Button Options</label>
   <fieldset>
@@ -495,20 +493,19 @@
   
   <label>Disabled Radio Button Example</label>
   <fieldset>
-  <legend class="sr-only">Radio button example</legend>
+  <legend class="sr-only">Disabled Radio button example</legend>
   <ul class="wss-unstyled-list"> 
-	<li>
-      <input id="option3" type="radio" name="myOptions" value="Option 3" disabled/>
+    <li>
+      <input id="option3" type="radio" name="myOptions2" value="Option 3" disabled/>
       <label for="option3">Option 3</label>
     </li>
-	<li>
-      <input id="option4" type="radio" name="myOptions" value="Option 4" disabled checked/>
+    <li>
+      <input id="option4" type="radio" name="myOptions2" value="Option 4" disabled checked/>
       <label for="option4">Option 4</label>
     </li>
   </ul>
   </fieldset>
 </div>
-<!--</div>-->
 <br>
 
 <!-- Checkboxes -->
@@ -528,11 +525,11 @@
   
   <label>Disabled Checkbox Options</label>
   <ul class="wss-unstyled-list">
-	<li>
+    <li>
       <input id="check3" type="checkbox" value="Option 3" disabled/>
       <label for="check3">Option 3</label>
     </li>
-	<li>
+    <li>
       <input id="check4" type="checkbox" value="Option 4" disabled checked/>
       <label for="check4">Option 4</label>
     </li>
@@ -839,136 +836,130 @@
     <li role="presentation" class="active"><a data-toggle="tab" href="#tab1">Tab 1</a></li>
     <li role="presentation"><a data-toggle="tab" href="#tab2">Tab 2</a></li>
     <li role="presentation"><a data-toggle="tab" href="#tab3">Tab 3</a></li>
-	<li role="presentation"><a data-toggle="tab" href="#tab4">Tab 4</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tab4">Tab 4</a></li>
   </ul>
   
   <div class="tab-content">
-	  <div id="tab1" class="tab-pane fade in active container-fluid">
-		<h4>Tab Content</h4>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
-	  </div>
-	  <div id="tab2" class="tab-pane fade container-fluid">
-		<h4>Tab 2</h4>
-		<p>Some content in tab 2.</p>
-	  </div>
-	  <div id="tab3" class="tab-pane fade container-fluid">
-		<h4>Tab 3</h4>
-		<p>Some content in tab 3.</p>
-	  </div>
-	  <div id="tab4" class="tab-pane fade container-fluid">
-		<h4>Tab 4</h4>
-		<p>Some content in tab 4.</p>
-	  </div>
+    <div id="tab1" class="tab-pane fade in active container-fluid">
+      <h4>Tab Content</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+    </div>
+    <div id="tab2" class="tab-pane fade container-fluid">
+      <h4>Tab 2</h4>
+      <p>Some content in tab 2.</p>
+    </div>
+    <div id="tab3" class="tab-pane fade container-fluid">
+      <h4>Tab 3</h4>
+      <p>Some content in tab 3.</p>
+    </div>
+    <div id="tab4" class="tab-pane fade container-fluid">
+      <h4>Tab 4</h4>
+      <p>Some content in tab 4.</p>
+    </div>
    </div>
 </div>
 
 <!-- Background Colors -->
   <h2>18 Background Colors</h2>
-    <div class="container-fluid"> 
-	  <div class="row">
-	    <div class="col-sm-4">
-		  <div class="panel panel-default">
-            <div class="panel-body whiteBackground">
-			  <form>
-				  <div class="row">
-					<div class="form-group col-sm-12">
-					  <label for="labelExample1">Label</label>
-					  <input type="text" class="form-control" id="labelExample1">
-					</div>
-				  </div>
-				  <div class="row">
-					<div class="form-group col-sm-12">
-					  <label for="labelExample2">Label</label>
-					  <input type="text" class="form-control" id="labelExample2" required data-error="Required">
-					</div>
-				  </div>
-				  <div class="row">
-					<div class="form-group col-sm-12">
-					  <button type="submit" class="btn btn-primary col-sm-12">Button</button>
-					</div>
-				  </div>
-				  <div class="row">
-					<div class="form-group col-sm-12">
-					  <a href="javascript:void(0);" class="signInLink">Forgot your password?</a>
-					</div>
-				  </div>  
-			  </form>
-			 </div>
-		   </div>
-		</div>
-		<div class="col-sm-4">
-		  <div class="panel panel-default" id="">
+<div class="container-fluid"> 
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-body whiteBackground">
+          <form>
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <label for="labelExample1">Label</label>
+                  <input type="text" class="form-control" id="labelExample1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <label for="labelExample2">Label</label>
+                  <input type="text" class="form-control" id="labelExample2" required data-error="Required">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <button type="submit" class="btn btn-primary col-sm-12">Button</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <a href="javascript:void(0);" class="signInLink">Forgot your password?</a>
+              </div>
+            </div>  
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default" id="">
             <div class="panel-body blackBackground">
-				<form>
-					  <div class="row">
-						<div class="form-group col-sm-12">
-						  <label class="whiteFont" for="labelExample3">Label</label>
-						  <input type="text" class="form-control" id="labelExample3">
-						</div>
-					  </div>
-					  <div class="row">
-						<div class="form-group col-sm-12">
-						  <label class="whiteFont" for="labelExample4">Label</label>
-						  <input type="text" class="form-control" id="labelExample4" required data-error="Required">
-						</div>
-					  </div>
-					  <div class="row">
-						<div class="form-group col-sm-12">
-						  <button type="submit" class="btn btn-primary btn-dark-background col-sm-12">Button</button>
-						</div>
-					  </div>
-					  <div class="row">
-						<div class="form-group col-sm-12">
-						  <a href="javascript:void(0);" class="signInLink link-dark-background">Forgot your password?</a>
-						</div>
-					  </div>  
-				  </form>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="panel panel-default">
-				<div class="panel-body greyBackground">
-					<form>
-						  <div class="row">
-							<div class="form-group col-sm-12">
-							  <label for="labelExample5">Label</label>
-							  <input type="text" class="form-control" id="labelExample5">
-							</div>
-						  </div>
-						  <div class="row">
-							<div class="form-group col-sm-12">
-							  <label for="labelExample6">Label</label>
-							  <input type="text" class="form-control" id="labelExample6" required data-error="Required">
-							</div>
-						  </div>
-						  <div class="row">
-							<div class="form-group col-sm-12">
-							  <button type="submit" class="btn btn-primary col-sm-12">Button</button>
-							</div>
-						  </div>
-						  <div class="row">
-							<div class="form-group col-sm-12">
-							  <a href="javascript:void(0);" class="signInLink">Forgot your password?</a>
-							</div>
-						  </div>  
-					  </form>
-				</div>
-			</div>
-		</div>
-	  </div>
-	</div>
+              <form>
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <label class="whiteFont" for="labelExample3">Label</label>
+                    <input type="text" class="form-control" id="labelExample3">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <label class="whiteFont" for="labelExample4">Label</label>
+                    <input type="text" class="form-control" id="labelExample4" required data-error="Required">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <button type="submit" class="btn btn-primary btn-dark-background col-sm-12">Button</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <a href="javascript:void(0);" class="signInLink link-dark-background">Forgot your password?</a>
+                  </div>
+                </div>  
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-body greyBackground">
+          <form>
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <label for="labelExample5">Label</label>
+                <input type="text" class="form-control" id="labelExample5">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <label for="labelExample6">Label</label>
+                <input type="text" class="form-control" id="labelExample6" required data-error="Required">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <button type="submit" class="btn btn-primary col-sm-12">Button</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <a href="javascript:void(0);" class="signInLink">Forgot your password?</a>
+              </div>
+            </div>  
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 	
  <!-- Footer -->
  <h2>19 Footer</h2>
 </div>
 </body>
-<script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
-});
-
-</script>
 <!-- Standard Footer-->
 <div style="height:50px" id="placeholderForFrontify2"></div>
 <footer id="footer" class="container-fluid text-left">
