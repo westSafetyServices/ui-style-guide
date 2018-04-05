@@ -42,8 +42,7 @@
       <li><a href="javascript:void(0);">Menu 2</a></li> 
       <li><a href="javascript:void(0);">Menu 3</a></li>
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 4
-        <span class="caret"></span></a>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 4<i class="fa fa-fw fa-chevron-down menu-dropdown-chevron" aria-hidden="true"></i></a>
         <ul class="dropdown-menu">
           <li><a href="javascript:void(0);">Page 1</a></li>
           <li><a href="javascript:void(0);">Page 2</a></li>
@@ -565,32 +564,36 @@
 
 <!-- Processing Indicator -->
   <h2>13 Processing Indicator</h2>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" >Loading Modal</button>
-<div id="loadingModal" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-sm">
+  <div class="container-fluid" style="padding-top: 10px">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" >Loading Modal</button>
+    <div id="loadingModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
         <div class="modal-content">
-        <div class="modal-header loadingModalHeader">
+          <div class="modal-header loadingModalHeader">
             <h4 class="modal-title">Loading...</h4>
+          </div>
+          <div class="modal-body loadingModalContent">
+            <br>
+            <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i><br><br>
+            <p>Explanation for delay.</p>
+          </div>
         </div>
-        <div class="modal-body loadingModalContent">
-             <br>
-             <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i><br><br>
-             <p>Explanation for delay.</p>
-        </div>
+      </div>
     </div>
-</div>
-</div>
-<div style="height:250px" id="placeholderForFrontify2"></div>
+  </div>
+  <div style="height:250px" id="placeholderForFrontify2"></div>
 <br>
 
 <!-- Popup Windows -->
   <h2>14 Popup Windows</h2>
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#successModal" >Success Modal</button>
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoModal" >Info Modal</button>
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#warningModal" >Warning Modal</button>
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#errorModal" >Error Modal</button>
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#neutralModal" >Neutral Modal</button>
-<div style="height:450px" id="placeholderForFrontify2"></div>
+  <div class="container-fluid" style="padding-top: 10px">
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#successModal" >Success Modal</button>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoModal" >Info Modal</button>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#warningModal" >Warning Modal</button>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#errorModal" >Error Modal</button>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#neutralModal" >Neutral Modal</button>
+    <div style="height:450px" id="placeholderForFrontify2"></div>
+  </div>
 
 <div id="successModal" class="modal fade" role="dialog">
   <div class="modal-dialog modal-sm">
@@ -689,19 +692,19 @@
 <form>
   <div class="row">
     <div class="form-group col-sm-12">
-      <label for="tooltip1">Success tooltip<span class="requiredField"> *</span></label><button type="button" id="popover1" class="btn btn-link" data-toggle="popover" data-style="success" data-html="true" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Success" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <label for="tooltip1">Success tooltip<span class="requiredField"> *</span></label><button type="button" id="popover1" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="success" data-html="true" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Success" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="tooltip1" required data-error="Required">
 	  
-	  <label for="tooltip2">Info tooltip<span class="requiredField"> *</span></label><button type="button" id="popover2" class="btn btn-link" data-toggle="popover" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+	  <label for="tooltip2">Info tooltip<span class="requiredField"> *</span></label><button type="button" id="popover2" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="tooltip2" required data-error="Required">
 	  
-	  <label for="tooltip3">Warning tooltip<span class="requiredField"> *</span></label><button type="button" id="popover3" class="btn btn-link" data-toggle="popover" data-style="warning" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Warning" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+	  <label for="tooltip3">Warning tooltip<span class="requiredField"> *</span></label><button type="button" id="popover3" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="warning" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Warning" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="tooltip3" required data-error="Required">
 	  
-	  <label for="tooltip4">Error tooltip<span class="requiredField"> *</span></label><button type="button" id="popover4" class="btn btn-link" data-toggle="popover" data-style="error" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Error" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+	  <label for="tooltip4">Error tooltip<span class="requiredField"> *</span></label><button type="button" id="popover4" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="error" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Error" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="tooltip4" required data-error="Required">
 	  
-	  <label for="tooltip5">Neutral tooltip<span class="requiredField"> *</span></label><button type="button" id="popover5" class="btn btn-link" data-toggle="popover" data-style="neutral" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Neutral" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+	  <label for="tooltip5">Neutral tooltip<span class="requiredField"> *</span></label><button type="button" id="popover5" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="neutral" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Neutral" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="tooltip5" required data-error="Required">
 	 
     </div>
@@ -713,7 +716,7 @@
 <form>
   <div class="row">
     <div class="form-group col-sm-12">	  
-	  <label class="whiteFont" for="darkToolTip">Info tooltip<span class="requiredField whiteFont"> *</span></label><button type="button" id="popover2" class="btn btn-link" data-toggle="popover" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fa fa-question-circle fa-lg popoverIcon whiteFont"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+	  <label class="whiteFont" for="darkToolTip">Info tooltip<span class="requiredField whiteFont"> *</span></label><button type="button" id="darkPopover" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fa fa-question-circle fa-lg popoverIcon whiteFont"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="darkToolTip" required data-error="Required">	 
     </div>
   </div>
@@ -724,7 +727,7 @@
   <h2>16 Tables</h2>
 <div class= "container-fluid">
   <div class="table-responsive">
-    <table id="grid-basic-example1" class="table table-striped table-hover">
+    <table id="grid-basic-example1" class="table table-striped table-hover table-active">
       <thead>
         <tr>
           <th class="th-active" data-column-id="id">Column 1 </th>
@@ -855,6 +858,41 @@
     <div id="tab4" class="tab-pane fade container-fluid">
       <h4>Tab 4</h4>
       <p>Some content in tab 4.</p>
+    </div>
+   </div>
+</div>
+
+<br/>
+
+<div class= "container-fluid">
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a data-toggle="tab" href="#tabA"><i class="fa fa-fw fa-dashboard tab-icon" aria-hidden="true"></i>Dashboard</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tabB"><i class="fa fa-fw fa-line-chart tab-icon" aria-hidden="true"></i> Trending</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tabC"><i class="fa fa-fw fa-pie-chart tab-icon" aria-hidden="true"></i> Distribution</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tabD"><i class="fa fa-fw fa-sort-amount-asc tab-icon" aria-hidden="true"></i> Drilldown</a></li>
+	<li role="presentation"><a data-toggle="tab" href="#tabE"><i class="fa fa-fw fa-file-text-o tab-icon" aria-hidden="true"></i> Reports</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="tabA" class="tab-pane fade in active container-fluid">
+      <h4>Dashboard</h4>
+      <p>Example tab with icons</p>
+    </div>
+    <div id="tabB" class="tab-pane fade container-fluid">
+      <h4>Trending</h4>
+      <p>Some content in tab B.</p>
+    </div>
+    <div id="tabC" class="tab-pane fade container-fluid">
+      <h4>Distribution</h4>
+      <p>Some content in tab C.</p>
+    </div>
+    <div id="tabD" class="tab-pane fade container-fluid">
+      <h4>Drilldown</h4>
+      <p>Some content in tab D.</p>
+    </div>
+	<div id="tabE" class="tab-pane fade container-fluid">
+      <h4>Reports</h4>
+      <p>Some content in tab E.</p>
     </div>
    </div>
 </div>
