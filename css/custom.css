@@ -1057,16 +1057,16 @@ input[type="radio"]:hover + label {
 *  
 ******************************************/
 
-#signInPanel {
+.signInPanel {
 	max-width: 450px;
     border-radius: 0px;
 }
 
-#signInTitle {
+.signInTitle {
 	padding-top: 10px;
 }
 
-#signInForm {
+.signInForm {
 	padding-bottom: 0px;
 }
 
