@@ -78,7 +78,7 @@
         <tr>
           <th class="th-passive" data-column-id="id">Icon </th>
           <th class="th-passive" data-column-id="type">Font Awesome ID </th>
-          <th class="th-passive" data-column-id="status">Usage </th>
+          <th class="th-passive" data-column-id="status">WSS Common Usage </th>
         </tr>
       </thead>
       <tbody>
@@ -329,16 +329,18 @@
 
 <!-- Sign In Example (light background) -->
   <h2>05 Sign In</h2>
-<div class="container-fluid">
-    <div class="panel panel-default" id="signInPanel">
-        <div class="panel-body" id="signInForm">
-            <form role="form" data-toggle="validator">
+<div class="container-fluid"> 
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="panel panel-default signInPanel">
+        <div class="panel-body whiteBackground signInForm">
+          <form role="form" data-toggle="validator">
                 <div class="row">
                     <div class="form-group col-sm-3">
                         <img src="images/west_logo_white_lg.png" id="westLogoBlackLetters" alt="West logo with black letters">
                     </div>
                     <div class="form-group col-sm-9">
-                        <h4 id="signInTitle">Application Title</h4>
+                        <h4 class="signInTitle">Application Title</h4>
                     </div>
                 </div> 
                 <div class="row">
@@ -366,10 +368,51 @@
                     </div>
                 </div> 
             </form>
-        </div>
-    </div>
-</div>
-  
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-sm-6">
+      <div class="panel panel-default signInPanel">
+        <div class="panel-body blackBackground signInForm">
+          <form role="form" data-toggle="validator">
+                <div class="row">
+                    <div class="form-group col-sm-3">
+                        <img src="images/west_logo_dk_lg.png" id="westLogoWhiteLetters" alt="West logo with white letters" width="60" height="60">
+                    </div>
+                    <div class="form-group col-sm-9">
+                        <h4 class="signInTitle whiteFont">Application Title</h4>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="form-group col-sm-12 signInPadding">
+                        <label for="username" class="whiteFont">Username</label>
+                        <input type="text" class="form-control" id="username" data-error="Required" required maxlength="40">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="form-group col-sm-12 signInPadding">
+                        <label for="password" class="whiteFont">Password</label>
+                        <input type="text" class="form-control" id="password" data-error="Required" required maxlength="40">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="form-group col-sm-12 signInPadding">
+                        <button type="submit" class="btn btn-primary col-sm-12">Sign In</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-12 signInPadding">
+                        <a href="javascript:void(0);" class="signInLink link-dark-background">Forgot username or password?</a>
+                    </div>
+                </div> 
+            </form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</div>	    
 <br>
 <!-- Buttons -->
   <h2>06 Buttons</h2>
@@ -436,21 +479,21 @@
 <!-- Text Fields (Left-Aligned labels)-->
 <form class="form-horizontal">
   <div class="form-group">
-    <label class="control-label col-sm-2" for="example4">Label</label>
-      <div class="col-sm-10">
+    <label class="control-label col-sm-3 col-md-2" for="example4">Label</label>
+      <div class="col-sm-9 col-md-10">
         <input type="text" class="form-control" id="example4">
       </div>
   </div>
   <div class="form-group">
-    <label class="control-label col-sm-2" for="example5">Label Required <span class="requiredField"> *</span></label>
-    <div class="col-sm-10">
+    <label class="control-label col-sm-3 col-md-2" for="example5">Label Required <span class="requiredField"> *</span></label>
+    <div class="col-sm-9 col-md-10">
       <input type="text" class="form-control" id="example5" required data-error="Required">
       <div class="help-block with-errors"></div>
     </div>
   </div>
   <div class="form-group">
-    <label class="control-label col-sm-2" for="example6">Form Validation Fails <span class="requiredField"> *</span></label>
-    <div class="col-sm-10 has-error">
+    <label class="control-label col-sm-3 col-md-2" for="example6">Form Validation Fails <span class="requiredField"> *</span></label>
+    <div class="col-sm-9 col-md-10 has-error">
       <input type="text" class="form-control" id="example6" required data-error="Required">
       <div class="help-block with-errors">Required</div>
     </div>
@@ -562,10 +605,10 @@
 </div>
 <br>
 
-<!-- Processing Indicator -->
-  <h2>13 Processing Indicator</h2>
+<!-- Modals -->
+  <h2>13 Modals </h2>
   <div class="container-fluid" style="padding-top: 10px">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" >Loading Modal</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" >Click to display a Processing Indicator</button>
     <div id="loadingModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -587,11 +630,11 @@
 <!-- Popup Windows -->
   <h2>14 Popup Windows</h2>
   <div class="container-fluid" style="padding-top: 10px">
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#successModal" >Success Modal</button>
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoModal" >Info Modal</button>
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#warningModal" >Warning Modal</button>
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#errorModal" >Error Modal</button>
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#neutralModal" >Neutral Modal</button>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#successModal" >Click to display a Success Modal</button> <br/><br/>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoModal" >Click to display an Info Modal</button> <br/><br/>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#warningModal" >Click to display a Warning Modal</button> <br/><br/>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#errorModal" >Click to display an Error Modal</button> <br/><br/>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#neutralModal" >Click to display a Neutral Modal</button> <br/><br/>
     <div style="height:450px" id="placeholderForFrontify2"></div>
   </div>
 
