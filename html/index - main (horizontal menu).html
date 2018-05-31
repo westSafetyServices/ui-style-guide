@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="images/west_favicon.png" type="image/png">
   <script src="lib/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script> <!--for popup initialization (Frontify workaround)-->  
+  <script src="js/custom.js"></script> <!--for popup initialization (Frontify workaround)--> 
   </head>
 <!-- Header -->
 <nav class="navbar navbar-inverse" id="headerBar">
@@ -26,11 +26,11 @@
   <div class="collapse navbar-collapse" id="userProfileDropdown">
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="userProfileMenu"><i class="fas fa-fw fa-user" aria-hidden="true"></i><span class="loginUserLabel"> username </span><i class="fas fa-fw fa-chevron-down" aria-hidden="true"></i></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="userProfileMenu"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i><span class="loginUserLabel"> username </span><i class="fa fa-fw fa-chevron-down" aria-hidden="true"></i></a>
          <ul class="dropdown-menu">
-            <li><a href="javascript:void(0);" class="userProfileMenuOption"><i class="fas fa-fw fa-question-circle" aria-hidden="true"></i> Help</a></li>
+            <li><a href="javascript:void(0);" class="userProfileMenuOption"><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i> Help</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="javascript:void(0);" class="userProfileMenuOption"><i class="fas fa-fw fa-sign-out-alt" aria-hidden="true"></i> Sign Out</a></li>
+            <li><a href="javascript:void(0);" class="userProfileMenuOption"><i class="fa fa-fw fa-lg fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
           </ul>
         </li>
     </ul>
@@ -42,7 +42,7 @@
       <li><a href="javascript:void(0);">Menu 2</a></li> 
       <li><a href="javascript:void(0);">Menu 3</a></li>
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 4<i class="fas fa-fw fa-chevron-down menu-dropdown-chevron" aria-hidden="true"></i></a>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 4<i class="fa fa-fw fa-chevron-down menu-dropdown-chevron" aria-hidden="true"></i></a>
         <ul class="dropdown-menu">
           <li><a href="javascript:void(0);">Page 1</a></li>
           <li><a href="javascript:void(0);">Page 2</a></li>
@@ -83,157 +83,162 @@
       </thead>
       <tbody>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-user-circle" aria-hidden="true"></i></td>
-          <td>user-circle</td>
+          <td><i class="fa fa-lg fa-fw fa-user-circle-o" aria-hidden="true"></i></td>
+          <td>user-circle-o</td>
           <td>Account Info</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-plus" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-plus" aria-hidden="true"></i></td>
           <td>plus</td>
           <td>Add</td>
         </tr>
         <tr>
-          <td><i class="fab fa-lg fa-fw fa-bluetooth" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-bluetooth" aria-hidden="true"></i></td>
           <td>bluetooth</td>
           <td>Bluetooth</td>
         </tr>
         <tr>
-          <td><i class="far fa-lg fa-fw fa-clone" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-clone" aria-hidden="true"></i></td>
           <td>clone</td>
           <td>Clone</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-times" aria-hidden="true"></i></td>
-          <td>times</td>
+          <td><i class="fa fa-lg fa-fw fa-remove" aria-hidden="true"></i></td>
+          <td>remove</td>
           <td>Close</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-chevron-down" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-chevron-down" aria-hidden="true"></i></td>
           <td>chevron-down</td>
           <td>Collapse</td>
         </tr>
         <tr>
-          <td><i class="far fa-lg fa-fw fa-comment" aria-hidden="true"></i></td>
-          <td>comment</td>
+          <td><i class="fa fa-lg fa-fw fa-comment-o" aria-hidden="true"></i></td>
+          <td>comment-o</td>
           <td>Comments</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-arrow-alt-circle-right" aria-hidden="true"></i></td>
-          <td>arrow-alt-circle-right</td>
+          <td><i class="fa fa-lg fa-fw fa-arrow-circle-right" aria-hidden="true"></i></td>
+          <td>arrow-circle-right</td>
           <td>Continue</td>
         </tr>
         <tr>
-          <td><i class="far fa-lg fa-fw fa-calendar" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-calendar" aria-hidden="true"></i></td>
           <td>calendar</td>
           <td>Date picker</td>
         </tr>
         <tr>
-          <td><i class="far fa-lg fa-fw fa-trash-alt" aria-hidden="true"></i></td>
-          <td>trash-alt</td>
+          <td><i class="fa fa-lg fa-fw fa-trash" aria-hidden="true"></i></td>
+          <td>trash</td>
           <td>Delete</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-download" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-download" aria-hidden="true"></i></td>
           <td>download</td>
           <td>Download</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-pencil-alt" aria-hidden="true"></i></td>
-          <td>pencil-alt</td>
+          <td><i class="fa fa-lg fa-fw fa-pencil" aria-hidden="true"></i></td>
+          <td>pencil</td>
           <td>Edit</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-times-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-times-circle" aria-hidden="true"></i></td>
           <td>times-circle</td>
           <td>Error</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-chevron-right" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-chevron-right" aria-hidden="true"></i></td>
           <td>chevron-right</td>
           <td>Expand</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-share-square" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-share-square" aria-hidden="true"></i></td>
           <td>share-square</td>
           <td>Export</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-home" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-home" aria-hidden="true"></i></td>
           <td>home</td>
           <td>Home</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-info-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-info-circle" aria-hidden="true"></i></td>
           <td>info-circle</td>
-          <td>Info, Tooltip</td>
+          <td>Info</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-sign-out-alt" aria-hidden="true"></i></td>
-          <td>sign-out-alt</td>
+          <td><i class="fa fa-lg fa-fw fa-sign-out" aria-hidden="true"></i></td>
+          <td>sign-out</td>
           <td>Logout</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-bars" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-bars" aria-hidden="true"></i></td>
           <td>bars</td>
           <td>Menu (Mobile)</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-spinner" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-spinner" aria-hidden="true"></i></td>
           <td>spinner</td>
           <td>Processing</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-user" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-user" aria-hidden="true"></i></td>
           <td>user</td>
           <td>Profile Menu</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-undo" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-undo" aria-hidden="true"></i></td>
           <td>undo</td>
           <td>Reset; Clear Filters; Undo</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-search" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-search" aria-hidden="true"></i></td>
           <td>search</td>
           <td>Search</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-cog" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-cog" aria-hidden="true"></i></td>
           <td>cog</td>
           <td>Settings menu, Admin operations</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-check" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-check" aria-hidden="true"></i></td>
           <td>check</td>
           <td>Success, Complete, Verified</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-wrench" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-wrench" aria-hidden="true"></i></td>
           <td>wrench</td>
           <td>Tools</td>
         </tr>
         <tr>
-          <td><i class="far fa-lg fa-fw fa-question-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-question-circle" aria-hidden="true"></i></td>
           <td>question-circle</td>
           <td>Tooltip, Help</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-question-circle" aria-hidden="true"></i></td>
-          <td>question-circle</td>
+          <td><i class="fa fa-lg fa-fw fa-question-circle-o" aria-hidden="true"></i></td>
+          <td>question-circle-o</td>
           <td>Tooltip, Help (alternate design)</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-video" aria-hidden="true"></i></td>
-          <td>video</td>
+          <td><i class="fa fa-lg fa-fw fa-info-circle" aria-hidden="true"></i></td>
+          <td>info-circle</td>
+          <td>Tooltip, Info</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-lg fa-fw fa-video-camera" aria-hidden="true"></i></td>
+          <td>video-camera</td>
           <td>Video</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-exclamation-triangle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-exclamation-triangle" aria-hidden="true"></i></td>
           <td>exclamation-triangle</td>
           <td>Warning</td>
         </tr>
         <tr>
-          <td><i class="fas fa-lg fa-fw fa-wifi" aria-hidden="true"></i></td>
+          <td><i class="fa fa-lg fa-fw fa-wifi" aria-hidden="true"></i></td>
           <td>wifi</td>
           <td>WiFi</td>
         </tr>
@@ -246,7 +251,7 @@
   <h2>03 Breadcrumbs</h2>
 <div class="whiteBackground" style="padding: 1%">
     <div class="btn-group btn-breadcrumb">
-        <a href="javascript:void(0);" class="btn btn-default"><i class="fas fa-fw fa-home" aria-hidden="true"></i>Home</a>
+        <a href="javascript:void(0);" class="btn btn-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a>
         <a href="javascript:void(0);" class="btn btn-default">Level 1</a>
         <a href="javascript:void(0);" class="btn btn-default">Level 2</a>
         <a href="javascript:void(0);" class="btn btn-primary active">Page Title</a>
@@ -256,7 +261,7 @@
 <!-- Button Style Breadcrumbs on dark background-->
 <div class="blackBackground" style="padding: 1%">
     <div class="btn-group btn-breadcrumb">
-        <a href="javascript:void(0);" class="btn btn-default"><i class="fas fa-fw fa-home" aria-hidden="true"></i>Home</a>
+        <a href="javascript:void(0);" class="btn btn-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a>
         <a href="javascript:void(0);" class="btn btn-default">Level 1</a>
         <a href="javascript:void(0);" class="btn btn-default">Level 2</a>
         <a href="javascript:void(0);" class="btn btn-default active">Page Title</a>
@@ -267,7 +272,7 @@
 <!-- Link Style Breadcrumbs on light background -->
 <div class="whiteBackground" style="padding: 1%">
   <ul class="breadcrumb">
-    <li><a href="javascript:void(0);" class="link-default"><i class="fas fa-fw fa-home" aria-hidden="true"></i>Home</a></li>
+    <li><a href="javascript:void(0);" class="link-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a></li>
     <li><a href="javascript:void(0);" class="link-default">Level 1</a></li>
     <li><a href="javascript:void(0);" class="link-default">Level 2</a></li>
     <li class="active">Page Title</li>
@@ -277,7 +282,7 @@
 <!-- Link Style Breadcrumbs on dark background-->
 <div class="blackBackground" style="padding: 1%">
   <ul class="breadcrumb dark-background">
-    <li><a href="javascript:void(0);" class="link-default link-dark-background"><i class="fas fa-fw fa-home" aria-hidden="true"></i>Home</a></li>
+    <li><a href="javascript:void(0);" class="link-default link-dark-background"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a></li>
     <li><a href="javascript:void(0);" class="link-default link-dark-background">Level 1</a></li>
     <li><a href="javascript:void(0);" class="link-default link-dark-background">Level 2</a></li>
     <li class="active">Page Title</li>
@@ -290,13 +295,13 @@
 <div class="container-fluid">
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
-      <div class="panel-heading accordionPanel" data-toggle="collapse" data-target="#collapseOrderItems1"><a href="javascript:void(0);"><i class="chevron fas fa-fw"></i>Label</a></div>
+      <div class="panel-heading accordionPanel" data-toggle="collapse" data-target="#collapseOrderItems1"><a href="javascript:void(0);"><i class="chevron fa fa-fw"></i>Label</a></div>
         <div class="collapse in" id="collapseOrderItems1">
           <p class="accordionContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>
     <div class="panel panel-default">
-      <div class="panel-heading accordionPanel collapsed" data-toggle="collapse" data-target="#collapseOrderItems2"><a href="javascript:void(0);"><i class="chevron fas fa-fw"></i>Label</a></div>
+      <div class="panel-heading accordionPanel collapsed" data-toggle="collapse" data-target="#collapseOrderItems2"><a href="javascript:void(0);"><i class="chevron fa fa-fw"></i>Label</a></div>
         <div class="collapse" id="collapseOrderItems2">
           <p class="accordionContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
@@ -308,13 +313,13 @@
 <div class="container-fluid">
   <div class="panel-group" id="accordionMin">
     <div class="panel panel-default panelMin">
-      <div class="panel-heading accordionPanelMin clearfix" data-toggle="collapse" data-target="#collapse1"><a href="javascript:void(0);"><i class="chevron fas fa-fw" aria-hidden="true"></i>Label</a><hr class="horizontalLine"></div>
+      <div class="panel-heading accordionPanelMin clearfix" data-toggle="collapse" data-target="#collapse1"><a href="javascript:void(0);"><i class="chevron fa fa-fw" aria-hidden="true"></i>Label</a><hr class="horizontalLine"></div>
         <div class="collapse in" id="collapse1">
           <p class="accordionContentMin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
     </div>
     <div class="panel panel-default panelMin">
-      <div class="panel-heading accordionPanelMin collapsed clearfix" data-toggle="collapse" data-target="#collapse2"><a href="javascript:void(0);"><i class="chevron fas fa-fw" aria-hidden="true"></i>Label</a><hr class="horizontalLine"></div>
+      <div class="panel-heading accordionPanelMin collapsed clearfix" data-toggle="collapse" data-target="#collapse2"><a href="javascript:void(0);"><i class="chevron fa fa-fw" aria-hidden="true"></i>Label</a><hr class="horizontalLine"></div>
         <div class="collapse" id="collapse2">
           <p class="accordionContentMin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
@@ -428,20 +433,20 @@
 <br>
 <!-- Buttons with icons -->
 <div class="whiteBackground" style="padding: 1%">
-   <button class="btn btn-primary"><i class="fas fa-trash-alt fa-fw" aria-hidden="true"></i> Primary</button>
-   <button class="btn btn-default"><i class="fas fa-trash-alt fa-fw" aria-hidden="true"></i> Secondary</button>
-   <button class="btn btn-primary" disabled><i class="fas fa-trash-alt fa-fw" aria-hidden="true"></i> Disabled Primary</button>
-   <button class="btn btn-default" disabled><i class="fas fa-trash-alt fa-fw" aria-hidden="true"></i> Disabled Secondary</button>
+   <button class="btn btn-primary"><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Primary</button>
+   <button class="btn btn-default"><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Secondary</button>
+   <button class="btn btn-primary" disabled><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Disabled Primary</button>
+   <button class="btn btn-default" disabled><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Disabled Secondary</button>
 </div>
 <br>
   
 <!-- Alerts -->
   <h2>07 Alerts</h2>
 <div>
-  <div class="alert alert-success"><i class="fas fa-check fa-fw" aria-hidden="true"></i> Indicates a successful or positive action.</div>
-  <div class="alert alert-info"><i class="fas fa-info-circle fa-fw" aria-hidden="true"></i> Indicates a neutral informative change or action.</div>
-  <div class="alert alert-warning"><i class="fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i> Indicates a warning that might need attention.</div>
-  <div class="alert alert-danger"><i class="fas fa-times-circle fa-fw" aria-hidden="true"></i> Indicates an error or potentially negative action.</div>
+  <div class="alert alert-success"><i class="fa fa-check fa-lg fa-fw" aria-hidden="true"></i>Indicates a successful or positive action.</div>
+  <div class="alert alert-info"><i class="fa fa-info-circle fa-lg fa-fw" aria-hidden="true"></i>Indicates a neutral informative change or action.</div>
+  <div class="alert alert-warning"><i class="fa fa-exclamation-triangle fa-lg fa-fw" aria-hidden="true"></i>Indicates a warning that might need attention.</div>
+  <div class="alert alert-danger"><i class="fa fa-times-circle fa-lg fa-fw" aria-hidden="true"></i>Indicates an error or potentially negative action.</div>
 </div>
 <br>
 
@@ -579,7 +584,7 @@
 <div class="whiteBackground" style="padding: 1%">
   <a href="javascript:void(0);" target="_blank" class="link-default">Example Link</a>
   <br></br>
-  <a href="javascript:void(0);" target="_blank"><i class="fas fa-fw fa-user" aria-hidden="true"></i>Link with icon</a>
+  <a href="javascript:void(0);" target="_blank"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i>Link with icon</a>
   <br></br>
   <a href="javascript:void(0);" target="_blank" class="link-default link-active">Active Link</a>
   <br></br>
@@ -591,7 +596,7 @@
   <br>
   <a href="javascript:void(0);" target="_blank" class="link-default link-dark-background">Example Link</a>
   <br></br>
-  <a href="javascript:void(0);" target="_blank" class="link-dark-background"><i class="fas fa-fw fa-user" aria-hidden="true"></i>Link with icon</a>
+  <a href="javascript:void(0);" target="_blank" class="link-dark-background"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i>Link with icon</a>
   <br></br>
   <a href="javascript:void(0);" target="_blank" class="link-default link-dark-background link-dark-background-active">Active Link</a>
   <br></br>
@@ -612,7 +617,7 @@
           </div>
           <div class="modal-body loadingModalContent">
             <br>
-            <i class="fas fa-spinner fa-spin fa-2x" aria-hidden="true"></i><br><br>
+            <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i><br><br>
             <p>Explanation for delay.</p>
           </div>
         </div>
@@ -638,15 +643,15 @@
     <div class="modal-content">
       <div class="modal-header successModalHeader">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p class="modal-title"><i class="fas fa-fw fa-check" aria-hidden="true"></i> Success</p>
+        <p class="modal-title"><i class="fa fa-lg fa-fw fa-check" aria-hidden="true"></i> Success</p>
       </div>
       <div class="modal-body">
         <p>Pop-up windows that are used to provide positive confirmations or information should use the same colors and styles for the header as Success Alerts (or notifications).</p>
         <p>For example, the user submits a change to a document or file and the system detects no issues (e.g. formatting, connectivity, etc.), then the user might be presented with a Success message.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fas fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fas fa-fw fa-arrow-circle-right" aria-hidden="true"></i> Continue</button>
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-arrow-circle-right" aria-hidden="true"></i> Continue</button>
       </div>
     </div>
   </div>
@@ -657,14 +662,14 @@
     <div class="modal-content">
       <div class="modal-header infoModalHeader">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <p class="modal-title"><i class="fas fa-fw fa-info-circle" aria-hidden="true"></i> Info</p>
+          <p class="modal-title"><i class="fa fa-lg fa-fw fa-info-circle" aria-hidden="true"></i> Info</p>
       </div>
       <div class="modal-body">
         <p>Pop-up windows that are used to provide additional information that is not necessarily positive or negative should use the same colors and styles for the header as Info Alerts (or Notifications).</p>
         <p>For Example, if the user needs to see information about an upcoming action but not (at least not yet) see the positive or negative impact of that action, then an Info pop-up might be used.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fas fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
       </div>
     </div>
   </div>
@@ -675,15 +680,15 @@
     <div class="modal-content">
       <div class="modal-header warningModalHeader">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p class="modal-title"><i class="fas fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning</p>
+        <p class="modal-title"><i class="fa fa-lg fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning</p>
       </div>
       <div class="modal-body">
         <p>Pop-up windows that are used to provide additional information that an action or a state is negative or could become negative but isn't necessarily destructive.</p>
         <p>For example, deleting something that is easy to retrieve, is easy to recreate, or is fairly non-essential might constitute a Warning.  Deleting important data from a database that is mission critical or that could not be retrieved might warrant an Error.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fas fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fas fa-fw fa-arrow-circle-right" aria-hidden="true"></i> Continue</button>
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-arrow-circle-right" aria-hidden="true"></i> Continue</button>
       </div>
     </div>
   </div>
@@ -694,15 +699,15 @@
     <div class="modal-content">
       <div class="modal-header errorModalHeader">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p class="modal-title"><i class="fas fa-fw fa-times-circle" aria-hidden="true"></i> Error</p>
+        <p class="modal-title"><i class="fa fa-lg fa-fw fa-times-circle" aria-hidden="true"></i> Error</p>
       </div>
       <div class="modal-body">
         <p>Pop-up windows that are used to provide additional information that an action or a state is negative or could become negative in a way that is destructive or potentially destructive, particularly if such an action is difficult to undo.</p>
         <p>For example, deleting something that is easy to retrieve, is easy to recreate, or is fairly non-essential might constitute a Warning.  Deleting important data from a database that is mission critical or that could not be retrieved might warrant an Error.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fas fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fas fa-fw fa-trash-alt" aria-hidden="true"></i> Delete</button>
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-trash" aria-hidden="true"></i> Delete</button>
       </div>
     </div>
   </div>
@@ -730,19 +735,19 @@
 <form>
   <div class="row">
     <div class="form-group col-sm-12">
-      <label for="tooltip1">Success tooltip<span class="requiredField"> *</span></label><button type="button" id="popover1" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="success" data-html="true" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Success" ><i class="fas fa-question-circle popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <label for="tooltip1">Success tooltip<span class="requiredField"> *</span></label><button type="button" id="popover1" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="success" data-html="true" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Success" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="tooltip1" required data-error="Required">
   
-      <label for="tooltip2">Info tooltip<span class="requiredField"> *</span></label><button type="button" id="popover2" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fas fa-question-circle popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <label for="tooltip2">Info tooltip<span class="requiredField"> *</span></label><button type="button" id="popover2" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="tooltip2" required data-error="Required">
   
-      <label for="tooltip3">Warning tooltip<span class="requiredField"> *</span></label><button type="button" id="popover3" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="warning" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Warning" ><i class="fas fa-question-circle popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <label for="tooltip3">Warning tooltip<span class="requiredField"> *</span></label><button type="button" id="popover3" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="warning" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Warning" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="tooltip3" required data-error="Required">
   
-      <label for="tooltip4">Error tooltip<span class="requiredField"> *</span></label><button type="button" id="popover4" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="error" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Error" ><i class="fas fa-question-circle popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <label for="tooltip4">Error tooltip<span class="requiredField"> *</span></label><button type="button" id="popover4" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="error" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Error" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="tooltip4" required data-error="Required">
   
-      <label for="tooltip5">Neutral tooltip<span class="requiredField"> *</span></label><button type="button" id="popover5" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="neutral" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Neutral" ><i class="fas fa-question-circle popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <label for="tooltip5">Neutral tooltip<span class="requiredField"> *</span></label><button type="button" id="popover5" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="neutral" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Neutral" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="tooltip5" required data-error="Required"> 
     </div>
   </div>
@@ -753,7 +758,7 @@
 <form>
   <div class="row">
     <div class="form-group col-sm-12"> 
-      <label class="whiteFont" for="darkToolTip">Info tooltip<span class="requiredField whiteFont"> *</span></label><button type="button" id="darkPopover" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fas fa-question-circle popoverIcon whiteFont"></i><span class="tooltipButtonLabel">Tooltip</span></button>
+      <label class="whiteFont" for="darkToolTip">Info tooltip<span class="requiredField whiteFont"> *</span></label><button type="button" id="darkPopover" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fa fa-question-circle fa-lg popoverIcon whiteFont"></i><span class="tooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="darkToolTip" required data-error="Required">
     </div>
   </div>
@@ -903,11 +908,11 @@
 
 <div class= "container-fluid">
   <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a data-toggle="tab" href="#tabA"><i class="fas fa-fw fa-tachometer-alt tab-icon" aria-hidden="true"></i> Dashboard</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tabB"><i class="fas fa-fw fa-chart-line tab-icon" aria-hidden="true"></i> Trending</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tabC"><i class="fas fa-fw fa-chart-pie tab-icon" aria-hidden="true"></i> Distribution</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tabD"><i class="fas fa-fw fa-sort-amount-down tab-icon" aria-hidden="true"></i> Drilldown</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tabE"><i class="fas fa-fw fa-file-alt tab-icon" aria-hidden="true"></i> Reports</a></li>
+    <li role="presentation" class="active"><a data-toggle="tab" href="#tabA"><i class="fa fa-fw fa-dashboard tab-icon" aria-hidden="true"></i>Dashboard</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tabB"><i class="fa fa-fw fa-line-chart tab-icon" aria-hidden="true"></i> Trending</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tabC"><i class="fa fa-fw fa-pie-chart tab-icon" aria-hidden="true"></i> Distribution</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tabD"><i class="fa fa-fw fa-sort-amount-asc tab-icon" aria-hidden="true"></i> Drilldown</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tabE"><i class="fa fa-fw fa-file-text-o tab-icon" aria-hidden="true"></i> Reports</a></li>
   </ul>
   
   <div class="tab-content">
