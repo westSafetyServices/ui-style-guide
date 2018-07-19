@@ -21,6 +21,7 @@ html {
 
 body {
 	font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif !important;
+	font-size: 14px !important;
 }
 
 h1 {
@@ -58,15 +59,15 @@ h6 {
 *  Background Colors
 *  
 ******************************************/
-.whiteBackground {
+.wssWhiteBackground {
 	background-color: #FFFFFF;
 }
 
-.blackBackground {
+.wssBlackBackground {
 	background-color: #000000;
 }
 
-.greyBackground {
+.wssGreyBackground {
 	background-color: #E4E4E4;
 }
 
@@ -75,48 +76,25 @@ h6 {
 *  Navbar
 *  
 ******************************************/
-
-.navbar {
-	margin-bottom: 0px;
+#wssWestLogo {
+	margin-right: 10px;
 }
 
-.navbar-inverse {
-	border-style: none;
-}
-
-#westLogo {
-    display: inline;
-	margin-top: -2px;
-	margin-right: 12px;
-	margin-left: 2px;
-}
-
-#headerBar {
-	background-color: #000000;
-	border-radius: 0px;
+#wssHeaderBar {
+	padding: 2.5px 15px;
 }
 
 .navbar-brand {
 	font-size: 16px;
-	padding: 10px 15px;
+	font-weight: bold;
 }
 
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav > li > a {
+.navbar-dark .navbar-nav .nav-link, 
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-item .nav-link {
 	color: #FFFFFF;
 	font-weight: bold;
-	white-space: nowrap;
-}
-
-/* Adjust navbar size and alignment */
-.navbar-inverse .navbar-nav > li > a {
-	line-height: 8px;
-}
-
-/* Adjust simple header size and alignment */
-.simpleHeaderLink {
-	line-height: 20px!important;
-}
+}  
 
 /*****************************************
 *  
@@ -124,79 +102,48 @@ h6 {
 *  
 ******************************************/
 
-/* Bold dropdown list items */
-.dropdown-menu > li > a {
-	font-weight: bold;
-	color: #000000;
-}
-
-.userProfileMenuOption {
-	padding: 2px 10px!important;
-}
-
-/* Set background color of dropdown list */
-.navbar-nav>li>.dropdown-menu {
+/* Expand to full width of username */
+.dropdown-menu {
+	width: 100%;
 	background-color: #E4E4E4;
 	border: 1px solid #000000;
 	border-radius: 0px;
 	min-width: 120px;
+	margin-top: 0px;
 }
 
-/* Set hover color for dropdown items */
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-	background-color: #009EE1;
+/* Bold dropdown list items */
+.dropdown-item {
+	font-weight: bold;
+	font-size: 14px;
 	color: #000000;
+	padding: .1rem 1rem;
+}
+
+/* Remove Bootstrap 4 default dropdown toggle */
+.dropdown-toggle::after {
+	display: none;
+}
+
+.dropdown-item:hover, .dropdown-item:focus,
+.dropdown-item.active, .dropdown-item:active {
+	color: #000000;
+	background-color: #009EE1;
 }
 
 /* Username profile menu: Match color of dropdown list and reduce height */
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-	background-color: #E4E4E4;
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .show>.nav-link:hover, .navbar-dark .navbar-nav .show>.nav-link:focus{
+	background-color: #E4E4E4 !important;
 	color: #000000;
 	border: 1px solid #000000;
 }
 
 /* Custom divider styling */
-.dropdown-menu .divider {
+.dropdown-menu .dropdown-divider {
 	margin: 2px;
-    margin-left: 35px;
+    margin-left: 40px;
     margin-right: 20px;
-	background-color: #949494
-}
-
-/* Ensure styling of dropdown carries through to responsive devices */
-@media (max-width: 767px){
-	.navbar-nav .open .dropdown-menu {
-	background-color: #E4E4E4;
-	border: 1px solid #000000;
-	}
-	
-	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-	color: #000000;
-    font-weight: bold;
-	}
-	
-	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
-	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
-		color: #000000;
-		background-color: #009EE1;
-	}
-	
-	.navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-		background-color: #949494
-	}
-}
-
-/* Make entire userprofile link clickable */
-.loginUserLabel{
-	font-weight: bold;
-}
-
-/* Remove grey/cyan border-top for userprofile dropdown */
-#userProfileMenu {
-	border-top: 2px solid #000000;
-	padding: 10px 10px;
-	margin-top: 5px;
+	border-top: 1px solid #949494
 }
 
 /*****************************************
@@ -205,63 +152,35 @@ h6 {
 *  
 ******************************************/
 
-#mainNav2 {
+.wssHorizontalMenu {
 	background-color: #2D383F;
+	padding: 0rem;
 }
 
-@media (min-width: 768px) {
-	#mainNav2 {
-		padding-left: 0px;
-	}
-}
-
-.navbar-inverse .navbar-nav > li > a {
+.navbar-dark .navbar-nav .nav-item .nav-link{
 	border: 1px solid #000000;
-	padding-top: 14px;
 	font-weight: bold;
+	min-width: 120px;
+	padding: 8px 15px;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
+.navbar-dark .navbar-nav .nav-item .nav-link:hover,
+.navbar-dark .navbar-nav .nav-item .nav-link:focus {
 	font-style: italic;
-	padding-top: 14px;
 	background-color: #000000;
 	font-weight: bold;
 }
 
-.navbar-inverse .navbar-nav>.active>a {
+.navbar-dark .navbar-nav .nav-item .nav-link.active {
 	border-top: 2px solid #009EE1;
-	padding-top: 14px;
 	background-color: #2D383F;
 	font-weight: bold;
 }
 
-/* Style for mobile devices */
-@media (max-width: 767px){
-	.navbar-inverse .navbar-nav > li > a {
-		border: 1px solid #000000;
-		border-top: 1px solid #000000;
-	}
-	
-	.navbar-inverse .navbar-nav > li > a:hover,
-	.navbar-inverse .navbar-nav > li > a:focus {
-		border-top: 1px solid #000000;
-		background-color: #232323;
-	}
-
-	.navbar-inverse .navbar-nav>.active>a {
-		background-color: #2D383F;
-		border-top: 1px solid #000000;
-	}
-}
-
-.menu-dropdown-chevron {
-	display: inline-block !important;
-	height: 0 !important;
+.wssDropdownIcon {
 	width: 0 !important;
-	margin-left: 5px !important;
 	margin-right: 10px !important;
-	line-height: 8px !important;
+	margin-top: 5px;
 }
 
 /*****************************************
@@ -271,114 +190,56 @@ h6 {
 ******************************************/
 
 /* Create grey divider bar to separate menus from header */
-#menuDividerBar {
+#wssMenuDividerBar {
 	width: 100%; 
 	height: 5px; 
 	background-color: #CCCCCC; 
 	border: 1px solid #797979;
 }
 
-/* Collapse header */
-#collapseHeader {
-	background-color: #000000;
+.wssSidebar {
+	background-color: #2D383F;
+	padding: 0px;
 }
 
-/* extend sidebar along entire page */
 @media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
+  .wssSidebar {
+	position: fixed;
     top: 55px; /* extend from bottom of header */
     bottom: 0px; /* extend to bottom of footer */
     left: 0;
     z-index: 1000;
     display: block;
-    padding: 0px;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #2D383F;
     border-right: 1px solid #eee;
-	min-width: 15%; /* preserve minimum width for menu items */
+	min-width: 150px;
   }
   
-  .accordionMenu {
-	  position: fixed;
-	  top: 55px; /* extend from bottom of header */
-	  min-width: 15%; /* preserve minimum width for menu items */
+  .wssFullWidth {
+	  width: 100%;
   }
 }
 
-/* make sidebar nav vertical */ 
-@media (min-width: 768px) {
-	.sidebar-nav .navbar .navbar-collapse {
-		padding: 0;
-		max-height: none;
-	}
-	
-	.sidebar-nav .navbar ul {
-		float: none;
-	}
-	
-	.sidebar-nav .navbar ul:not {
-		display: block;
-	}
-	
-	.sidebar-nav .navbar li {
-		float: none;
-		display: block;
-	}
-	
-	.sidebar-nav .navbar-inverse .navbar-nav > li > .dropdown-menu {
-		width: 100%;
-	}
-  
-	.sidebar-nav .navbar-inverse .navbar-nav > li > a {
-		border: 1px solid #000000;
-		padding-left: 14px;
-		font-weight: bold;
-		/*margin-left: 4px;*/
-		background-color: #2D383F;
-	}
+@media (max-width: 768px) {
+  .wssLeftNav {
+	  background-color: #2D383F;
+  }	
+}
 
-	.sidebar-nav .navbar-inverse .navbar-nav > li > a:hover,
-	.sidebar-nav .navbar-inverse .navbar-nav > li > a:focus {
-		font-style: italic;
-		padding-left: 14px;
-		background-color: #000000;
-		font-weight: bold;
-		/*margin-left: 4px;*/
-		color: #FFFFFF;
-	}
-
-	.sidebar-nav .navbar-inverse .navbar-nav>.active>a {
+/* right border active indicator */
+.wssSidebar .navbar-nav .nav-link.active{
+		border-top: 1px solid #000000 !important;
 		border-right: 10px solid #009EE1;
 		padding-left: 14px;
 		background-color: #2D383F;
 		font-weight: bold;
-		/*margin-left: 4px;*/
-	}
-	
-	.sidebar-nav .navbar-inverse .navbar-nav>.open>a {
-		background-color: #E4E4E4!important;
-		color: #000000!important;
-	}
-	
-	/* adjust username profile menu positioning when using a fixed nav for the vertical menus */
-	.navbar-right{
-			margin-right: 5px;
-	}
 }
 
-/* Style for mobile devices */
-@media (max-width: 767px){
-	#sideNavBar {
-		min-height: 0px;
-	}
+.wssVerticalPage {
+	padding-top: 15px;
 }
 
-/* adjust margin on row to remove horizontal scrollbar */
-	.sidebarRow {
-		margin-right: 0px;
-	}
 
 /*****************************************
 *  
@@ -386,57 +247,53 @@ h6 {
 *  
 ******************************************/
 
-#accordionNav {
-	background-color: #2D383F;
-}
-
-.topMenu {
+.wssTopMenu {
 	padding-left: 10px !important;
 	font-weight: bold;
 }
 
-.subMenu {
+.wssSubMenu {
 	padding: 5px 5px 5px 25px;
 	font-weight: bold;
 	background-color: #E4E4E4;
 	border: 1px solid #FFFFFF;
 }
 
-.subSubMenu {
+.wssSubSubMenu {
 	padding: 5px 5px 5px 40px;
 	font-weight: bold;
 	background-color: #E4E4E4;
 	border: 1px solid #FFFFFF;
 }	
 
-.subMenu > a, .subSubMenu > a {
+.wssSubMenu > a, .wssSubSubMenu > a {
 	color: #000000;
 }
 
-.subSubMenu.active {
-		border-right: 10px solid #009EE1;
-	}
+.wssSubSubMenu.active {
+	border-right: 10px solid #009EE1;
+}
 
-.secondaryAccordion {
+.wssSecondaryAccordion {
 	background-color: #C9C9C9 !important;
 	color: #000000 !important;
 	border: 1px solid #FFFFFF !important;
 	font-weight: bold;
 }
 
-.panel-heading.accordionPanel.secondaryAccordion a ,
-.panel-heading.accordionPanel.secondaryAccordion.collapsed a,
-.panel-heading.accordionPanel.secondaryAccordion.collapsed .chevron:after {
+.card-header.wssAccordionPanel.wssSecondaryAccordion a ,
+.card-header.wssAccordionPanel.wssSecondaryAccordion.collapsed a,
+.card-header.wssAccordionPanel.wssSecondaryAccordion.collapsed .chevron:after {
 	color: #000000;
 }
 
 /* Remove extra border for inner accordion panels */
-.noBorder {
+.wssNoBorder {
 	border: none;
 }
 
 /* Place expand/collapse icons on right for Accordion Menu */
-.accordionMenuIcon{
+.wssAccordionMenuIcon{
 	float: right;
 	padding-top: 3px;
 }
@@ -451,7 +308,7 @@ h6 {
 	border-bottom: none;
 }
 
-.nav-tabs >li > a {
+.nav-tabs .nav-item .nav-link {
   border: 1px solid #000000;
   border-bottom: none;
   color: #FFFFFF;
@@ -464,8 +321,8 @@ h6 {
   min-width: 150px;
 }
 
-.nav-tabs > li > a:hover,
-.nav-tabs > li > a:focus {
+.nav-tabs .nav-item .nav-link:hover,
+.nav-tabs .nav-item .nav-link:focus {
   border-color: #000000;
   border-bottom: none;
   background-color: #000000;
@@ -474,15 +331,13 @@ h6 {
   font-style: italic;
 }
 
-.nav-tabs >li.active > a {
-  font-style: normal;
-  /*box-shadow: 1px 4px 0 #fff;*/
-  /*box-shadow: 0px -12px 0px 0px red inset;*/
+.nav-tabs .nav-item .nav-link.active {
+  font-style: normal; /*don't italicize title of active tab on hover*/
 }
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
+.nav-tabs .nav-item .nav-link.active,
+.nav-tabs .nav-item .nav-link.active:hover,
+.nav-tabs .nav-item .nav-link.active:focus {
   color: #000000;
   background-color: #FFFFFF;
   border-color: #797979;
@@ -492,9 +347,10 @@ h6 {
 
 .tab-content {
   border: 1px solid #666666;
+  padding-top: 15px;
 }
 
-.tab-icon {
+.wssTabIcon {
   line-height: 0px !important;
 }
 
@@ -505,7 +361,7 @@ h6 {
 *  
 ******************************************/
 
-.link-default {
+.wssLinkDefault {
 	text-decoration: underline;
 }
 
@@ -513,26 +369,26 @@ a {
 	color: #005DAC;
 }
 
-a:focus, a:hover, .link-active {
+a:focus, a:hover, .wssLinkActive {
 	color: #001b46;
 }
 
-a:active, .link-visited {
+a:active, .wssLinkVisited {
 	color: #492f91;
 }
 
-.link-dark-background {
+.wssLinkDarkBackground {
 	color: #FFFFFF;
 }
 
-.link-dark-background:focus,
-.link-dark-background:hover,
-.link-dark-background-active {
+.wssLinkDarkBackground:focus,
+.wssLinkDarkBackground:hover,
+.wssLinkDarkBackground-active {
 	color: #009EE1;
 }
 
-.link-dark-background:active,
-.link-dark-background-visited {
+.wssLinkDarkBackground:active,
+.wssLinkDarkBackground-visited {
 	color: #AE9CDF;
 }
 
@@ -543,15 +399,8 @@ a:active, .link-visited {
 ******************************************/
 
 .breadcrumb {
-	font-size: 12px;
 	background: none;
 	margin-bottom: 5px;
-}
-
-.breadcrumb > li + li:before {
-  color: #005DAC;
-  content: ">\00a0";
-  font-weight: normal;
 }
 
 .breadcrumb > .active {
@@ -560,16 +409,16 @@ a:active, .link-visited {
 }
 
 /* Styling for breadcrumbs on dark backgrounds */
-.breadcrumb.dark-background > li + li:before {
+.breadcrumb.wssDarkBackground > li + li:before {
   color: #FFFFFF;
 }
 
-.breadcrumb.dark-background > .active {
+.breadcrumb.wssDarkBackground > .active {
   color: #FFFFFF;
 }
 
 /** Button-style breadcrumbs **/
-.btn-breadcrumb .btn:not(:last-child):after {
+.wssBtnBreadcrumb .btn:not(:last-child):after {
   content: " ";
   display: block;
   width: 0;
@@ -583,7 +432,7 @@ a:active, .link-visited {
   left: 100%;
   z-index: 3;
 }
-.btn-breadcrumb .btn:not(:last-child):before {
+.wssBtnBreadcrumb .btn:not(:last-child):before {
   content: " ";
   display: block;
   width: 0;
@@ -600,48 +449,48 @@ a:active, .link-visited {
 }
 
 /** The Spacing **/
-.btn-breadcrumb .btn {
+.wssBtnBreadcrumb .btn {
   padding:6px 12px 6px 24px;
 }
-.btn-breadcrumb .btn:first-child {
+.wssBtnBreadcrumb .btn:first-child {
   padding:6px 6px 6px 10px;
 }
-.btn-breadcrumb .btn:last-child {
+.wssBtnBreadcrumb .btn:last-child {
   padding:6px 18px 6px 24px;
 }
 
 /** Default button **/
-.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+.wssBtnBreadcrumb .btn.btn-secondary:not(:last-child):after {
   border-left: 10px solid #DDDDDD;
 }
-.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+.wssBtnBreadcrumb .btn.btn-secondary:not(:last-child):before {
   border-left: 10px solid #000000;
 }
-.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+.wssBtnBreadcrumb .btn.btn-secondary:hover:not(:last-child):after {
   border-left: 10px solid #DDDDDD;
 }
-.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+.wssBtnBreadcrumb .btn.btn-secondary:hover:not(:last-child):before {
   border-left: 10px solid #000000;
 }
 
 /* Disable standard box shadow for buttons since this causes undesired button overlap */
 /* Just underline text link instead */
-.btn-breadcrumb .btn.btn-default:hover, .btn-breadcrumb .btn.btn-default:focus {
+.wssBtnBreadcrumb .btn.btn-secondary:hover, .wssBtnBreadcrumb .btn.btn-secondary:focus {
 	box-shadow: none;
 	text-decoration: underline;
 }
 
-.btn-breadcrumb .btn.btn-default.active:hover{
+.wssBtnBreadcrumb .btn.btn-secondary.active:hover{
 	text-decoration: none;
 }
 
-.btn-breadcrumb .btn.btn-primary.active:hover, .btn-breadcrumb .btn.btn-primary.active:focus {
+.wssBtnBreadcrumb .btn.btn-primary.active:hover, .wssBtnBreadcrumb .btn.btn-primary.active:focus {
 	box-shadow: none;
 	background-color: #1B4478;;
 }
 
 /* Disable hover behavior for active button (dark backgrounds only) */
-.btn-breadcrumb .btn.btn-default.active:hover, .btn-breadcrumb .btn.btn-default.active:focus, .btn-breadcrumb .btn.btn-default.active {
+.wssBtnBreadcrumb .btn.btn-secondary.active:hover, .wssBtnBreadcrumb .btn.btn-secondary.active:focus, .wssBtnBreadcrumb .btn.btn-secondary.active {
 	background-color: #A1A1A1;
 	border-color: #000000;
 	box-shadow: none;
@@ -649,7 +498,7 @@ a:active, .link-visited {
 }
 
 /* Prevents undesired button overlap on hover */
-.btn-breadcrumb>.btn:hover, .btn-breadcrumb>.btn:focus{
+.wssBtnBreadcrumb>.btn:hover, .wssBtnBreadcrumb>.btn:focus{
 	z-index: auto;
 }
 
@@ -659,89 +508,89 @@ a:active, .link-visited {
 *  
 ******************************************/
 
-.panel-heading {
+.card-header {
 	padding: 5px;
 }
 
 /* Accordion icons */
-.panel-heading .chevron:after {
+.card-header .chevron:after {
     content: "\f078";   
 }
-.panel-heading.collapsed .chevron:after {
+.card-header.collapsed .chevron:after {
     content: "\f054"; 
 	color: #FFFFFF;
 }
 
 /* Standard Accordions */
-.panel-heading.accordionPanel a {
+.card-header.wssAccordionPanel a {
 	color: #FFFFFF;
 }
 
-.panel-heading.accordionPanel.collapsed a {
+.card-header.wssAccordionPanel.collapsed a {
 	color: #FFFFFF;
 }
 
-.panel-heading.accordionPanel.collapsed {
+.card-header.wssAccordionPanel.collapsed {
 	background-color: #2D383F;
 	color: #FFFFFF;
 	border-radius: 0px;
 	border-color: #000000
 }
 
-.panel-heading.accordionPanel {
+.card-header.wssAccordionPanel {
 	background-color: #2D383F;
 	color: #FFFFFF;
 	border-radius: 0px;
 	border-color: #000000;
 }
 
-.panel-heading.accordionPanel:hover, .panel-heading.collapsed:hover {
+.card-header.wssAccordionPanel:hover, .card-header.collapsed:hover {
 	cursor: pointer;
 }
 
-.panel-group .panel {
+.accordion .card {
 	border-radius: 0px;
 	border-color: #000000;
 }
 
-.panel-group .panel + .panel {
+.accordion .card + .card {
 	margin-top: 0px;
 }
 
-.accordionContent {
+.wssAccordionContent {
 	margin: 5px 25px;
 }
 
 /*Minimalist Accordions */
-.panel-heading.accordionPanelMin {
+.card-header.wssAccordionPanelMin {
 	background-color: #FFFFFF;
 	color: #000000;
 	border: none;
 	padding-bottom: 0px;
 }
 
-.panel-heading.accordionPanelMin a{
+.card-header.wssAccordionPanelMin a{
 	color: #000000;
 }
 
-.panel-heading.accordionPanelMin.collapsed .chevron:after {
+.card-header.wssAccordionPanelMin.collapsed .chevron:after {
     content: "\f054"; 
 	color: #000000;
 }
 
-.panel-heading.accordionPanelMin:hover, .panel-heading.collapsed:hover {
+.card-header.wssAccordionPanelMin:hover, .card-header.collapsed:hover {
 	cursor: pointer;
 }
 
-.panelMin {
+.wssPanelMin {
 	border: none;
 }
 
-.accordionContentMin {
+.wssAccordionContentMin {
 	margin: 0px 40px;
 }
 
-.horizontalLine {
+.wssHorizontalLine {
 	margin-top: 10px;
 	border: 1px solid #000000;
 	width: 95%;
@@ -750,7 +599,7 @@ a:active, .link-visited {
 
 /* Adjust for smaller screen widths */
 @media (max-width: 1160px){
-	.horizontalLine {
+	.wssHorizontalLine {
 		margin-top: 10px;
 		border: 1px solid #000000;
 		width: 80%;
@@ -762,6 +611,10 @@ a:active, .link-visited {
 *  Forms
 *  
 ******************************************/
+
+label {
+	font-weight: bold;
+}
 
 /* Remove rounded-corners on text-fields */
 .form-control {
@@ -802,19 +655,19 @@ input[type="radio"] + label::before {
   box-shadow: 0 0 0 1px #797979;
   content: '\a0';
   display: inline-block;
-  height: 1.3rem;
-  line-height: 1.3rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
   margin-right: 0.8em;
   text-indent: 0.15em;
   vertical-align: middle\0;
-  width: 1.3rem;
+  width: 0.9rem;
 }
 
 input[type="radio"] + label::before {
   box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #797979;
-  height: 0.7rem;
-  line-height: 0.7rem;
-  width: 0.7rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  width: 0.5rem;
   border-radius: 100%;
 }
 
@@ -866,15 +719,10 @@ input[type="radio"]:hover + label {
   border-radius: 5px;
 }
 
-.wss-unstyled-list {
+.wssUnstyledList {
 	list-style-type: none;
 	margin-left: 5px;
 	padding: 0;
- }
- 
- /*left-aligned labels*/
- .form-horizontal .control-label {
-	 text-align: left;
  }
 
 /*****************************************
@@ -883,7 +731,7 @@ input[type="radio"]:hover + label {
 *  
 ******************************************/
 
-#footer {
+.wssFooter {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -892,21 +740,21 @@ input[type="radio"]:hover + label {
   background: #E4E4E4;
 }
 
-#footerText {
+.wssFooterText {
 	margin: 10px;
 	color: #000000;
 	font-size:12px !important;
 }
 @media (min-width: 768px) {
-.leftNavFooter {
-	padding-left: 15%;
-}
+  .wssLeftNavFooter {
+    padding-left: 18%;
+  }
 }
 
 @media (min-width: 768px) {
-.accordionNavFooter {
-	padding-left: 20%;
-}
+  .wssAccordionNavFooter {
+    padding-left: 20%;
+  }
 }
 
 /*****************************************
@@ -917,6 +765,7 @@ input[type="radio"]:hover + label {
 
 .btn {
                 font-weight: bold;
+				font-size: 14px;
                 border-width: 1px;
 
 }
@@ -937,8 +786,8 @@ input[type="radio"]:hover + label {
                 box-shadow: 0 0 14px 0 #009EE1;
 }
 
-.btn-primary:active,
-.btn-primary.active {
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active {
                 background-color: #1B4478;
                 border-color: #1B4478;
                 color: #FFFFFF;
@@ -950,30 +799,30 @@ input[type="radio"]:hover + label {
                 border-color: #1B4478;
 }
 
-.btn-default {
+.btn-secondary {
                 background-color: #DDDDDD;
                 color: #000000;
                 border-color: #000000;
 }
 
-.btn-default:hover,
-.btn-default.hover,
-.btn-default:focus,
-.btn-default.focus {
+.btn-secondary:hover,
+.btn-secondary.hover,
+.btn-secondary:focus,
+.btn-secondary.focus {
                 background-color: #DDDDDD;
                 color: #000000;
                 border-color: #000000;
                 box-shadow: 0 0 14px 0 #009EE1;
 }
 
-.btn-default:active,
-.btn-default.active {
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active {
                 background-color: #A1A1A1;
                 color: #000000;
                 border-color: #000000;
 }
 
-.btn-default:disabled {
+.btn-secondary:disabled {
                 background-color: #DDDDDD;
                 border-color: #606060;
                 color: #606060;
@@ -983,23 +832,23 @@ input[type="radio"]:hover + label {
  color: #005dac;
 }
 
-.btn.small {
+.btn.wssSmall {
                 width: 90px;
 }
 
-.btn.medium {
+.btn.wssMedium {
                 width: 120px;
 }
 
-.btn.large {
+.btn.wssLarge {
                 width: 150px;
 }
 
 /* Use white hover styling when buttons are on dark backgrounds */
-.btn-dark-background:hover,
-.btn-dark-background.hover,
-.btn-dark-background:focus,
-.btn-dark-background.focus {
+.wssDarkBackgroundButton:hover,
+.wssDarkBackgroundButton.hover,
+.wssDarkBackgroundButton:focus,
+.wssDarkBackgroundButton.focus {
 	box-shadow: 0 0 14px 0 #FFFFFF;
 }
 
@@ -1041,53 +890,43 @@ input[type="radio"]:hover + label {
                 border: 2px solid #F8C70F;
 }
 
-.alert .glyphicon {
-    display:table-cell;
-}
-
-.alert div,
-.alert span {
-    padding-left: 5px;
-    display:table-cell;
-}
-
 /*****************************************
 *  
 *  Forms
 *  
 ******************************************/
 
-.signInPanel {
+.wssSignInPanel {
 	max-width: 450px;
     border-radius: 0px;
 }
 
-.signInTitle {
+.wssSignInTitle {
 	padding-top: 10px;
 }
 
-.signInForm {
+.wssSignInForm {
 	padding-bottom: 0px;
 }
 
-.signInPadding {
+.wssSignInPadding {
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-.signInLink {
+.wssSignInLink {
 	font-size: 12px;
 }
 
-.whiteFont {
+.wssWhiteFont {
 	color: #FFFFFF !important;
 }
 
-.darkBackground {
+.wssDarkBackground {
 	background-color: #000000;
 }
 
-.requiredField {
+.wssRequiredField {
 	color: #FF0000;
     font-weight: normal;
 }
@@ -1099,7 +938,7 @@ input[type="radio"]:hover + label {
 ******************************************/
 
 .has-error .help-block,
-.has-error .control-label,
+.has-error .col-form-label,
 .has-error .radio,
 .has-error .checkbox,
 .has-error .radio-inline,
@@ -1134,34 +973,34 @@ input[type="radio"]:hover + label {
 *  Tables
 *  
 ******************************************/
-/*table, th, td {
-	border: 2px solid #FFFFFF;
-}*/
+.table td, .table th {
+	padding: .5rem;
+}
 
-.table-active, .th-active, .td-active {
+.wssActiveTable, .wssActiveTableHeader, .wssActiveTableData {
 	border: 2px solid #FFFFFF;
 }
 
-.th-active {
+.wssActiveTableHeader {
 	color: #FFFFFF;
 	background-color: #687982;
 }
 
-.th-passive {
+.wssPassiveTableHeader {
 	color: #687982;
 	background-color: #FFFFFF;
-	/*border: none;*/
 }
 
 .table>thead>tr>th {
 	border-bottom: 2px solid #687982;
+	border-top: none;
 }
 
 .table>tbody>tr>td {
 	border-top: none;
 }
 
-.table-active>tbody>tr>td {
+.wssActiveTable>tbody>tr>td {
 	border: 2px solid #FFFFFF;
 }
 
@@ -1206,42 +1045,41 @@ input[type="radio"]:hover + label {
 }
 
 /* Custom WSS colors */
-.successModalHeader {
+.wssSuccessModalHeader {
 	background-color: #DFF0D8;
 	border: 2px solid #00A262;
 }
 
-.infoModalHeader {
+.wssInfoModalHeader {
 	background-color: #D9EDF7; 
 	border: 2px solid #009EE1;
 }
 
-.warningModalHeader {
+.wssWarningModalHeader {
 	background-color: #FCF8E3; 
 	border: 2px solid #F8C70F;
 }
 
-.errorModalHeader {
+.wssErrorModalHeader {
 	background-color: #F2DEDE; 
 	border: 2px solid #ED1C24;
 }
 
-.neutralModalHeader {
+.wssNeutralModalHeader {
 	background-color: #E4E4E4;
 	border: 2px solid #797979;
 }
 
-.loadingModalHeader {
+.wssLoadingModalHeader {
 	background-color: #005DAC;
 	color: #FFFFFF;
-	text-align: center;
 }
 
 .modal-content  {
 	border-radius: 6px 6px 0px 0px;
 }
 
-.loadingModalContent {
+.wssLoadingModalContent {
 	text-align: center;
 	padding: 5px;
 }
@@ -1259,13 +1097,13 @@ select {
   background-color: #ffffff;
   background-image: url("../images/arrow-down.png");
   background-image: url("../images/arrow-down.svg");
-  background-position: right 1.3rem center;
+  background-position: right 1rem center;
   background-repeat: no-repeat;
-  background-size: 1.3rem;
+  background-size: 0.75rem;
 
 }
 
-.dropdown-caret {
+.wssDropdownCaret {
 	background-image: url("../images/arrow-down.svg");
 }
 
@@ -1276,37 +1114,29 @@ select {
 ******************************************/
 
 /* Supports accessibility so button is not empty */
-.tooltipButtonLabel {
+.wssTooltipButtonLabel {
 	font-size: 0;
 	font-color: transparent;
 }
 
-.popover {
-	padding: 0px;
-	background:  #FFFFFF;
-	border-radius: 5px 5px 0px 0px;
-	border-top: none;
+.popover-header {
+	font-size: 14px;
 }
 
-.popover-title {
-	font-weight: bold;
-	text-align: left;
-}
-
-.popoverIcon {
+.wssPopoverIcon {
 	color: #005dac;
 	display:inline-block; /* chrome-fix */
 	cursor: pointer;
 }
 
 /* Success Tooltips */
-[data-style=success] + .popover .popover-title {
+.wssSuccessPopoverHeader {
 	background-color: #DFF0D8;
 	border: 2px solid #00A262;
 }
 
 /* Add fa-check icon */
-[data-style=success] + .popover .popover-title:before {
+.wssSuccessPopoverHeader:before {
 	content: "\f00c"; /*fa-check*/
 	font-family: FontAwesome;
 	padding-right: 10px;
@@ -1320,13 +1150,13 @@ select {
 }
 
 /* Info Tooltips */
-[data-style=info] + .popover .popover-title {
+.wssInfoPopoverHeader {
 	background-color: #D9EDF7; 
 	border: 2px solid #009EE1;
 }
 
 /* Add fa-info-circle icon */
-[data-style=info] + .popover .popover-title:before {
+.wssInfoPopoverHeader:before {
 	content: "\f05a"; /*fa-info-circle*/
 	font-family: FontAwesome;
 	padding-right: 10px;
@@ -1340,13 +1170,13 @@ select {
 }
 
 /* Warning Tooltips */
-[data-style=warning] + .popover .popover-title {
+.wssWarningPopoverHeader {
 	background-color: #FCF8E3; 
 	border: 2px solid #F8C70F;
 }
 
 /* Add fa-exclamation-triangle icon */
-[data-style=warning] + .popover .popover-title:before {
+.wssWarningPopoverHeader:before {
 	content: "\f071"; /*fa-exclamation-triangle*/
 	font-family: FontAwesome;
 	padding-right: 10px;
@@ -1360,13 +1190,13 @@ select {
 }
 
 /* Error Tooltips */
-[data-style=error] + .popover .popover-title {
+.wssErrorPopoverHeader {
 	background-color: #F2DEDE; 
 	border: 2px solid #ED1C24;
 }
 
 /* Add fa-times-circle icon */
-[data-style=error] + .popover .popover-title:before {
+.wssErrorPopoverHeader:before {
 	content: "\f057"; /*fa-times-circle*/
 	font-family: FontAwesome;
 	padding-right: 10px;
@@ -1380,7 +1210,7 @@ select {
 }
 
 /* Neutral Tooltips */
-[data-style=neutral] + .popover .popover-title {
+.wssNeutralPopoverHeader {
 	background-color: #E4E4E4;
 	border: 2px solid #797979;
 }
