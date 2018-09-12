@@ -128,7 +128,7 @@ h6 {
 .dropdown-item:hover, .dropdown-item:focus,
 .dropdown-item.active, .dropdown-item:active {
 	color: #000000;
-	background-color: rgba(0, 93, 172, 0.2);
+	background-color: #CCDFEE;
 }
 
 /* Username profile menu: Match color of dropdown list and reduce height */
@@ -1014,7 +1014,7 @@ input[type="radio"]:hover + label {
 }
 
 .table-hover > tbody > tr:hover {
-  background-color: rgba(0, 93, 172, 0.2);
+  background-color: #CCDFEE;
 }
 
 .fa-sort-down:before, .fa-sort-desc:before {
