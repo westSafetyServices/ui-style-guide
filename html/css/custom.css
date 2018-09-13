@@ -128,7 +128,7 @@ h6 {
 .dropdown-item:hover, .dropdown-item:focus,
 .dropdown-item.active, .dropdown-item:active {
 	color: #000000;
-	background-color: #009EE1;
+	background-color: #CCDFEE;
 }
 
 /* Username profile menu: Match color of dropdown list and reduce height */
@@ -401,6 +401,7 @@ a:active, .wssLinkVisited {
 .breadcrumb {
 	background: none;
 	margin-bottom: 5px;
+	font-size: 12px;
 }
 
 .breadcrumb > .active {
@@ -1013,7 +1014,7 @@ input[type="radio"]:hover + label {
 }
 
 .table-hover > tbody > tr:hover {
-  background-color: rgba(0, 158, 225, 0.3);
+  background-color: #CCDFEE;
 }
 
 .fa-sort-down:before, .fa-sort-desc:before {
