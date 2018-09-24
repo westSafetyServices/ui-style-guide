@@ -3,50 +3,53 @@
 <head>
   <title>Horizontal Menu - Main UI Style Guide</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome-free-5.2.0-web/css/all.min.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="images/west_favicon.png" type="image/png">
-  <script src="lib/jquery-3.2.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script> <!--for popup initialization (Frontify workaround)--> 
+  <script src="lib/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script> <!--for popup initialization (Frontify workaround)-->  
   </head>
 <!-- Header -->
-<nav class="navbar navbar-inverse" id="headerBar">
-  <div class="navbar-header" id="myNavbar1">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#userProfileDropdown, #mainNav2">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span> 
-    </button>
-    <a class="navbar-brand" id="logoLink" href="#" ><img src="images/west_logo.png" id="westLogo" alt="West logo">Application Title</a>
-  </div>
-  <div class="collapse navbar-collapse" id="userProfileDropdown">
-    <ul class="nav navbar-nav navbar-right">
-       <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="userProfileMenu"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i><span class="loginUserLabel"> username </span><i class="fa fa-fw fa-chevron-down" aria-hidden="true"></i></a>
-         <ul class="dropdown-menu">
-            <li><a href="javascript:void(0);" class="userProfileMenuOption"><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i> Help</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="javascript:void(0);" class="userProfileMenuOption"><i class="fa fa-fw fa-lg fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
-          </ul>
-        </li>
+<nav class="navbar navbar-expand-lg navbar-dark wssBlackBackground" id="wssHeaderBar">
+    <a class="navbar-brand" id="wssLogoLink" href="#" ><img src="images/west_logo.png" id="wssWestLogo" alt="West logo">Application Title</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wssUserProfileDropdown, #wssMainNav2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fas fa-bars wssWhiteFont"></span>
+    </button>  
+  <div class="collapse navbar-collapse" id="wssUserProfileDropdown">
+    <ul class="navbar-nav ml-auto">
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="userProfileMenu" data-toggle="dropdown"><i class="fas fa-fw fa-user" aria-hidden="true"></i> username <i class="fas fa-fw fa-chevron-down" aria-hidden="true"></i></a>
+          <div class="dropdown-menu" aria-labelledby="wssUserProfileMenu">
+            <a href="javascript:void(0);" class="dropdown-item userProfileMenuOption"><i class="fas fa-fw fa-question-circle" aria-hidden="true"></i> Help</a>
+            <div class="dropdown-divider"></div>
+            <a href="javascript:void(0);" class="dropdown-item userProfileMenuOption"><i class="fas fa-fw fa-sign-out-alt" aria-hidden="true"></i> Sign Out</a>
+          </div>
+       </li>
     </ul>
   </div>
-  <div id="menuDividerBar" class="container-fluid"></div>
-  <div class="collapse navbar-collapse" id="mainNav2">
-    <ul class="nav navbar-nav" id="horizontalMainMenu">
-      <li class="active"><a href="javascript:void(0);">Menu 1</a></li>
-      <li><a href="javascript:void(0);">Menu 2</a></li> 
-      <li><a href="javascript:void(0);">Menu 3</a></li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 4<i class="fa fa-fw fa-chevron-down menu-dropdown-chevron" aria-hidden="true"></i></a>
+</nav>
+<div id="wssMenuDividerBar" class="container-fluid"></div>
+<nav class="navbar navbar-expand-lg navbar-dark wssHorizontalMenu" id="wssHeaderBar2">
+  <div class="collapse navbar-collapse" id="wssMainNav2">
+    <ul class="navbar-nav" id="wssHorizontalMainMenu">
+      <li class="nav-item">
+	    <a class="nav-link active" href="javascript:void(0);">Menu 1</a>
+      </li>
+      <li class="nav-item">
+	    <a class="nav-link" href="javascript:void(0);">Menu 2</a>
+	  </li> 
+      <li class="nav-item">
+	    <a class="nav-link" href="javascript:void(0);">Menu 3</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Menu 4<i class="fas fa-fw fa-chevron-down wssDropdownIcon float-right" aria-hidden="true"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="javascript:void(0);">Page 1</a></li>
-          <li><a href="javascript:void(0);">Page 2</a></li>
-          <li><a href="javascript:void(0);">Page 3</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0);">Page 1</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0);">Page 2</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0);">Page 3</a></li>
         </ul>
       </li>
     </ul>
@@ -55,8 +58,10 @@
 
 <body>
 <div class="container-fluid">
+  <br>
   <h1>West Safety Services UI Style Guide</h1>
-    
+
+<br>  
 <!-- Headings -->
   <h2>01 Headings</h2>
 <div class="container-fluid">
@@ -69,6 +74,7 @@
   <p>Paragraph</p>
 </div>
 
+<br>
 <!-- Icons -->
   <h2>02 Icons</h2>
 <div class="container-fluid">
@@ -76,169 +82,169 @@
     <table id="grid-basic-icon-example" class="table">
     <thead>
         <tr>
-          <th class="th-passive" data-column-id="id">Icon </th>
-          <th class="th-passive" data-column-id="type">Font Awesome ID </th>
-          <th class="th-passive" data-column-id="status">WSS Common Usage </th>
+          <th class="wssPassiveTableHeader" data-column-id="id">Icon </th>
+          <th class="wssPassiveTableHeader" data-column-id="type">Font Awesome ID </th>
+          <th class="wssPassiveTableHeader" data-column-id="status">WSS Common Usage </th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-user-circle-o" aria-hidden="true"></i></td>
-          <td>user-circle-o</td>
+          <td><i class="fas fa-fw fa-user-circle" aria-hidden="true"></i></td>
+          <td>user-circle</td>
           <td>Account Info</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-plus" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-plus" aria-hidden="true"></i></td>
           <td>plus</td>
           <td>Add</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-bluetooth" aria-hidden="true"></i></td>
+          <td><i class="fab fa-fw fa-bluetooth" aria-hidden="true"></i></td>
           <td>bluetooth</td>
           <td>Bluetooth</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-clone" aria-hidden="true"></i></td>
+          <td><i class="far fa-fw fa-clone" aria-hidden="true"></i></td>
           <td>clone</td>
           <td>Clone</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-remove" aria-hidden="true"></i></td>
-          <td>remove</td>
+          <td><i class="fas fa-fw fa-times" aria-hidden="true"></i></td>
+          <td>times</td>
           <td>Close</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-chevron-down" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-chevron-down" aria-hidden="true"></i></td>
           <td>chevron-down</td>
           <td>Collapse</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-comment-o" aria-hidden="true"></i></td>
-          <td>comment-o</td>
+          <td><i class="far fa-fw fa-comment" aria-hidden="true"></i></td>
+          <td>comment</td>
           <td>Comments</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-arrow-circle-right" aria-hidden="true"></i></td>
-          <td>arrow-circle-right</td>
+          <td><i class="fas fa-fw fa-arrow-alt-circle-right" aria-hidden="true"></i></td>
+          <td>arrow-alt-circle-right</td>
           <td>Continue</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-calendar" aria-hidden="true"></i></td>
+          <td><i class="far fa-fw fa-calendar" aria-hidden="true"></i></td>
           <td>calendar</td>
           <td>Date picker</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-trash" aria-hidden="true"></i></td>
-          <td>trash</td>
+          <td><i class="far fa-fw fa-trash-alt" aria-hidden="true"></i></td>
+          <td>trash-alt</td>
           <td>Delete</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-download" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-download" aria-hidden="true"></i></td>
           <td>download</td>
           <td>Download</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-pencil" aria-hidden="true"></i></td>
-          <td>pencil</td>
+          <td><i class="fas fa-fw fa-pencil-alt" aria-hidden="true"></i></td>
+          <td>pencil-alt</td>
           <td>Edit</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-times-circle" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-times-circle" aria-hidden="true"></i></td>
           <td>times-circle</td>
           <td>Error</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-chevron-right" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i></td>
           <td>chevron-right</td>
           <td>Expand</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-share-square" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-share-square" aria-hidden="true"></i></td>
           <td>share-square</td>
           <td>Export</td>
         </tr>
+		<tr>
+          <td><i class="fas fa-fw fa-external-link-square-alt" aria-hidden="true"></i></td>
+          <td>external-link-square-alt</td>
+          <td>External Link</td>
+        </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-home" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-home" aria-hidden="true"></i></td>
           <td>home</td>
           <td>Home</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-info-circle" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-info-circle" aria-hidden="true"></i></td>
           <td>info-circle</td>
-          <td>Info</td>
+          <td>Info, Tooltip</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-sign-out" aria-hidden="true"></i></td>
-          <td>sign-out</td>
+          <td><i class="fas fa-fw fa-sign-out-alt" aria-hidden="true"></i></td>
+          <td>sign-out-alt</td>
           <td>Logout</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-bars" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-bars" aria-hidden="true"></i></td>
           <td>bars</td>
           <td>Menu (Mobile)</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-spinner" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-spinner" aria-hidden="true"></i></td>
           <td>spinner</td>
           <td>Processing</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-user" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-user" aria-hidden="true"></i></td>
           <td>user</td>
           <td>Profile Menu</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-undo" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-undo" aria-hidden="true"></i></td>
           <td>undo</td>
           <td>Reset; Clear Filters; Undo</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-search" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-search" aria-hidden="true"></i></td>
           <td>search</td>
           <td>Search</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-cog" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-cog" aria-hidden="true"></i></td>
           <td>cog</td>
           <td>Settings menu, Admin operations</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-check" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-check" aria-hidden="true"></i></td>
           <td>check</td>
           <td>Success, Complete, Verified</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-wrench" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-wrench" aria-hidden="true"></i></td>
           <td>wrench</td>
           <td>Tools</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-question-circle" aria-hidden="true"></i></td>
+          <td><i class="far fa-fw fa-question-circle" aria-hidden="true"></i></td>
           <td>question-circle</td>
           <td>Tooltip, Help</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-question-circle-o" aria-hidden="true"></i></td>
-          <td>question-circle-o</td>
+          <td><i class="fas fa-fw fa-question-circle" aria-hidden="true"></i></td>
+          <td>question-circle</td>
           <td>Tooltip, Help (alternate design)</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-info-circle" aria-hidden="true"></i></td>
-          <td>info-circle</td>
-          <td>Tooltip, Info</td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-lg fa-fw fa-video-camera" aria-hidden="true"></i></td>
-          <td>video-camera</td>
+          <td><i class="fas fa-fw fa-video" aria-hidden="true"></i></td>
+          <td>video</td>
           <td>Video</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-exclamation-triangle" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-exclamation-triangle" aria-hidden="true"></i></td>
           <td>exclamation-triangle</td>
           <td>Warning</td>
         </tr>
         <tr>
-          <td><i class="fa fa-lg fa-fw fa-wifi" aria-hidden="true"></i></td>
+          <td><i class="fas fa-fw fa-wifi" aria-hidden="true"></i></td>
           <td>wifi</td>
           <td>WiFi</td>
         </tr>
@@ -246,125 +252,133 @@
     </table>
   </div>
 </div>
+<br>
 
 <!-- Button Style Breadcrumbs on light background-->
   <h2>03 Breadcrumbs</h2>
-<div class="whiteBackground" style="padding: 1%">
-    <div class="btn-group btn-breadcrumb">
-        <a href="javascript:void(0);" class="btn btn-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a>
-        <a href="javascript:void(0);" class="btn btn-default">Level 1</a>
-        <a href="javascript:void(0);" class="btn btn-default">Level 2</a>
+<div class="wssWhiteBackground" style="padding: 1%">
+    <div class="btn-group wssBtnBreadcrumb">
+        <a href="javascript:void(0);" class="btn btn-secondary"><i class="fas fa-fw fa-home" aria-hidden="true"></i>Home</a>
+        <a href="javascript:void(0);" class="btn btn-secondary">Level 1</a>
+        <a href="javascript:void(0);" class="btn btn-secondary">Level 2</a>
         <a href="javascript:void(0);" class="btn btn-primary active">Page Title</a>
     </div>
 </div>
 
 <!-- Button Style Breadcrumbs on dark background-->
-<div class="blackBackground" style="padding: 1%">
-    <div class="btn-group btn-breadcrumb">
-        <a href="javascript:void(0);" class="btn btn-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a>
-        <a href="javascript:void(0);" class="btn btn-default">Level 1</a>
-        <a href="javascript:void(0);" class="btn btn-default">Level 2</a>
-        <a href="javascript:void(0);" class="btn btn-default active">Page Title</a>
+<div class="wssBlackBackground" style="padding: 1%">
+    <div class="btn-group wssBtnBreadcrumb">
+        <a href="javascript:void(0);" class="btn btn-secondary"><i class="fas fa-fw fa-home" aria-hidden="true"></i>Home</a>
+        <a href="javascript:void(0);" class="btn btn-secondary">Level 1</a>
+        <a href="javascript:void(0);" class="btn btn-secondary">Level 2</a>
+        <a href="javascript:void(0);" class="btn btn-secondary active">Page Title</a>
     </div>
 </div>
 <br>
 
 <!-- Link Style Breadcrumbs on light background -->
-<div class="whiteBackground" style="padding: 1%">
-  <ul class="breadcrumb">
-    <li><a href="javascript:void(0);" class="link-default"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a></li>
-    <li><a href="javascript:void(0);" class="link-default">Level 1</a></li>
-    <li><a href="javascript:void(0);" class="link-default">Level 2</a></li>
-    <li class="active">Page Title</li>
-  </ul>
+<div class="wssWhiteBackground" style="padding: 1%">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="javascript:void(0);" class="wssLinkDefault"><i class="fas fa-fw fa-home" aria-hidden="true"></i>Home</a></li>
+	  <li class="breadcrumb-item"><a href="javascript:void(0);" class="wssLinkDefault">Level 1</a></li>
+	  <li class="breadcrumb-item"><a href="javascript:void(0);" class="wssLinkDefault">Level 2</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Page Title</li>
+    </ol>
+  </nav>
 </div>
 
 <!-- Link Style Breadcrumbs on dark background-->
-<div class="blackBackground" style="padding: 1%">
-  <ul class="breadcrumb dark-background">
-    <li><a href="javascript:void(0);" class="link-default link-dark-background"><i class="fa fa-fw fa-lg fa-home" aria-hidden="true"></i>Home</a></li>
-    <li><a href="javascript:void(0);" class="link-default link-dark-background">Level 1</a></li>
-    <li><a href="javascript:void(0);" class="link-default link-dark-background">Level 2</a></li>
-    <li class="active">Page Title</li>
-  </ul>
+<div class="wssBlackBackground" style="padding: 1%">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb wssDarkBackground">
+      <li class="breadcrumb-item"><a href="javascript:void(0);" class="wssLinkDefault wssLinkDarkBackground"><i class="fas fa-fw fa-home" aria-hidden="true"></i>Home</a></li>
+	  <li class="breadcrumb-item"><a href="javascript:void(0);" class="wssLinkDefault wssLinkDarkBackground">Level 1</a></li>
+	  <li class="breadcrumb-item"><a href="javascript:void(0);" class="wssLinkDefault wssLinkDarkBackground">Level 2</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Page Title</li>
+    </ol>
+  </nav>
 </div>
 <br>
 
 <!-- Accordions (Standard) -->
   <h2>04 Accordions</h2>
 <div class="container-fluid">
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading accordionPanel" data-toggle="collapse" data-target="#collapseOrderItems1"><a href="javascript:void(0);"><i class="chevron fa fa-fw"></i>Label</a></div>
-        <div class="collapse in" id="collapseOrderItems1">
-          <p class="accordionContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="accordion" id="wssAccordion">
+    <div class="card">
+      <div class="card-header wssAccordionPanel" data-toggle="collapse" data-target="#collapseOrderItems1"><a href="javascript:void(0);"><i class="chevron fas fa-fw"></i>Label</a></div>
+        <div class="collapse show" id="collapseOrderItems1">
+          <p class="wssAccordionContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>
-    <div class="panel panel-default">
-      <div class="panel-heading accordionPanel collapsed" data-toggle="collapse" data-target="#collapseOrderItems2"><a href="javascript:void(0);"><i class="chevron fa fa-fw"></i>Label</a></div>
+    <div class="card">
+      <div class="card-header wssAccordionPanel collapsed" data-toggle="collapse" data-target="#collapseOrderItems2"><a href="javascript:void(0);"><i class="chevron fas fa-fw"></i>Label</a></div>
         <div class="collapse" id="collapseOrderItems2">
-          <p class="accordionContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p class="wssAccordionContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+</div>
+<br>
+
+<!-- Accordions (Minimalist)-->
+<div class="container-fluid">
+  <div class="accordion" id="wssAccordionMin">
+    <div class="card wssPanelMin">
+      <div class="card-header wssAccordionPanelMin clearfix" data-toggle="collapse" data-target="#collapse1"><a href="javascript:void(0);"><i class="chevron fas fa-fw" aria-hidden="true"></i>Label</a><hr class="wssHorizontalLine"></div>
+        <div class="collapse show" id="collapse1">
+          <p class="wssAccordionContentMin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>
+    <div class="card wssPanelMin">
+      <div class="card-header wssAccordionPanelMin collapsed clearfix" data-toggle="collapse" data-target="#collapse2"><a href="javascript:void(0);"><i class="chevron fas fa-fw" aria-hidden="true"></i>Label</a><hr class="wssHorizontalLine"></div>
+        <div class="collapse" id="collapse2">
+          <p class="wssAccordionContentMin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>
     </div>
 </div>
 
-<!-- Accordions (Minimalist)-->
-<div class="container-fluid">
-  <div class="panel-group" id="accordionMin">
-    <div class="panel panel-default panelMin">
-      <div class="panel-heading accordionPanelMin clearfix" data-toggle="collapse" data-target="#collapse1"><a href="javascript:void(0);"><i class="chevron fa fa-fw" aria-hidden="true"></i>Label</a><hr class="horizontalLine"></div>
-        <div class="collapse in" id="collapse1">
-          <p class="accordionContentMin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-    </div>
-    <div class="panel panel-default panelMin">
-      <div class="panel-heading accordionPanelMin collapsed clearfix" data-toggle="collapse" data-target="#collapse2"><a href="javascript:void(0);"><i class="chevron fa fa-fw" aria-hidden="true"></i>Label</a><hr class="horizontalLine"></div>
-        <div class="collapse" id="collapse2">
-          <p class="accordionContentMin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-      </div>
-    </div>
-</div>
+<br>
 
 <!-- Sign In Example (light background) -->
   <h2>05 Sign In</h2>
 <div class="container-fluid"> 
   <div class="row">
     <div class="col-sm-6">
-      <div class="panel panel-default signInPanel">
-        <div class="panel-body whiteBackground signInForm">
+      <div class="card wssSignInPanel">
+        <div class="card-body wssWhiteBackground wssSignInForm">
           <form role="form" data-toggle="validator">
                 <div class="row">
                     <div class="form-group col-sm-3">
                         <img src="images/west_logo_white_lg.png" id="westLogoBlackLetters" alt="West logo with black letters">
                     </div>
                     <div class="form-group col-sm-9">
-                        <h4 class="signInTitle">Application Title</h4>
+                        <h4 class="wssSignInTitle">Application Title</h4>
                     </div>
                 </div> 
                 <div class="row">
-                    <div class="form-group col-sm-12 signInPadding">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" id="username" data-error="Required" required maxlength="40">
+                    <div class="form-group col-sm-12 wssSignInPadding">
+                        <label for="username1">Username</label>
+                        <input type="text" class="form-control" id="username1" data-error="Required" required maxlength="40">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div> 
                 <div class="row">
-                    <div class="form-group col-sm-12 signInPadding">
-                        <label for="password">Password</label>
-                        <input type="text" class="form-control" id="password" data-error="Required" required maxlength="40">
+                    <div class="form-group col-sm-12 wssSignInPadding">
+                        <label for="password1">Password</label>
+                        <input type="text" class="form-control" id="password1" data-error="Required" required maxlength="40">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div> 
                 <div class="row">
-                    <div class="form-group col-sm-12 signInPadding">
+                    <div class="form-group col-sm-12 wssSignInPadding">
                         <button type="submit" class="btn btn-primary col-sm-12">Sign In</button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-sm-12 signInPadding">
-                        <a href="javascript:void(0);" class="signInLink">Forgot username or password?</a>
+                    <div class="form-group col-sm-12 wssSignInPadding">
+                        <a href="javascript:void(0);" class="wssSignInLink">Forgot username or password?</a>
                     </div>
                 </div> 
             </form>
@@ -372,39 +386,39 @@
 		</div>
 	  </div>
 	  <div class="col-sm-6">
-      <div class="panel panel-default signInPanel">
-        <div class="panel-body blackBackground signInForm">
+      <div class="card wssSignInPanel">
+        <div class="card-body wssBlackBackground wssSignInForm">
           <form role="form" data-toggle="validator">
                 <div class="row">
                     <div class="form-group col-sm-3">
                         <img src="images/west_logo_dk_lg.png" id="westLogoWhiteLetters" alt="West logo with white letters" width="60" height="60">
                     </div>
                     <div class="form-group col-sm-9">
-                        <h4 class="signInTitle whiteFont">Application Title</h4>
+                        <h4 class="wssSignInTitle wssWhiteFont">Application Title</h4>
                     </div>
                 </div> 
                 <div class="row">
-                    <div class="form-group col-sm-12 signInPadding">
-                        <label for="username" class="whiteFont">Username</label>
-                        <input type="text" class="form-control" id="username" data-error="Required" required maxlength="40">
+                    <div class="form-group col-sm-12 wssSignInPadding">
+                        <label for="username2" class="wssWhiteFont">Username</label>
+                        <input type="text" class="form-control" id="username2" data-error="Required" required maxlength="40">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div> 
                 <div class="row">
-                    <div class="form-group col-sm-12 signInPadding">
-                        <label for="password" class="whiteFont">Password</label>
-                        <input type="text" class="form-control" id="password" data-error="Required" required maxlength="40">
+                    <div class="form-group col-sm-12 wssSignInPadding">
+                        <label for="password2" class="wssWhiteFont">Password</label>
+                        <input type="text" class="form-control" id="password2" data-error="Required" required maxlength="40">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div> 
                 <div class="row">
-                    <div class="form-group col-sm-12 signInPadding">
+                    <div class="form-group col-sm-12 wssSignInPadding">
                         <button type="submit" class="btn btn-primary col-sm-12">Sign In</button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-sm-12 signInPadding">
-                        <a href="javascript:void(0);" class="signInLink link-dark-background">Forgot username or password?</a>
+                    <div class="form-group col-sm-12 wssSignInPadding">
+                        <a href="javascript:void(0);" class="wssSignInLink wssLinkDarkBackground">Forgot username or password?</a>
                     </div>
                 </div> 
             </form>
@@ -416,37 +430,37 @@
 <br>
 <!-- Buttons -->
   <h2>06 Buttons</h2>
-<div class="whiteBackground" style="padding: 1%">
+<div class="wssWhiteBackground" style="padding: 1%">
   <button class="btn btn-primary">Primary</button>
-  <button class="btn btn-default">Secondary</button>
+  <button class="btn btn-secondary">Secondary</button>
   <button class="btn btn-primary" disabled>Disabled Primary</button>
-  <button class="btn btn-default" disabled>Disabled Secondary</button>
+  <button class="btn btn-secondary" disabled>Disabled Secondary</button>
 </div>
 <br>
 <!-- Buttons on dark background-->
-<div class="blackBackground" style="padding: 1%">
-   <button class="btn btn-primary btn-dark-background">Primary</button>
-   <button class="btn btn-default btn-dark-background">Secondary</button>
-   <button class="btn btn-primary btn-dark-background" disabled>Disabled Primary</button>
-   <button class="btn btn-default btn-dark-background" disabled>Disabled Secondary</button>
+<div class="wssBlackBackground" style="padding: 1%">
+   <button class="btn btn-primary wssDarkBackgroundButton">Primary</button>
+   <button class="btn btn-secondary wssDarkBackgroundButton">Secondary</button>
+   <button class="btn btn-primary wssDarkBackgroundButton" disabled>Disabled Primary</button>
+   <button class="btn btn-secondary wssDarkBackgroundButton" disabled>Disabled Secondary</button>
 </div>
 <br>
 <!-- Buttons with icons -->
-<div class="whiteBackground" style="padding: 1%">
-   <button class="btn btn-primary"><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Primary</button>
-   <button class="btn btn-default"><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Secondary</button>
-   <button class="btn btn-primary" disabled><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Disabled Primary</button>
-   <button class="btn btn-default" disabled><i class="fa fa-trash fa-lg fa-fw" aria-hidden="true"></i> Disabled Secondary</button>
+<div class="wssWhiteBackground" style="padding: 1%">
+   <button class="btn btn-primary"><i class="fas fa-trash-alt fa-fw" aria-hidden="true"></i> Primary</button>
+   <button class="btn btn-secondary"><i class="fas fa-trash-alt fa-fw" aria-hidden="true"></i> Secondary</button>
+   <button class="btn btn-primary" disabled><i class="fas fa-trash-alt fa-fw" aria-hidden="true"></i> Disabled Primary</button>
+   <button class="btn btn-secondary" disabled><i class="fas fa-trash-alt fa-fw" aria-hidden="true"></i> Disabled Secondary</button>
 </div>
 <br>
   
 <!-- Alerts -->
   <h2>07 Alerts</h2>
 <div>
-  <div class="alert alert-success"><i class="fa fa-check fa-lg fa-fw" aria-hidden="true"></i>Indicates a successful or positive action.</div>
-  <div class="alert alert-info"><i class="fa fa-info-circle fa-lg fa-fw" aria-hidden="true"></i>Indicates a neutral informative change or action.</div>
-  <div class="alert alert-warning"><i class="fa fa-exclamation-triangle fa-lg fa-fw" aria-hidden="true"></i>Indicates a warning that might need attention.</div>
-  <div class="alert alert-danger"><i class="fa fa-times-circle fa-lg fa-fw" aria-hidden="true"></i>Indicates an error or potentially negative action.</div>
+  <div class="alert alert-success"><i class="fas fa-check fa-fw" aria-hidden="true"></i> Indicates a successful or positive action.</div>
+  <div class="alert alert-info"><i class="fas fa-info-circle fa-fw" aria-hidden="true"></i> Indicates a neutral informative change or action.</div>
+  <div class="alert alert-warning"><i class="fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i> Indicates a warning that might need attention.</div>
+  <div class="alert alert-danger"><i class="fas fa-times-circle fa-fw" aria-hidden="true"></i> Indicates an error or potentially negative action.</div>
 </div>
 <br>
 
@@ -462,13 +476,13 @@
   </div>
   <div class="row">
     <div class="form-group col-sm-12">
-      <label for="example2">Label Required <span class="requiredField"> *</span></label>
+      <label for="example2">Label Required <span class="wssRequiredField"> *</span></label>
       <input type="text" class="form-control" id="example2" required data-error="Required">
     </div>
   </div>
   <div class="row">
     <div class="form-group col-sm-12 has-error">
-      <label for="example3">Form Validation Fails <span class="requiredField"> *</span></label>
+      <label for="example3">Form Validation Fails <span class="wssRequiredField"> *</span></label>
       <input type="text" class="form-control" id="example3" required data-error="Required">
       <div class="help-block with-errors">Required</div>
     </div>
@@ -477,22 +491,22 @@
 <br>
 
 <!-- Text Fields (Left-Aligned labels)-->
-<form class="form-horizontal">
-  <div class="form-group">
-    <label class="control-label col-sm-3 col-md-2" for="example4">Label</label>
+<form>
+  <div class="form-group row">
+    <label class="col-form-label col-sm-3 col-md-2" for="example4">Label</label>
       <div class="col-sm-9 col-md-10">
         <input type="text" class="form-control" id="example4">
       </div>
   </div>
-  <div class="form-group">
-    <label class="control-label col-sm-3 col-md-2" for="example5">Label Required <span class="requiredField"> *</span></label>
+  <div class="form-group row">
+    <label class="col-form-label col-sm-3 col-md-2" for="example5">Label Required <span class="wssRequiredField"> *</span></label>
     <div class="col-sm-9 col-md-10">
       <input type="text" class="form-control" id="example5" required data-error="Required">
       <div class="help-block with-errors"></div>
     </div>
   </div>
-  <div class="form-group">
-    <label class="control-label col-sm-3 col-md-2" for="example6">Form Validation Fails <span class="requiredField"> *</span></label>
+  <div class="form-group row">
+    <label class="col-form-label col-sm-3 col-md-2" for="example6">Form Validation Fails <span class="wssRequiredField"> *</span></label>
     <div class="col-sm-9 col-md-10 has-error">
       <input type="text" class="form-control" id="example6" required data-error="Required">
       <div class="help-block with-errors">Required</div>
@@ -505,7 +519,7 @@
   <h2>09 Dropdowns</h2>
 <div class="form-group col-sm-4">
     <label for="dropdown1">Fruit Dropdown</label>
-    <select class="form-control dropdown-caret" id="dropdown1">
+    <select class="form-control wssDropdownCaret" id="dropdown1">
         <option></option>
         <option>Apple</option>
         <option>Banana</option>
@@ -513,7 +527,7 @@
         <option>Strawberry</option>
     </select>
 </div>
-<br></br><br></br>
+<br>
 
 <!-- Radio Buttons -->
   <h2>10 Radio Buttons</h2>
@@ -521,7 +535,7 @@
   <label>Radio Button Options</label>
   <fieldset>
   <legend class="sr-only">Radio button example</legend>
-  <ul class="wss-unstyled-list"> 
+  <ul class="wssUnstyledList"> 
     <li>
       <input id="option1" type="radio" name="myOptions" value="Option 1" checked/>
       <label for="option1">Option 1</label>
@@ -536,7 +550,7 @@
   <label>Disabled Radio Button Example</label>
   <fieldset>
   <legend class="sr-only">Disabled Radio button example</legend>
-  <ul class="wss-unstyled-list"> 
+  <ul class="wssUnstyledList"> 
     <li>
       <input id="option3" type="radio" name="myOptions2" value="Option 3" disabled/>
       <label for="option3">Option 3</label>
@@ -554,7 +568,7 @@
   <h2>11 Checkboxes</h2>
 <div class="form-group col-sm-12">
   <label>Checkbox Options</label>
-  <ul class="wss-unstyled-list">
+  <ul class="wssUnstyledList">
     <li>
       <input id="check1" type="checkbox" value="Option 1" checked/>
       <label for="check1">Option 1</label>
@@ -566,7 +580,7 @@
   </ul>
   
   <label>Disabled Checkbox Options</label>
-  <ul class="wss-unstyled-list">
+  <ul class="wssUnstyledList">
     <li>
       <input id="check3" type="checkbox" value="Option 3" disabled/>
       <label for="check3">Option 3</label>
@@ -581,26 +595,26 @@
 
 <!-- Links -->
   <h2>12 Links</h2>
-<div class="whiteBackground" style="padding: 1%">
-  <a href="javascript:void(0);" target="_blank" class="link-default">Example Link</a>
+<div class="wssWhiteBackground" style="padding: 1%">
+  <a href="javascript:void(0);" target="_blank" class="wssLinkDefault">Example Link</a>
   <br></br>
-  <a href="javascript:void(0);" target="_blank"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i>Link with icon</a>
+  <a href="javascript:void(0);" target="_blank"><i class="fas fa-fw fa-user" aria-hidden="true"></i>Link with icon</a>
   <br></br>
-  <a href="javascript:void(0);" target="_blank" class="link-default link-active">Active Link</a>
+  <a href="javascript:void(0);" target="_blank" class="wssLinkDefault wssLinkActive">Active Link</a>
   <br></br>
-  <a href="javascript:void(0);" target="_blank" class="link-default link-visited">Visited Link</a>
+  <a href="javascript:void(0);" target="_blank" class="wssLinkDefault wssLinkVisited">Visited Link</a>
   <br>
 </div>
 <!-- Links on dark background-->
-<div class="blackBackground" style="padding: 1%">
+<div class="wssBlackBackground" style="padding: 1%">
   <br>
-  <a href="javascript:void(0);" target="_blank" class="link-default link-dark-background">Example Link</a>
+  <a href="javascript:void(0);" target="_blank" class="wssLinkDefault wssLinkDarkBackground">Example Link</a>
   <br></br>
-  <a href="javascript:void(0);" target="_blank" class="link-dark-background"><i class="fa fa-fw fa-lg fa-user" aria-hidden="true"></i>Link with icon</a>
+  <a href="javascript:void(0);" target="_blank" class="wssLinkDarkBackground"><i class="fas fa-fw fa-user" aria-hidden="true"></i>Link with icon</a>
   <br></br>
-  <a href="javascript:void(0);" target="_blank" class="link-default link-dark-background link-dark-background-active">Active Link</a>
+  <a href="javascript:void(0);" target="_blank" class="wssLinkDefault wssLinkDarkBackground wssLinkDarkBackground-active">Active Link</a>
   <br></br>
-  <a href="javascript:void(0);" target="_blank" class="link-default link-dark-background link-dark-background-visited">Visited Link</a>
+  <a href="javascript:void(0);" target="_blank" class="wssLinkDefault wssLinkDarkBackground wssLinkDarkBackground-visited">Visited Link</a>
   <br></br>
 </div>
 <br>
@@ -608,117 +622,117 @@
 <!-- Modals -->
   <h2>13 Modals </h2>
   <div class="container-fluid" style="padding-top: 10px">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" >Click to display a Processing Indicator</button>
-    <div id="loadingModal" class="modal fade" role="dialog">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wssLoadingModal" >Click to display a Processing Indicator</button>
+    <div id="wssLoadingModal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
-          <div class="modal-header loadingModalHeader">
-            <h4 class="modal-title">Loading...</h4>
+          <div class="modal-header wssLoadingModalHeader">
+            <h4 class="modal-title text-center col-12">Loading...</h4>
           </div>
-          <div class="modal-body loadingModalContent">
+          <div class="modal-body wssLoadingModalContent">
             <br>
-            <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i><br><br>
+            <i class="fas fa-spinner fa-spin fa-2x" aria-hidden="true"></i><br><br>
             <p>Explanation for delay.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div style="height:250px" id="placeholderForFrontify2"></div>
+  <div style="height:250px" id="wssPlaceholderForFrontify2"></div>
 <br>
 
 <!-- Popup Windows -->
   <h2>14 Popup Windows</h2>
   <div class="container-fluid" style="padding-top: 10px">
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#successModal" >Click to display a Success Modal</button> <br/><br/>
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#infoModal" >Click to display an Info Modal</button> <br/><br/>
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#warningModal" >Click to display a Warning Modal</button> <br/><br/>
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#errorModal" >Click to display an Error Modal</button> <br/><br/>
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#neutralModal" >Click to display a Neutral Modal</button> <br/><br/>
-    <div style="height:450px" id="placeholderForFrontify2"></div>
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#wssSuccessModal" >Click to display a Success Modal</button> <br/><br/>
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#wssInfoModal" >Click to display an Info Modal</button> <br/><br/>
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#wssWarningModal" >Click to display a Warning Modal</button> <br/><br/>
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#wssErrorModal" >Click to display an Error Modal</button> <br/><br/>
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#wssNeutralModal" >Click to display a Neutral Modal</button> <br/><br/>
+    <div style="height:450px" id="wssPlaceholderForFrontify2"></div>
   </div>
 
-<div id="successModal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">
+<div id="wssSuccessModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
-      <div class="modal-header successModalHeader">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p class="modal-title"><i class="fa fa-lg fa-fw fa-check" aria-hidden="true"></i> Success</p>
+      <div class="modal-header wssSuccessModalHeader">
+        <p class="modal-title"><i class="fas fa-fw fa-check" aria-hidden="true"></i> Success</p>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
         <p>Pop-up windows that are used to provide positive confirmations or information should use the same colors and styles for the header as Success Alerts (or notifications).</p>
         <p>For example, the user submits a change to a document or file and the system detects no issues (e.g. formatting, connectivity, etc.), then the user might be presented with a Success message.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-arrow-circle-right" aria-hidden="true"></i> Continue</button>
+        <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal"><i class="fas fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-fw fa-arrow-circle-right" aria-hidden="true"></i> Continue</button>
       </div>
     </div>
   </div>
 </div>
 
-<div id="infoModal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">
+<div id="wssInfoModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
-      <div class="modal-header infoModalHeader">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <p class="modal-title"><i class="fa fa-lg fa-fw fa-info-circle" aria-hidden="true"></i> Info</p>
+      <div class="modal-header wssInfoModalHeader">
+        <p class="modal-title"><i class="fas fa-fw fa-info-circle" aria-hidden="true"></i> Info</p>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
         <p>Pop-up windows that are used to provide additional information that is not necessarily positive or negative should use the same colors and styles for the header as Info Alerts (or Notifications).</p>
         <p>For Example, if the user needs to see information about an upcoming action but not (at least not yet) see the positive or negative impact of that action, then an Info pop-up might be used.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
+        <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal"><i class="fas fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
       </div>
     </div>
   </div>
 </div>
 
-<div id="warningModal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">
+<div id="wssWarningModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
-      <div class="modal-header warningModalHeader">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p class="modal-title"><i class="fa fa-lg fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning</p>
+      <div class="modal-header wssWarningModalHeader">
+        <p class="modal-title"><i class="fas fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning</p>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
         <p>Pop-up windows that are used to provide additional information that an action or a state is negative or could become negative but isn't necessarily destructive.</p>
         <p>For example, deleting something that is easy to retrieve, is easy to recreate, or is fairly non-essential might constitute a Warning.  Deleting important data from a database that is mission critical or that could not be retrieved might warrant an Error.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-arrow-circle-right" aria-hidden="true"></i> Continue</button>
+        <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal"><i class="fas fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-fw fa-arrow-circle-right" aria-hidden="true"></i> Continue</button>
       </div>
     </div>
   </div>
 </div>
 
-<div id="errorModal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">
+<div id="wssErrorModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
-      <div class="modal-header errorModalHeader">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p class="modal-title"><i class="fa fa-lg fa-fw fa-times-circle" aria-hidden="true"></i> Error</p>
+      <div class="modal-header wssErrorModalHeader">
+        <p class="modal-title"><i class="fas fa-fw fa-times-circle" aria-hidden="true"></i> Error</p>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
         <p>Pop-up windows that are used to provide additional information that an action or a state is negative or could become negative in a way that is destructive or potentially destructive, particularly if such an action is difficult to undo.</p>
         <p>For example, deleting something that is easy to retrieve, is easy to recreate, or is fairly non-essential might constitute a Warning.  Deleting important data from a database that is mission critical or that could not be retrieved might warrant an Error.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-lg fa-fw fa-trash" aria-hidden="true"></i> Delete</button>
+        <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal"><i class="fas fa-fw fa-times" aria-hidden="true"></i> Cancel</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-fw fa-trash-alt" aria-hidden="true"></i> Delete</button>
       </div>
     </div>
   </div>
 </div>
 
-<div id="neutralModal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">
+<div id="wssNeutralModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
-      <div class="modal-header neutralModalHeader">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-header wssNeutralModalHeader">
         <p class="modal-title">Neutral</p>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
         <p>Neutral Pop-up windows could be used to present information or functionality that does not meet the recommendations or requirements for other pop-up types.</p>
@@ -731,51 +745,52 @@
 
 <!-- Tooltips -->
   <h2>15 Tooltips</h2>
-<div class="whiteBackground" style="padding: 1%">
+<div class="wssWhiteBackground" style="padding: 1%">
 <form>
   <div class="row">
     <div class="form-group col-sm-12">
-      <label for="tooltip1">Success tooltip<span class="requiredField"> *</span></label><button type="button" id="popover1" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="success" data-html="true" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Success" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
-      <input type="text" class="form-control" id="tooltip1" required data-error="Required">
+      <label for="wssTooltip1">Success tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover1" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="success" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Success" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="wssTooltip1" required data-error="Required">
   
-      <label for="tooltip2">Info tooltip<span class="requiredField"> *</span></label><button type="button" id="popover2" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
-      <input type="text" class="form-control" id="tooltip2" required data-error="Required">
+      <label for="wssTooltip2">Info tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover2" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="wssTooltip2" required data-error="Required">
   
-      <label for="tooltip3">Warning tooltip<span class="requiredField"> *</span></label><button type="button" id="popover3" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="warning" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Warning" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
-      <input type="text" class="form-control" id="tooltip3" required data-error="Required">
+      <label for="wssTooltip3">Warning tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover3" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="warning" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Warning" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="wssTooltip3" required data-error="Required">
   
-      <label for="tooltip4">Error tooltip<span class="requiredField"> *</span></label><button type="button" id="popover4" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="error" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Error" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
-      <input type="text" class="form-control" id="tooltip4" required data-error="Required">
+      <label for="wssTooltip4">Error tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover4" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="error" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Error" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="wssTooltip4" required data-error="Required">
   
-      <label for="tooltip5">Neutral tooltip<span class="requiredField"> *</span></label><button type="button" id="popover5" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="neutral" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Neutral" ><i class="fa fa-question-circle fa-lg popoverIcon"></i><span class="tooltipButtonLabel">Tooltip</span></button>
-      <input type="text" class="form-control" id="tooltip5" required data-error="Required"> 
+      <label for="wssTooltip5">Neutral tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover5" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="neutral" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Neutral" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="wssTooltip5" required data-error="Required"> 
     </div>
   </div>
 </form>
 </div>
 
-<div class="blackBackground" style="padding: 1%">
+<div class="wssBlackBackground" style="padding: 1%">
 <form>
   <div class="row">
     <div class="form-group col-sm-12"> 
-      <label class="whiteFont" for="darkToolTip">Info tooltip<span class="requiredField whiteFont"> *</span></label><button type="button" id="darkPopover" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fa fa-question-circle fa-lg popoverIcon whiteFont"></i><span class="tooltipButtonLabel">Tooltip</span></button>
-      <input type="text" class="form-control" id="darkToolTip" required data-error="Required">
+      <label class="wssWhiteFont" for="wssDarkToolTip">Info tooltip<span class="wssRequiredField wssWhiteFont"> *</span></label><button type="button" id="wssDarkPopover" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fas fa-question-circle wssPopoverIcon wssWhiteFont"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <input type="text" class="form-control" id="wssDarkToolTip" required data-error="Required">
     </div>
   </div>
 </form>
 </div>
+<br>
 
 <!-- Tables (Active) -->
   <h2>16 Tables</h2>
 <div class= "container-fluid">
   <div class="table-responsive">
-    <table id="grid-basic-example1" class="table table-striped table-hover table-active">
+    <table id="wssActiveTableExample" class="table table-striped table-hover wssActiveTable">
       <thead>
         <tr>
-          <th class="th-active" data-column-id="id">Column 1 </th>
-          <th class="th-active" data-column-id="type">Column 2 </th>
-          <th class="th-active" data-column-id="status">Column 3 </th>
-          <th class="th-active" data-column-id="street">Column 4 </th>
+          <th class="wssActiveTableHeader" data-column-id="id">Column 1 </th>
+          <th class="wssActiveTableHeader" data-column-id="type">Column 2 </th>
+          <th class="wssActiveTableHeader" data-column-id="status">Column 3 </th>
+          <th class="wssActiveTableHeader" data-column-id="street">Column 4 </th>
         </tr>
       </thead>
       <tbody>
@@ -823,13 +838,13 @@
 <!-- Tables (Passive) -->
 <div class= "container-fluid">
   <div class="table-responsive">
-    <table id="grid-basic-example2" class="table">
+    <table id="wssPassiveTableExample" class="table">
     <thead>
         <tr>
-          <th class="th-passive" data-column-id="id">Column 1 </th>
-          <th class="th-passive" data-column-id="type">Column 2 </th>
-          <th class="th-passive" data-column-id="status">Column 3 </th>
-          <th class="th-passive" data-column-id="street">Column 4 </th>
+          <th class="wssPassiveTableHeader" data-column-id="id">Column 1 </th>
+          <th class="wssPassiveTableHeader" data-column-id="type">Column 2 </th>
+          <th class="wssPassiveTableHeader" data-column-id="status">Column 3 </th>
+          <th class="wssPassiveTableHeader" data-column-id="street">Column 4 </th>
         </tr>
       </thead>
       <tbody>
@@ -878,85 +893,104 @@
   <h2>17 Tabs</h2>
 <div class= "container-fluid">
   <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a data-toggle="tab" href="#tab1">Tab 1</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tab2">Tab 2</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tab3">Tab 3</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tab4">Tab 4</a></li>
+    <li role="presentation" class="nav-item">
+	  <a class="nav-link active" data-toggle="tab" href="#wssTab1">Tab 1</a>
+	</li>
+    <li role="presentation" class="nav-item">
+	  <a class="nav-link" data-toggle="tab" href="#wssTab2">Tab 2</a>
+	</li>
+    <li role="presentation" class="nav-item">
+	  <a class="nav-link" data-toggle="tab" href="#wssTab3">Tab 3</a>
+	</li>
+    <li role="presentation" class="nav-item">
+	  <a class="nav-link" data-toggle="tab" href="#wssTab4">Tab 4</a>
+	</li>
   </ul>
   
   <div class="tab-content">
-    <div id="tab1" class="tab-pane fade in active container-fluid">
+    <div id="wssTab1" class="tab-pane active container-fluid">
       <h4>Tab Content</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
     </div>
-    <div id="tab2" class="tab-pane fade container-fluid">
+    <div id="wssTab2" class="tab-pane fade container-fluid">
       <h4>Tab 2</h4>
       <p>Some content in tab 2.</p>
     </div>
-    <div id="tab3" class="tab-pane fade container-fluid">
+    <div id="wssTab3" class="tab-pane fade container-fluid">
       <h4>Tab 3</h4>
       <p>Some content in tab 3.</p>
     </div>
-    <div id="tab4" class="tab-pane fade container-fluid">
+    <div id="wssTab4" class="tab-pane fade container-fluid">
       <h4>Tab 4</h4>
       <p>Some content in tab 4.</p>
     </div>
    </div>
 </div>
-
-<br/>
+<br>
 
 <div class= "container-fluid">
   <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a data-toggle="tab" href="#tabA"><i class="fa fa-fw fa-dashboard tab-icon" aria-hidden="true"></i>Dashboard</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tabB"><i class="fa fa-fw fa-line-chart tab-icon" aria-hidden="true"></i> Trending</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tabC"><i class="fa fa-fw fa-pie-chart tab-icon" aria-hidden="true"></i> Distribution</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tabD"><i class="fa fa-fw fa-sort-amount-asc tab-icon" aria-hidden="true"></i> Drilldown</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#tabE"><i class="fa fa-fw fa-file-text-o tab-icon" aria-hidden="true"></i> Reports</a></li>
+    <li role="presentation" class="nav-item">
+	  <a class="nav-link active" data-toggle="tab" href="#wssTabA"><i class="fas fa-fw fa-tachometer-alt wssTabIcon" aria-hidden="true"></i> Dashboard</a>
+	</li>
+    <li role="presentation" class="nav-item">
+	  <a class="nav-link" data-toggle="tab" href="#wssTabB"><i class="fas fa-fw fa-chart-line wssTabIcon" aria-hidden="true"></i> Trending</a>
+	</li>
+    <li role="presentation" class="nav-item">
+	  <a class="nav-link" data-toggle="tab" href="#wssTabC"><i class="fas fa-fw fa-chart-pie wssTabIcon" aria-hidden="true"></i> Distribution</a>
+	</li>
+    <li role="presentation" class="nav-item">
+	  <a class="nav-link" data-toggle="tab" href="#wssTabD"><i class="fas fa-fw fa-sort-amount-down wssTabIcon" aria-hidden="true"></i> Drilldown</a>
+	</li>
+    <li role="presentation" class="nav-item">
+	  <a class="nav-link" data-toggle="tab" href="#wssTabE"><i class="fas fa-fw fa-file-alt wssTabIcon" aria-hidden="true"></i> Reports</a>
+	</li>
   </ul>
   
   <div class="tab-content">
-    <div id="tabA" class="tab-pane fade in active container-fluid">
+    <div id="wssTabA" class="tab-pane active container-fluid">
       <h4>Dashboard</h4>
       <p>Example tab with icons</p>
     </div>
-    <div id="tabB" class="tab-pane fade container-fluid">
+    <div id="wssTabB" class="tab-pane fade container-fluid">
       <h4>Trending</h4>
       <p>Some content in tab B.</p>
     </div>
-    <div id="tabC" class="tab-pane fade container-fluid">
+    <div id="wssTabC" class="tab-pane fade container-fluid">
       <h4>Distribution</h4>
       <p>Some content in tab C.</p>
     </div>
-    <div id="tabD" class="tab-pane fade container-fluid">
+    <div id="wssTabD" class="tab-pane fade container-fluid">
       <h4>Drilldown</h4>
       <p>Some content in tab D.</p>
     </div>
-    <div id="tabE" class="tab-pane fade container-fluid">
+    <div id="wssTabE" class="tab-pane fade container-fluid">
       <h4>Reports</h4>
       <p>Some content in tab E.</p>
     </div>
    </div>
 </div>
 
+<br>
+
 <!-- Background Colors -->
   <h2>18 Background Colors</h2>
 <div class="container-fluid"> 
   <div class="row">
     <div class="col-sm-4">
-      <div class="panel panel-default">
-        <div class="panel-body whiteBackground">
+      <div class="card">
+        <div class="card-body wssWhiteBackground">
           <form>
             <div class="row">
               <div class="form-group col-sm-12">
-                <label for="labelExample1">Label</label>
-                  <input type="text" class="form-control" id="labelExample1">
+                <label for="wssLabelExample1">Label</label>
+                  <input type="text" class="form-control" id="wssLabelExample1">
               </div>
             </div>
             <div class="row">
               <div class="form-group col-sm-12">
-                <label for="labelExample2">Label</label>
-                  <input type="text" class="form-control" id="labelExample2" required data-error="Required">
+                <label for="wssLabelExample2">Label</label>
+                  <input type="text" class="form-control" id="wssLabelExample2" required data-error="Required">
               </div>
             </div>
             <div class="row">
@@ -966,7 +1000,7 @@
             </div>
             <div class="row">
               <div class="form-group col-sm-12">
-                <a href="javascript:void(0);" class="signInLink">Forgot your password?</a>
+                <a href="javascript:void(0);" class="wssSignInLink">Forgot your password?</a>
               </div>
             </div>  
           </form>
@@ -974,29 +1008,29 @@
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="panel panel-default" id="">
-            <div class="panel-body blackBackground">
+      <div class="card">
+            <div class="card-body wssBlackBackground">
               <form>
                 <div class="row">
                   <div class="form-group col-sm-12">
-                    <label class="whiteFont" for="labelExample3">Label</label>
-                    <input type="text" class="form-control" id="labelExample3">
+                    <label class="wssWhiteFont" for="wssLabelExample3">Label</label>
+                    <input type="text" class="form-control" id="wssLabelExample3">
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-group col-sm-12">
-                    <label class="whiteFont" for="labelExample4">Label</label>
-                    <input type="text" class="form-control" id="labelExample4" required data-error="Required">
+                    <label class="wssWhiteFont" for="wssLabelExample4">Label</label>
+                    <input type="text" class="form-control" id="wssLabelExample4" required data-error="Required">
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-group col-sm-12">
-                    <button type="submit" class="btn btn-primary btn-dark-background col-sm-12">Button</button>
+                    <button type="submit" class="btn btn-primary wssDarkBackgroundButton col-sm-12">Button</button>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-group col-sm-12">
-                    <a href="javascript:void(0);" class="signInLink link-dark-background">Forgot your password?</a>
+                    <a href="javascript:void(0);" class="wssSignInLink wssLinkDarkBackground">Forgot your password?</a>
                   </div>
                 </div>  
               </form>
@@ -1004,19 +1038,19 @@
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="panel panel-default">
-        <div class="panel-body greyBackground">
+      <div class="card">
+        <div class="card-body wssGreyBackground">
           <form>
             <div class="row">
               <div class="form-group col-sm-12">
-                <label for="labelExample5">Label</label>
-                <input type="text" class="form-control" id="labelExample5">
+                <label for="wssLabelExample5">Label</label>
+                <input type="text" class="form-control" id="wssLabelExample5">
               </div>
             </div>
             <div class="row">
               <div class="form-group col-sm-12">
-                <label for="labelExample6">Label</label>
-                <input type="text" class="form-control" id="labelExample6" required data-error="Required">
+                <label for="wssLabelExample6">Label</label>
+                <input type="text" class="form-control" id="wssLabelExample6" required data-error="Required">
               </div>
             </div>
             <div class="row">
@@ -1026,23 +1060,25 @@
             </div>
             <div class="row">
               <div class="form-group col-sm-12">
-                <a href="javascript:void(0);" class="signInLink">Forgot your password?</a>
+                <a href="javascript:void(0);" class="wssSignInLink">Forgot your password?</a>
               </div>
             </div>  
           </form>
         </div>
       </div>
-    </div>
+    </div>  
   </div>
 </div>
+
+<br>
 	
  <!-- Footer -->
  <h2>19 Footer</h2>
 </div>
 </body>
 <!-- Standard Footer-->
-<div style="height:50px" id="placeholderForFrontify2"></div>
-<footer id="footer" class="container-fluid text-left">
-  <p id="footerText">&copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.west.com" target="_blank">West Corporation</a>. All Rights Reserved.</p>		
+<div style="height:50px" id="wssPlaceholderForFrontify2"></div>
+<footer class="container-fluid text-left wssFooter">
+  <p class="wssFooterText">&copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.west.com" target="_blank">West Corporation</a>. All Rights Reserved.</p>		
 </footer>
 </html>
