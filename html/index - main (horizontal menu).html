@@ -13,7 +13,7 @@
   <script src="js/custom.js"></script> <!--for popup initialization (Frontify workaround)-->  
   </head>
 <!-- Header -->
-<nav class="navbar navbar-expand-lg navbar-dark wssBlackBackground" id="wssHeaderBar">
+<nav class="navbar navbar-expand-md navbar-dark wssBlackBackground" id="wssHeaderBar">
     <a class="navbar-brand" id="wssLogoLink" href="#" ><img src="images/west_logo.png" id="wssWestLogo" alt="West logo">Application Title</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wssUserProfileDropdown, #wssMainNav2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fas fa-bars wssWhiteFont"></span>
@@ -22,7 +22,7 @@
     <ul class="navbar-nav ml-auto">
        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="userProfileMenu" data-toggle="dropdown"><i class="fas fa-fw fa-user" aria-hidden="true"></i> username <i class="fas fa-fw fa-chevron-down" aria-hidden="true"></i></a>
-          <div class="dropdown-menu" aria-labelledby="userProfileMenu">
+          <div class="dropdown-menu" aria-labelledby="wssUserProfileMenu">
             <a href="javascript:void(0);" class="dropdown-item userProfileMenuOption"><i class="fas fa-fw fa-question-circle" aria-hidden="true"></i> Help</a>
             <div class="dropdown-divider"></div>
             <a href="javascript:void(0);" class="dropdown-item userProfileMenuOption"><i class="fas fa-fw fa-sign-out-alt" aria-hidden="true"></i> Sign Out</a>
@@ -32,7 +32,7 @@
   </div>
 </nav>
 <div id="wssMenuDividerBar" class="container-fluid"></div>
-<nav class="navbar navbar-expand-lg navbar-dark wssHorizontalMenu" id="wssHeaderBar2">
+<nav class="navbar navbar-expand-md navbar-dark wssHorizontalMenu" id="wssHeaderBar2">
   <div class="collapse navbar-collapse" id="wssMainNav2">
     <ul class="navbar-nav" id="wssHorizontalMainMenu">
       <li class="nav-item">
@@ -162,6 +162,11 @@
           <td><i class="fas fa-fw fa-share-square" aria-hidden="true"></i></td>
           <td>share-square</td>
           <td>Export</td>
+        </tr>
+		<tr>
+          <td><i class="fas fa-fw fa-external-link-square-alt" aria-hidden="true"></i></td>
+          <td>external-link-square-alt</td>
+          <td>External Link</td>
         </tr>
         <tr>
           <td><i class="fas fa-fw fa-home" aria-hidden="true"></i></td>
@@ -354,15 +359,15 @@
                 </div> 
                 <div class="row">
                     <div class="form-group col-sm-12 wssSignInPadding">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" id="username" data-error="Required" required maxlength="40">
+                        <label for="username1">Username</label>
+                        <input type="text" class="form-control" id="username1" data-error="Required" required maxlength="40">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div> 
                 <div class="row">
                     <div class="form-group col-sm-12 wssSignInPadding">
-                        <label for="password">Password</label>
-                        <input type="text" class="form-control" id="password" data-error="Required" required maxlength="40">
+                        <label for="password1">Password</label>
+                        <input type="text" class="form-control" id="password1" data-error="Required" required maxlength="40">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div> 
@@ -394,15 +399,15 @@
                 </div> 
                 <div class="row">
                     <div class="form-group col-sm-12 wssSignInPadding">
-                        <label for="username" class="wssWhiteFont">Username</label>
-                        <input type="text" class="form-control" id="username" data-error="Required" required maxlength="40">
+                        <label for="username2" class="wssWhiteFont">Username</label>
+                        <input type="text" class="form-control" id="username2" data-error="Required" required maxlength="40">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div> 
                 <div class="row">
                     <div class="form-group col-sm-12 wssSignInPadding">
-                        <label for="password" class="wssWhiteFont">Password</label>
-                        <input type="text" class="form-control" id="password" data-error="Required" required maxlength="40">
+                        <label for="password2" class="wssWhiteFont">Password</label>
+                        <input type="text" class="form-control" id="password2" data-error="Required" required maxlength="40">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div> 
@@ -488,21 +493,21 @@
 <!-- Text Fields (Left-Aligned labels)-->
 <form>
   <div class="form-group row">
-    <label class="col-form-label col-sm-3 col-md-2" for="example4">Label</label>
-      <div class="col-sm-9 col-md-10">
+    <label class="col-form-label col-sm-3 col-md-3 col-lg-2" for="example4">Label</label>
+      <div class="col-sm-9 col-md-9 col-lg-10">
         <input type="text" class="form-control" id="example4">
       </div>
   </div>
   <div class="form-group row">
-    <label class="col-form-label col-sm-3 col-md-2" for="example5">Label Required <span class="wssRequiredField"> *</span></label>
-    <div class="col-sm-9 col-md-10">
+    <label class="col-form-label col-sm-3 col-md-3 col-lg-2" for="example5">Label Required <span class="wssRequiredField"> *</span></label>
+    <div class="col-sm-9 col-md-9 col-lg-10">
       <input type="text" class="form-control" id="example5" required data-error="Required">
       <div class="help-block with-errors"></div>
     </div>
   </div>
   <div class="form-group row">
-    <label class="col-form-label col-sm-3 col-md-2" for="example6">Form Validation Fails <span class="wssRequiredField"> *</span></label>
-    <div class="col-sm-9 col-md-10 has-error">
+    <label class="col-form-label col-sm-3 col-md-3 col-lg-2" for="example6">Form Validation Fails <span class="wssRequiredField"> *</span></label>
+    <div class="col-sm-9 col-md-9 col-lg-10 has-error">
       <input type="text" class="form-control" id="example6" required data-error="Required">
       <div class="help-block with-errors">Required</div>
     </div>
@@ -744,19 +749,19 @@
 <form>
   <div class="row">
     <div class="form-group col-sm-12">
-      <label for="tooltip1">Success tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover1" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="success" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Success" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <label for="wssTooltip1">Success tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover1" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="success" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Success" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="wssTooltip1" required data-error="Required">
   
-      <label for="tooltip2">Info tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover2" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <label for="wssTooltip2">Info tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover2" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="wssTooltip2" required data-error="Required">
   
-      <label for="tooltip3">Warning tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover3" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="warning" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Warning" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <label for="wssTooltip3">Warning tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover3" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="warning" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Warning" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="wssTooltip3" required data-error="Required">
   
-      <label for="tooltip4">Error tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover4" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="error" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Error" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <label for="wssTooltip4">Error tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover4" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="error" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Error" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="wssTooltip4" required data-error="Required">
   
-      <label for="tooltip5">Neutral tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover5" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="neutral" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Neutral" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <label for="wssTooltip5">Neutral tooltip<span class="wssRequiredField"> *</span></label><button type="button" id="wssPopover5" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="neutral" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Neutral" ><i class="fas fa-question-circle wssPopoverIcon"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="wssTooltip5" required data-error="Required"> 
     </div>
   </div>
@@ -767,7 +772,7 @@
 <form>
   <div class="row">
     <div class="form-group col-sm-12"> 
-      <label class="wssWhiteFont" for="darkToolTip">Info tooltip<span class="wssRequiredField wssWhiteFont"> *</span></label><button type="button" id="wssDarkPopover" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fas fa-question-circle wssPopoverIcon wssWhiteFont"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
+      <label class="wssWhiteFont" for="wssDarkToolTip">Info tooltip<span class="wssRequiredField wssWhiteFont"> *</span></label><button type="button" id="wssDarkPopover" class="btn btn-link" data-toggle="popover" data-trigger="focus" data-style="info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Info" ><i class="fas fa-question-circle wssPopoverIcon wssWhiteFont"></i><span class="wssTooltipButtonLabel">Tooltip</span></button>
       <input type="text" class="form-control" id="wssDarkToolTip" required data-error="Required">
     </div>
   </div>
