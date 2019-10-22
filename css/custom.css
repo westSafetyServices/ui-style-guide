@@ -1,7 +1,7 @@
 /***************************************
-*  //Copyright West Safety Services, Inc. 2018
+*  Copyright Intrado. 2019
 *
-*  Universal CSS
+*  Custom CSS for style guide
 *
 ******************************************/
 @font-face {
@@ -10,8 +10,8 @@
 }
 
 @font-face {
-	font-family: 'Open Sans';
-	src: url('../fonts/OpenSans.woff2') format('woff2'), url('../fonts/OpenSans.woff') format('woff');
+	font-family: 'Poppins';
+	src: url('../fonts/Poppins-Regular.ttf') format('ttf');
 }
 
 html {
@@ -20,37 +20,42 @@ html {
 }
 
 body {
-	font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif !important;
+	font-family:  'Roboto', 'Poppins', 'Arial', sans-serif !important;
 	font-size: 14px !important;
 }
 
 h1 {
 	font-weight: bold;
-	font-size: 32px;
+	font-size: 24px;
 }
 
 h2 {
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 h3 {
 	font-weight: bold;
-	font-size: 21px;
+	font-size: 18px;
 }
 
 h4 {
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 16px;
 }
 
+/* Small */
 h5 {
-	font-weight: bold;
-	font-size: 15px;
+	font-size: 12px;
 }
 
+/* Caption */
 h6 {
-	font-weight: bold;
+	font-size: 10px;
+}
+
+/* Helper text */
+small {
 	font-size: 12px;
 }
 
@@ -59,16 +64,20 @@ h6 {
 *  Background Colors
 *  
 ******************************************/
-.wssWhiteBackground {
+.intradoWhiteBackground {
 	background-color: #FFFFFF;
 }
 
-.wssBlackBackground {
+.intradoBlackBackground {
 	background-color: #000000;
 }
 
-.wssGreyBackground {
+.intradoGreyBackground {
 	background-color: #E4E4E4;
+}
+
+.intradoPurpleBackground {
+	background-color: #582D82;
 }
 
 /*****************************************
@@ -76,24 +85,26 @@ h6 {
 *  Navbar
 *  
 ******************************************/
-#wssWestLogo {
-	margin-right: 10px;
+#intradoLogo {
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 10px;
 }
 
-#wssHeaderBar {
+#intradoHeaderBar {
 	padding: 2.5px 15px;
 }
 
 .navbar-brand {
 	font-size: 16px;
-	font-weight: bold;
+	padding-top: 10px;
+	font-weight: 400;
 }
 
-.navbar-dark .navbar-nav .nav-link, 
+.navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-item .nav-link {
 	color: #FFFFFF;
-	font-weight: bold;
 }  
 
 /*****************************************
@@ -102,22 +113,10 @@ h6 {
 *  
 ******************************************/
 
-/* Expand to full width of username */
-.dropdown-menu {
-	width: 100%;
-	background-color: #E4E4E4;
-	border: 1px solid #000000;
-	border-radius: 0px;
-	min-width: 120px;
-	margin-top: 0px;
-}
-
 /* Bold dropdown list items */
 .dropdown-item {
-	font-weight: bold;
-	font-size: 14px;
-	color: #000000;
-	padding: .1rem 1rem;
+	font-size: 14px !important;
+	padding: .2rem 1rem !important;
 }
 
 /* Remove Bootstrap 4 default dropdown toggle */
@@ -125,62 +124,72 @@ h6 {
 	display: none;
 }
 
-.dropdown-item:hover, .dropdown-item:focus,
-.dropdown-item.active, .dropdown-item:active {
-	color: #000000;
-	background-color: #CCDFEE;
+@media (min-width: 768px) {
+	#intradoUserProfileMenuTop {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
 }
-
-/* Username profile menu: Match color of dropdown list and reduce height */
-.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .show>.nav-link:hover, .navbar-dark .navbar-nav .show>.nav-link:focus{
-	background-color: #E4E4E4 !important;
-	color: #000000;
-	border: 1px solid #000000;
-}
-
-/* Custom divider styling */
-.dropdown-menu .dropdown-divider {
-	margin: 2px;
-    margin-left: 40px;
-    margin-right: 20px;
-	border-top: 1px solid #949494
-}
-
 /*****************************************
 *  
 *  Horizontal Main Menu Tabs
 *  
 ******************************************/
 
-.wssHorizontalMenu {
-	background-color: #2D383F;
-	padding: 0rem;
+@media (min-width: 768px) {
+	.intradoHorizontalNav .navbar-nav .nav-item .nav-link {
+		padding-bottom: 25px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.intradoHorizontalNav .navbar-nav .nav-item .nav-link.active {
+		border-bottom: 3px solid #FFFFFF;
+		font-weight: bold;
+	}
 }
 
-.navbar-dark .navbar-nav .nav-item .nav-link{
-	border: 1px solid #000000;
-	font-weight: bold;
-	min-width: 120px;
-	padding: 8px 15px;
+@media (max-width: 768px) {
+	.intradoHorizontalNav .navbar-nav .nav-item .nav-link.active {
+		background-color: #EBEAEC;
+		color: #582D82;
+	}
+
+	.intradoHorizontalNav .navbar-nav .nav-item .nav-link.active:focus,
+	.intradoHorizontalNav .navbar-nav .nav-item .nav-link.active:hover {
+		color: #582D82;
+	}
 }
 
-.navbar-dark .navbar-nav .nav-item .nav-link:hover,
-.navbar-dark .navbar-nav .nav-item .nav-link:focus {
-	font-style: italic;
-	background-color: #000000;
-	font-weight: bold;
-}
-
-.navbar-dark .navbar-nav .nav-item .nav-link.active {
-	border-top: 2px solid #009EE1;
-	background-color: #2D383F;
-	font-weight: bold;
-}
-
-.wssDropdownIcon {
+.intradoDropdownIcon {
 	width: 0 !important;
-	margin-right: 10px !important;
-	margin-top: 5px;
+	margin-right: 15px !important;
+	color: #939393;
+}
+
+#intradoMainNav2 {
+	padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+	/* adjust padding on help and other links */
+	.intradoTopNavBarLink {
+		padding: 0 25px !important;
+	}
+}
+
+#intradoUserProfileBar {
+	background-color: #F5F5F5;
+}
+
+@media (max-width: 768px) {
+	#intradoUserProfileBar {
+		padding: 0px;
+	}
+}
+
+.intradoSmallerIcon {
+	font-size: 20px;
 }
 
 /*****************************************
@@ -189,57 +198,65 @@ h6 {
 *  
 ******************************************/
 
-/* Create grey divider bar to separate menus from header */
-#wssMenuDividerBar {
-	width: 100%; 
-	height: 5px; 
-	background-color: #CCCCCC; 
-	border: 1px solid #797979;
-}
-
-.wssSidebar {
-	background-color: #2D383F;
+.intradoSidebar {
+	background-color: #F5F5F5;
 	padding: 0px;
 }
 
 @media (min-width: 768px) {
-  .wssSidebar {
+  .intradoSidebar {
 	position: fixed;
-    top: 55px; /* extend from bottom of header */
+    top: 62px; /* extend from bottom of header */
     bottom: 0px; /* extend to bottom of footer */
     left: 0;
     z-index: 1000;
     display: block;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    border-right: 1px solid #eee;
 	min-width: 150px;
+	box-shadow: none;
   }
   
-  .wssFullWidth {
+  .intradoFullWidth {
 	  width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .wssLeftNav {
-	  background-color: #2D383F;
+  .intradoLeftNav {
+	  background-color: #F5F5F5;
   }	
 }
 
-/* right border active indicator */
-.wssSidebar .navbar-nav .nav-link.active{
-		border-top: 1px solid #000000 !important;
-		border-right: 10px solid #009EE1;
-		padding-left: 14px;
-		background-color: #2D383F;
-		font-weight: bold;
+.intradoSidebar .navbar-nav .nav-link {
+	color: #582D82 !important;
+	padding: 10px 25px;
+	font-weight: 400;
 }
 
-.wssVerticalPage {
+/* right border active indicator */
+.intradoSidebar .navbar-nav .nav-link.active{
+		border-right: 5px solid #582D82;
+		padding: 10px 25px;
+		background-color: #EBEAEC;
+		color: #582D82 !important;
+}
+
+.intradoSidebar .navbar-nav .nav-link:hover,
+.dropdown-item:focus, .dropdown-item:hover,
+.navbar-dark .navbar-nav .show>.nav-link:active,
+.navbar-dark .navbar-nav .show>.nav-link:focus {
+	background-color: #582D82 !important;
+	color: #FFFFFF !important;
+}
+
+.intradoVerticalPage {
 	padding-top: 15px;
 }
 
+.navbar-nav .dropdown-menu {
+	width: 100%
+}
 
 /*****************************************
 *  
@@ -247,53 +264,59 @@ h6 {
 *  
 ******************************************/
 
-.wssTopMenu {
-	padding-left: 10px !important;
-	font-weight: bold;
+.card-header.card-header.intradoAccordionPanel.intradoTopMenu a,
+.card-header.card-header.intradoAccordionPanel.intradoSecondaryAccordion a {
+	font-size: 14px;
+	color: #582D82;
 }
 
-.wssSubMenu {
-	padding: 5px 5px 5px 25px;
-	font-weight: bold;
-	background-color: #E4E4E4;
-	border: 1px solid #FFFFFF;
+.card-header.card-header.intradoAccordionPanel.intradoTopMenu {
+	background-color: #F5F5F5;
+	padding: 10px 25px;
 }
 
-.wssSubSubMenu {
+.intradoSubMenu {
+	padding: 10px 10px 5px 25px;
+	background-color: #F5F5F5;
+}
+
+.intradoSubSubMenu {
 	padding: 5px 5px 5px 40px;
-	font-weight: bold;
-	background-color: #E4E4E4;
-	border: 1px solid #FFFFFF;
+	background-color: #F5F5F5;
 }	
 
-.wssSubMenu > a, .wssSubSubMenu > a {
-	color: #000000;
+.intradoSubMenu > a, .intradoSubSubMenu > a {
+	color: #582D82;
+	font-weight: normal !important;
 }
 
-.wssSubSubMenu.active {
-	border-right: 10px solid #009EE1;
+.intradoSecondaryAccordion {
+	background-color: #F5F5F5 !important;
 }
 
-.wssSecondaryAccordion {
-	background-color: #C9C9C9 !important;
-	color: #000000 !important;
-	border: 1px solid #FFFFFF !important;
-	font-weight: bold;
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion a ,
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion.collapsed a {
+	color: #582D82;
 }
 
-.card-header.wssAccordionPanel.wssSecondaryAccordion a ,
-.card-header.wssAccordionPanel.wssSecondaryAccordion.collapsed a,
-.card-header.wssAccordionPanel.wssSecondaryAccordion.collapsed .chevron:after {
-	color: #000000;
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion:hover,
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion:focus,
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion > a:hover,
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion > a:focus,
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion:active {
+	background-color: #582D82 !important;
+	color: #FFFFFF !important;
+	text-decoration: none;
 }
 
 /* Remove extra border for inner accordion panels */
-.wssNoBorder {
-	border: none;
+.intradoNoBorder {
+	border: none !important;
+	box-shadow: none;
 }
 
 /* Place expand/collapse icons on right for Accordion Menu */
-.wssAccordionMenuIcon{
+.intradoAccordionMenuIcon {
 	float: right;
 	padding-top: 3px;
 }
@@ -304,56 +327,65 @@ h6 {
 *  
 ******************************************/
 
-.nav-tabs {
-	border-bottom: none;
+.card {
+	border-radius: 0px;
 }
 
-.nav-tabs .nav-item .nav-link {
-  border: 1px solid #000000;
-  border-bottom: none;
-  color: #FFFFFF;
-  background-color: #2D383F;
-  border-radius: 0px;
-  line-height: 0px;
-  margin-right: 0px;
-  padding: 15px 15px;
-  font-weight: bold;
-  min-width: 150px;
+.nav-tabs { 
+	border-bottom: 2px solid #DDD; 
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-top: 10px;
 }
 
-.nav-tabs .nav-item .nav-link:hover,
-.nav-tabs .nav-item .nav-link:focus {
-  border-color: #000000;
-  border-bottom: none;
-  background-color: #000000;
-  color: #FFFFFF;
-  font-weight: bold;
-  font-style: italic;
+.nav-tabs .nav-link {
+	padding: 0.5rem 2rem 0.75rem !important;
 }
 
-.nav-tabs .nav-item .nav-link.active {
-  font-style: normal; /*don't italicize title of active tab on hover*/
+.nav-tabs .nav-link.active, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { 
+	border-width: 0; 
+}
+	
+.nav-tabs > li > a { 
+	border: none; color: #666; 
 }
 
-.nav-tabs .nav-item .nav-link.active,
-.nav-tabs .nav-item .nav-link.active:hover,
-.nav-tabs .nav-item .nav-link.active:focus {
-  color: #000000;
-  background-color: #FFFFFF;
-  border-color: #797979;
-  border-bottom: none;
-  font-weight: bold;
+.nav-tabs .nav-link.active, .nav-tabs > li > a:hover { 
+	border: none;
+	color: #582D82 !important;
+	background: transparent; 
+	font-weight: bold;
+}
+		
+.nav-tabs > li > a::after { 
+	content: ""; 
+	background: #582D82; 
+	height: 3px; 
+	position: absolute; 
+	width: 100%; 
+	left: 0px; 
+	bottom: -1px; 
+	transition: all 250ms ease 0s; 
+	transform: scale(0); 
+}
+	
+.nav-tabs .nav-link.active::after, .nav-tabs > li:hover > a::after { 
+	transform: scale(1); 
+}
+
+.tab-nav > li > a::after { 
+	background: #582D82 none repeat scroll 0% 0%; color: #fff; 
+}
+
+.tab-pane { 
+	padding: 15px 0; 
 }
 
 .tab-content {
-  border: 1px solid #666666;
-  padding-top: 15px;
+	padding:20px;
+	border-top: none;
+	border-radius: 3px;
 }
-
-.wssTabIcon {
-  line-height: 0px !important;
-}
-
 
 /*****************************************
 *  
@@ -361,35 +393,37 @@ h6 {
 *  
 ******************************************/
 
-.wssLinkDefault {
+.intradoLinkDefault {
 	text-decoration: underline;
 }
 
 a {
-	color: #005DAC;
+	color: #582D82;
 }
 
-a:focus, a:hover, .wssLinkActive {
-	color: #001b46;
+a:focus, a:hover, .intradoLinkActive {
+	color: #582D82;
+	text-decoration: underline;
 }
 
-a:active, .wssLinkVisited {
-	color: #492f91;
+a:active, .intradoLinkVisited {
+	color: #582D82;
 }
 
-.wssLinkDarkBackground {
+.intradoLinkDarkBackground {
 	color: #FFFFFF;
 }
 
-.wssLinkDarkBackground:focus,
-.wssLinkDarkBackground:hover,
-.wssLinkDarkBackground-active {
-	color: #009EE1;
+.intradoLinkDarkBackground:focus,
+.intradoLinkDarkBackground:hover,
+.intradoLinkDarkBackground-active {
+	color: #FFFFFF;
+	text-decoration: underline;
 }
 
-.wssLinkDarkBackground:active,
-.wssLinkDarkBackground-visited {
-	color: #AE9CDF;
+.intradoLinkDarkBackground:active,
+.intradoLinkDarkBackground-visited {
+	color: #FFFFFF;
 }
 
 /*****************************************
@@ -401,106 +435,24 @@ a:active, .wssLinkVisited {
 .breadcrumb {
 	background: none;
 	margin-bottom: 5px;
-	font-size: 12px;
+	text-decoration: none !important;
+}
+
+.breadcrumb-item > a {
+	color: #75868C !important;
 }
 
 .breadcrumb > .active {
   color: #000000;
-  font-weight: bold;
 }
 
 /* Styling for breadcrumbs on dark backgrounds */
-.breadcrumb.wssDarkBackground > li + li:before {
+.breadcrumb.intradoDarkBackground > li + li:before {
   color: #FFFFFF;
 }
 
-.breadcrumb.wssDarkBackground > .active {
+.breadcrumb.intradoDarkBackground > .active {
   color: #FFFFFF;
-}
-
-/** Button-style breadcrumbs **/
-.wssBtnBreadcrumb .btn:not(:last-child):after {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 10px solid white;
-  position: absolute;
-  top: 50%;
-  margin-top: -17px;
-  left: 100%;
-  z-index: 3;
-}
-.wssBtnBreadcrumb .btn:not(:last-child):before {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 10px solid #000000;
-  position: absolute;
-  top: 50%;
-  margin-top: -17px;
-  margin-left: 1px;
-  left: 100%;
-  z-index: 3;
-}
-
-/** The Spacing **/
-.wssBtnBreadcrumb .btn {
-  padding:6px 12px 6px 24px;
-}
-.wssBtnBreadcrumb .btn:first-child {
-  padding:6px 6px 6px 10px;
-}
-.wssBtnBreadcrumb .btn:last-child {
-  padding:6px 18px 6px 24px;
-}
-
-/** Default button **/
-.wssBtnBreadcrumb .btn.btn-secondary:not(:last-child):after {
-  border-left: 10px solid #DDDDDD;
-}
-.wssBtnBreadcrumb .btn.btn-secondary:not(:last-child):before {
-  border-left: 10px solid #000000;
-}
-.wssBtnBreadcrumb .btn.btn-secondary:hover:not(:last-child):after {
-  border-left: 10px solid #DDDDDD;
-}
-.wssBtnBreadcrumb .btn.btn-secondary:hover:not(:last-child):before {
-  border-left: 10px solid #000000;
-}
-
-/* Disable standard box shadow for buttons since this causes undesired button overlap */
-/* Just underline text link instead */
-.wssBtnBreadcrumb .btn.btn-secondary:hover, .wssBtnBreadcrumb .btn.btn-secondary:focus {
-	box-shadow: none;
-	text-decoration: underline;
-}
-
-.wssBtnBreadcrumb .btn.btn-secondary.active:hover{
-	text-decoration: none;
-}
-
-.wssBtnBreadcrumb .btn.btn-primary.active:hover, .wssBtnBreadcrumb .btn.btn-primary.active:focus {
-	box-shadow: none;
-	background-color: #1B4478;;
-}
-
-/* Disable hover behavior for active button (dark backgrounds only) */
-.wssBtnBreadcrumb .btn.btn-secondary.active:hover, .wssBtnBreadcrumb .btn.btn-secondary.active:focus, .wssBtnBreadcrumb .btn.btn-secondary.active {
-	background-color: #A1A1A1;
-	border-color: #000000;
-	box-shadow: none;
-	color: #000000;
-}
-
-/* Prevents undesired button overlap on hover */
-.wssBtnBreadcrumb>.btn:hover, .wssBtnBreadcrumb>.btn:focus{
-	z-index: auto;
 }
 
 /*****************************************
@@ -509,43 +461,44 @@ a:active, .wssLinkVisited {
 *  
 ******************************************/
 
-.card-header {
-	padding: 5px;
+.card-header.collapsed i {
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	transform: rotate(180deg);
+	transition: transform 200ms;
+	color: #8E99AB;
 }
 
-/* Accordion icons */
-.card-header .chevron:after {
-    content: "\f078";   
-}
-.card-header.collapsed .chevron:after {
-    content: "\f054"; 
-	color: #FFFFFF;
+.card-header i {
+	color: #8E99AB;
+	transition: transform 200ms;
 }
 
 /* Standard Accordions */
-.card-header.wssAccordionPanel a {
-	color: #FFFFFF;
+.card-header.intradoAccordionPanel a {
+	color: #000000;
 }
 
-.card-header.wssAccordionPanel.collapsed a {
-	color: #FFFFFF;
+.card-header.intradoAccordionPanel.collapsed a {
+	color: #000000;
 }
 
-.card-header.wssAccordionPanel.collapsed {
-	background-color: #2D383F;
-	color: #FFFFFF;
-	border-radius: 0px;
-	border-color: #000000
+.card-header.intradoAccordionPanel.collapsed {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: none;
 }
 
-.card-header.wssAccordionPanel {
-	background-color: #2D383F;
-	color: #FFFFFF;
-	border-radius: 0px;
-	border-color: #000000;
+.card-header.intradoAccordionPanel {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: none;
+	padding: 15px 25px;
+	font-size: 16px;
+	font-weight: normal;
 }
 
-.card-header.wssAccordionPanel:hover, .card-header.collapsed:hover {
+.card-header.intradoAccordionPanel:hover, .card-header.collapsed:hover {
 	cursor: pointer;
 }
 
@@ -558,68 +511,80 @@ a:active, .wssLinkVisited {
 	margin-top: 0px;
 }
 
-.wssAccordionContent {
-	margin: 5px 25px;
+.intradoAccordionContent {
+	margin: 10px 25px;
 }
 
-/*Minimalist Accordions */
-.card-header.wssAccordionPanelMin {
-	background-color: #FFFFFF;
-	color: #000000;
-	border: none;
-	padding-bottom: 0px;
+.intradoSignInPanel {
+	min-width: 500px;
 }
 
-.card-header.wssAccordionPanelMin a{
-	color: #000000;
-}
-
-.card-header.wssAccordionPanelMin.collapsed .chevron:after {
-    content: "\f054"; 
-	color: #000000;
-}
-
-.card-header.wssAccordionPanelMin:hover, .card-header.collapsed:hover {
-	cursor: pointer;
-}
-
-.wssPanelMin {
-	border: none;
-}
-
-.wssAccordionContentMin {
-	margin: 0px 40px;
-}
-
-.wssHorizontalLine {
-	margin-top: 10px;
-	border: 1px solid #000000;
-	width: 95%;
-	float: right;
-}
-
-/* Adjust for smaller screen widths */
-@media (max-width: 1160px){
-	.wssHorizontalLine {
-		margin-top: 10px;
-		border: 1px solid #000000;
-		width: 80%;
-		float: right;
-	}
-}
 /*****************************************
 *  
 *  Forms
 *  
 ******************************************/
 
-label {
-	font-weight: bold;
+.md-form input:not([type]):focus:not([readonly]),
+    .md-form input[type=text]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=password]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=email]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=url]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=time]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=date]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=datetime]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=tel]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=number]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=search]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=search-md]:focus:not([readonly]),
+    .md-form textarea.md-textarea:focus:not([readonly]) {
+      border-bottom: 1px solid #582D82;
+	  box-shadow: 0 1px 0 0 #582D82; 
 }
 
-/* Remove rounded-corners on text-fields */
+.md-form input:not([type]):focus:not([readonly]) + label,
+      .md-form input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=search-md]:focus:not([readonly]) + label,
+      .md-form textarea.md-textarea:focus:not([readonly]) + label {
+		color: #582D82; 
+}
+
+.md-form.md-outline label {
+	font-weight: normal !important;
+}
+
+.md-form.md-outline input[type=text]:focus:not([readonly]),
+      .md-form.md-outline input[type=password]:focus:not([readonly]),
+      .md-form.md-outline input[type=email]:focus:not([readonly]),
+      .md-form.md-outline input[type=url]:focus:not([readonly]),
+      .md-form.md-outline input[type=time]:focus:not([readonly]),
+      .md-form.md-outline input[type=date]:focus:not([readonly]),
+      .md-form.md-outline input[type=datetime-local]:focus:not([readonly]),
+      .md-form.md-outline input[type=tel]:focus:not([readonly]),
+      .md-form.md-outline input[type=number]:focus:not([readonly]),
+      .md-form.md-outline input[type=search-md]:focus:not([readonly]),
+      .md-form.md-outline input[type=search]:focus:not([readonly]),
+      .md-form.md-outline textarea.md-textarea:focus:not([readonly]) {
+		border-color: #582D82;
+	  }
+
+.md-form label {
+	left: inherit; /* aligns label with field when grid used */
+}
+
 .form-control {
-	border-radius: 0px;
+	color: #000000 !important;
 }
 
 /* Custom radio buttons and checkboxes */
@@ -652,33 +617,33 @@ input[type="radio"] + label {
 input[type="checkbox"] + label::before,
 input[type="radio"] + label::before {
   background: #ffffff;
-  border-radius: 0.3rem;
+  border-radius: 0;
   box-shadow: 0 0 0 1px #797979;
   content: '\a0';
   display: inline-block;
-  height: 0.9rem;
-  line-height: 0.9rem;
+  height: 1rem;
+  line-height: 1rem;
   margin-right: 0.8em;
   text-indent: 0.15em;
   vertical-align: middle\0;
-  width: 0.9rem;
+  width: 1rem;
 }
 
 input[type="radio"] + label::before {
   box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #797979;
-  height: 0.5rem;
-  line-height: 0.5rem;
-  width: 0.5rem;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  width: 0.75rem;
   border-radius: 100%;
 }
 
 input[type="checkbox"]:checked + label::before,
 input[type="radio"]:checked + label::before {
-  background-color: #005DAC;
+  background-color: #582D82;
 }
 
 input[type="radio"]:checked + label::before {
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #005DAC;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #582D82;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -702,29 +667,24 @@ input[type="radio"]:disabled + label::before {
 
 input[type="checkbox"]:checked:disabled + label::before,
 input[type="radio"]:checked:disabled + label::before {
-  background-color: 276AA2;
+  background-color: #582D82;
   opacity: .65;
 }
 
-/* Focus checkbox and radio buttons */
-input[type="checkbox"]:focus + label,
-input[type="radio"]:focus + label {
-  border: 1px solid #009EE1;
-  border-radius: 5px;
-}
+input[type="radio"] + label::before:focus {
+	background-color: red !important;
+  }
 
-/* Hover checkbox and radio buttons */
-input[type="checkbox"]:hover + label,
-input[type="radio"]:hover + label {
-  border: 1px solid #009EE1;
-  border-radius: 5px;
-}
-
-.wssUnstyledList {
+.intradoUnstyledList {
 	list-style-type: none;
 	margin-left: 5px;
 	padding: 0;
  }
+
+.intradoSignInBtn {
+	margin: 0;
+	width: 100%
+}
 
 /*****************************************
 *  
@@ -732,28 +692,28 @@ input[type="radio"]:hover + label {
 *  
 ******************************************/
 
-.wssFooter {
+.intradoFooter {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 40px;
-  background: #E4E4E4;
+  background: #F5F5F5;
 }
 
-.wssFooterText {
+.intradoFooterText {
 	margin: 10px;
 	color: #000000;
 	font-size:12px !important;
 }
 @media (min-width: 768px) {
-  .wssLeftNavFooter {
+  .intradoLeftNavFooter {
     padding-left: 18%;
   }
 }
 
 @media (min-width: 768px) {
-  .wssAccordionNavFooter {
+  .intradoAccordionNavFooter {
     padding-left: 20%;
   }
 }
@@ -765,92 +725,45 @@ input[type="radio"]:hover + label {
 ******************************************/
 
 .btn {
-                font-weight: bold;
+                font-weight: medium;
 				font-size: 14px;
-                border-width: 1px;
 
 }
 
 .btn-primary {
-                background-color: #005DAC;
-                border-color: #1B4478;
-                color: #FFFFFF;
-}
-
-.btn-primary:hover,
-.btn-primary.hover,
-.btn-primary:focus,
-.btn-primary.focus{
-                background-color: #005DAC;
-                color: #FFFFFF;
-                border-color: #1B4478;
-                box-shadow: 0 0 14px 0 #009EE1;
+				background-color: #582D82 !important;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active {
-                background-color: #1B4478;
-                border-color: #1B4478;
-                color: #FFFFFF;
-}
-
-.btn-primary:disabled {
-                background-color: #276AA2;
-                color: #E4E4E4;
-                border-color: #1B4478;
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active {
+                background-color: #7332B3 !important;
 }
 
 .btn-secondary {
-                background-color: #DDDDDD;
-                color: #000000;
-                border-color: #000000;
+                background-color: #FFFFFF !important;
+                color: #582D82;
 }
 
 .btn-secondary:hover,
 .btn-secondary.hover,
 .btn-secondary:focus,
 .btn-secondary.focus {
-                background-color: #DDDDDD;
-                color: #000000;
-                border-color: #000000;
-                box-shadow: 0 0 14px 0 #009EE1;
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active,
-.btn-secondary:not(:disabled):not(.disabled):active {
-                background-color: #A1A1A1;
-                color: #000000;
-                border-color: #000000;
+                color: #582D82;
 }
 
 .btn-secondary:disabled {
-                background-color: #DDDDDD;
-                border-color: #606060;
-                color: #606060;
+                color: #582D82;
+}
+
+.btn:disabled {
+	background-color: rgba(0,0,0,.11) !important;
+	color: rgba(0,0,0,.25) !important;
 }
 
 .btn-link {
- color: #005dac;
-}
-
-.btn.wssSmall {
-                width: 90px;
-}
-
-.btn.wssMedium {
-                width: 120px;
-}
-
-.btn.wssLarge {
-                width: 150px;
-}
-
-/* Use white hover styling when buttons are on dark backgrounds */
-.wssDarkBackgroundButton:hover,
-.wssDarkBackgroundButton.hover,
-.wssDarkBackgroundButton:focus,
-.wssDarkBackgroundButton.focus {
-	box-shadow: 0 0 14px 0 #FFFFFF;
+	color: #582D82 !important;
 }
 
 /*****************************************
@@ -863,71 +776,72 @@ input[type="radio"]:hover + label {
 .alert-danger,
 .alert-info,
 .alert-warning {
-                color: #000000;
-                font-weight: bold;
-                padding: 5px;
-                border-radius: 0px;
-                box-shadow: 5px 5px 5px #888888;
-                border-width: 2px;
+    color: #000000;
+    font-size: 16px;
+    border: none;
 }
 
 .alert-danger {
-                background-color: #F2DEDE;
-                border: 2px solid #ED1C24;
+    background-color: #F57F29;
 }
 
 .alert-success {
-                background-color: #DFF0D8;
-                border: 2px solid #00A262;
+    background-color: #3DA1AE;
 }
 
 .alert-info {
-			    background-color: #D9EDF7;
-			    border: 2px solid #009EE1;
+    background-color: #AFC5CD;
 }
 
 .alert-warning {
-                background-color: #FCF8E3;
-                border: 2px solid #F8C70F;
+    background-color: #F9C20A;
+}
+
+.close {
+	text-shadow: none;
+}
+
+.alert .material-icons {
+	padding-right: 10px;
 }
 
 /*****************************************
 *  
-*  Forms
+*  Sign In Form
 *  
 ******************************************/
 
-.wssSignInPanel {
-	max-width: 450px;
-    border-radius: 0px;
+.intradoSignInPanel {
+	max-width: 600px;
+	padding: 20px;
 }
 
-.wssSignInTitle {
-	padding-top: 10px;
+.intradoSignInTitle {
+	padding-top: 13px;
 }
 
-.wssSignInForm {
+.intradoSignInForm {
 	padding-bottom: 0px;
 }
 
-.wssSignInPadding {
+.intradoSignInPadding {
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-.wssSignInLink {
+.intradoSignInLink {
 	font-size: 12px;
 }
 
-.wssWhiteFont {
+.intradoWhiteFont {
 	color: #FFFFFF !important;
 }
 
-.wssDarkBackground {
+.intradoDarkBackground {
 	background-color: #000000;
 }
 
-.wssRequiredField {
+.intradoRequiredField {
 	color: #FF0000;
     font-weight: normal;
 }
@@ -938,35 +852,27 @@ input[type="radio"]:hover + label {
 *  
 ******************************************/
 
-.has-error .help-block,
-.has-error .col-form-label,
-.has-error .radio,
-.has-error .checkbox,
-.has-error .radio-inline,
-.has-error .checkbox-inline,
-.has-error .radio label,
-.has-error .checkbox label,
-.has-error .radio-inline label,
-.has-error .checkbox-inline label {
-  color: #B30000; /* for WCAG 2.0 readable error message */
+/* Remove 'x' displayed at end of text field */
+.form-control.is-invalid {
+	background-image: none !important;
 }
 
-.has-error .form-control {
-  border-color: #FF0000;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+.md-form .form-control.is-invalid {
+	color: #F57F29 !important;
+	border-bottom: 1px solid #F57F29 !important;
 }
 
-.has-error .form-control:focus {
-  border-color: #FF0000;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+.invalid-feedback {
+	color: #F57F29 !important;
 }
 
-.has-error .input-group-addon {
-  color: #B30000; /* for WCAG 2.0 readable error message */
-  background-color: #f2dede;
-  border-color: #FF0000;
+.md-form .form-control.disabled {
+	color: rgba(0, 0, 0, 0.38) !important;
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.42) !important;
+}
+
+.md-form.md-outline .form-control.is-invalid {
+	border: 1px solid #F57F29 !important;
 }
 
 /*****************************************
@@ -974,55 +880,21 @@ input[type="radio"]:hover + label {
 *  Tables
 *  
 ******************************************/
-.table td, .table th {
-	padding: .5rem;
+.table td {
+	font-size: 12px !important;
+	padding-top: .8rem !important;
+	padding-bottom: .8rem !important;
+	font-weight: normal;
 }
 
-.wssActiveTable, .wssActiveTableHeader, .wssActiveTableData {
-	border: 2px solid #FFFFFF;
-}
-
-.wssActiveTableHeader {
-	color: #FFFFFF;
-	background-color: #687982;
-}
-
-.wssPassiveTableHeader {
-	color: #687982;
-	background-color: #FFFFFF;
-}
-
-.table>thead>tr>th {
-	border-bottom: 2px solid #687982;
-	border-top: none;
-}
-
-.table>tbody>tr>td {
-	border-top: none;
-}
-
-.wssActiveTable>tbody>tr>td {
-	border: 2px solid #FFFFFF;
-}
-
-.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #FFFFFF;
-}
-
-.table-striped > tbody > tr:nth-of-type(even) {
-  background-color: #e4e4e4;
+.table th {
+	font-size: 12px !important;
+	font-weight: normal;
 }
 
 .table-hover > tbody > tr:hover {
-  background-color: #CCDFEE;
-}
-
-.fa-sort-down:before, .fa-sort-desc:before {
-                color: #FFFFFF;
-}
-
-.fa-sort-up:before, .fa-sort-asc:before {
-                color: #FFFFFF;
+  background-color: #582D82 !important;
+  color: white;
 }
 
 /*****************************************
@@ -1036,43 +908,30 @@ input[type="radio"]:hover + label {
     opacity: 100;
 }
 
+.modal-title {
+	font-size: 21px;
+	font-weight: 500; /* medium */
+	padding: 0 10px;
+}
+
 .modal-header {
-	color: #000000;
-	padding: 5px;
-	border-top-left-radius: 5px;
- 	border-top-right-radius: 5px;
-	font-weight: bold;
-	font-size: 14px;
+	border-bottom: none;
 }
 
-/* Custom WSS colors */
-.wssSuccessModalHeader {
-	background-color: #DFF0D8;
-	border: 2px solid #00A262;
+.modal-footer {
+	border-top: none;
 }
 
-.wssInfoModalHeader {
-	background-color: #D9EDF7; 
-	border: 2px solid #009EE1;
+.modal-content {
+	font-size: 16px;
 }
 
-.wssWarningModalHeader {
-	background-color: #FCF8E3; 
-	border: 2px solid #F8C70F;
+.modal-body {
+	padding: 0 25px;
 }
 
-.wssErrorModalHeader {
-	background-color: #F2DEDE; 
-	border: 2px solid #ED1C24;
-}
-
-.wssNeutralModalHeader {
-	background-color: #E4E4E4;
-	border: 2px solid #797979;
-}
-
-.wssLoadingModalHeader {
-	background-color: #005DAC;
+.intradoLoadingModalHeader {
+	background-color: #582D82;
 	color: #FFFFFF;
 }
 
@@ -1080,33 +939,77 @@ input[type="radio"]:hover + label {
 	border-radius: 6px 6px 0px 0px;
 }
 
-.wssLoadingModalContent {
+.intradoLoadingModalContent {
 	text-align: center;
 	padding: 5px;
 }
 
+.intradoPurpleText{
+	color: #582D82;
+}
+
+.intradoBlueText{
+	color: #3DA1AE;
+}
+
+.intradoGreyText {
+	color: #758687;
+}
+
+.intradoDarkGreyText {
+	color: #514F4D;
+}
 /*****************************************
 *  
 *  Dropdowns
 *  
 ******************************************/
 
+/* Style Select Field */
 select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #ffffff;
-  background-image: url("../images/arrow-down.png");
-  background-image: url("../images/arrow-down.svg");
-  background-position: right 1rem center;
-  background-repeat: no-repeat;
-  background-size: 0.75rem;
-
-}
-
-.wssDropdownCaret {
-	background-image: url("../images/arrow-down.svg");
-}
+	-moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+	font-family: inherit !important;
+	background-color: transparent !important;
+	width: 100% !important;
+	padding: 4px 0 !important;
+	font-size: 16px !important;
+	color: rgba(0,0,0, 0.26) !important;
+	border: none !important;
+	border-bottom: 1px solid rgba(0,0,0, 0.12) !important;
+	border-radius: 0 !important;
+  }
+  /* Remove focus */
+  select:focus {
+	outline: none !important;
+  }
+  /* Hide label */
+  .mdl-selectfield label {
+	display: none !important;
+  }
+  /* Use custom arrow */
+  .mdl-selectfield select {
+	appearance: none !important;
+  }
+  .mdl-selectfield {
+	font-family: 'Roboto', 'Poppins', 'Arial', sans-serif !important;
+	position: relative !important;
+  }
+  .mdl-selectfield:after {
+	position: absolute !important;
+	top: 1em !important;
+	right: 0.5em !important;
+	/* Styling the down arrow */
+	width: 0 !important;
+	height: 0 !important;
+	padding: 0 !important;
+	content: '' !important;
+	border-left: 0.375em solid transparent !important;
+	border-right: 0.375em solid transparent !important;
+	border-top: 0.5em solid rgba(0,0,0, 0.25) !important;
+	pointer-events: none !important;
+  }
 
 /*****************************************
 *  
@@ -1115,103 +1018,23 @@ select {
 ******************************************/
 
 /* Supports accessibility so button is not empty */
-.wssTooltipButtonLabel {
+.intradoTooltipButtonLabel {
 	font-size: 0;
 	font-color: transparent;
 }
 
-.popover-header {
-	font-size: 14px;
+.bs-tooltip-top .arrow {
+	display: none;
 }
 
-.wssPopoverIcon {
-	color: #005dac;
+.tooltip-inner {
+	background-color: #616161;
+	font-size: 10px;
+}
+
+.intradoPopoverIcon {
+	color: #582D82;
 	display:inline-block; /* chrome-fix */
 	cursor: pointer;
-}
-
-/* Success Tooltips */
-.wssSuccessPopoverHeader {
-	background-color: #DFF0D8;
-	border: 2px solid #00A262;
-}
-
-/* Add fa-check icon */
-.wssSuccessPopoverHeader:before {
-	content: "\f00c"; /*fa-check*/
-	font-family: FontAwesome;
-	padding-right: 10px;
-	/*fa-lg*/
-	font-size: 1.33333333em;
-    line-height: 0.75em;
-    vertical-align: -15%;
-	/*fa-fw*/
-	width: 1.28571429em;
-    text-align: center;
-}
-
-/* Info Tooltips */
-.wssInfoPopoverHeader {
-	background-color: #D9EDF7; 
-	border: 2px solid #009EE1;
-}
-
-/* Add fa-info-circle icon */
-.wssInfoPopoverHeader:before {
-	content: "\f05a"; /*fa-info-circle*/
-	font-family: FontAwesome;
-	padding-right: 10px;
-	/*fa-lg*/
-	font-size: 1.33333333em;
-    line-height: 0.75em;
-    vertical-align: -15%;
-	/*fa-fw*/
-	width: 1.28571429em;
-    text-align: center;
-}
-
-/* Warning Tooltips */
-.wssWarningPopoverHeader {
-	background-color: #FCF8E3; 
-	border: 2px solid #F8C70F;
-}
-
-/* Add fa-exclamation-triangle icon */
-.wssWarningPopoverHeader:before {
-	content: "\f071"; /*fa-exclamation-triangle*/
-	font-family: FontAwesome;
-	padding-right: 10px;
-	/*fa-lg*/
-	font-size: 1.33333333em;
-    line-height: 0.75em;
-    vertical-align: -15%;
-	/*fa-fw*/
-	width: 1.28571429em;
-    text-align: center;
-}
-
-/* Error Tooltips */
-.wssErrorPopoverHeader {
-	background-color: #F2DEDE; 
-	border: 2px solid #ED1C24;
-}
-
-/* Add fa-times-circle icon */
-.wssErrorPopoverHeader:before {
-	content: "\f057"; /*fa-times-circle*/
-	font-family: FontAwesome;
-	padding-right: 10px;
-	/*fa-lg*/
-	font-size: 1.33333333em;
-    line-height: 0.75em;
-    vertical-align: -15%;
-	/*fa-fw*/
-	width: 1.28571429em;
-    text-align: center;
-}
-
-/* Neutral Tooltips */
-.wssNeutralPopoverHeader {
-	background-color: #E4E4E4;
-	border: 2px solid #797979;
+	padding-left: 10px;
 }

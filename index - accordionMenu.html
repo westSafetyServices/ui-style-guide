@@ -4,81 +4,92 @@
   <title>Accordion Menu</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/fontawesome-free-5.2.0-web/css/all.min.css">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="icon" href="images/west_favicon.png" type="image/png">
-  <script src="lib/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Material Icons -->
+  <link href="fonts/material-design-icons/material-icons.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Life & Safety Custom CSS -->
+  <link href="css/custom.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+	
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="lib/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom JavaScript (enable tooltips) -->
+  <script type="text/javascript" src="js/custom.js"></script>
 </head>
 
 <!-- Header -->
-<nav class="navbar navbar-expand-lg navbar-dark wssBlackBackground" id="wssHeaderBar">
-    <a class="navbar-brand" id="wssLogoLink" href="#" ><img src="images/west_logo.png" id="wssWestLogo" alt="West logo">Application Title</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wssUserProfileDropdown, #wssInnerSideNavBar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="fas fa-bars wssWhiteFont"></span>
-    </button>  
-  <div class="collapse navbar-collapse" id="wssUserProfileDropdown">
+<nav class="navbar navbar-expand-md navbar-dark intradoPurpleBackground" id="intradoHeaderBar">
+  <a class="navbar-brand" id="intradoLogoLink" href="#" ><img src="images/Intrado-reverse-tagline-small.png" id="intradoLogo" alt="West logo">Application Name</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#intradoUserProfileDropdown, #intradoInnerSideNavBar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="material-icons">menu</i>
+  </button>
+  <div class="collapse navbar-collapse" id="intradoUserProfileDropdown">
     <ul class="navbar-nav ml-auto">
        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="wssUserProfileMenu" data-toggle="dropdown"><i class="fas fa-fw fa-user" aria-hidden="true"></i> really really long username <i class="fas fa-fw fa-chevron-down" aria-hidden="true"></i></a>
-          <div class="dropdown-menu" aria-labelledby="wssUserProfileMenu">
-            <a href="javascript:void(0);" class="dropdown-item userProfileMenuOption"><i class="fas fa-fw fa-question-circle" aria-hidden="true"></i> Help</a>
-            <div class="dropdown-divider"></div>
-            <a href="javascript:void(0);" class="dropdown-item userProfileMenuOption"><i class="fas fa-fw fa-sign-out-alt" aria-hidden="true"></i> Sign Out</a>
+          <a class="nav-link dropdown-toggle" href="#" id="intradoUserProfileMenu" data-toggle="dropdown"><i class="material-icons" aria-hidden="true">person</i> username <i class="material-icons" aria-hidden="true">expand_more</i></a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="intradoUserProfileMenu">
+            <a href="javascript:void(0);" class="dropdown-item"><i class="material-icons" aria-hidden="true">help_outline</i> Help</a>
+            <a href="javascript:void(0);" class="dropdown-item"><i class="material-icons" aria-hidden="true">exit_to_app</i> Sign Out</a>
           </div>
        </li>
     </ul>
   </div>
 </nav>
-<div id="wssMenuDividerBar" class="container-fluid"></div>
+<div id="intradoMenuDividerBar" class="container-fluid"></div>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-2 wssLeftNav">    
-      <nav class="navbar navbar-expand-lg navbar-dark wssSidebar col-sm-2" id="wssLeftSideBar">
-        <div class="collapse navbar-collapse" id="wssInnerSideNavBar">
-          <ul class="navbar-nav flex-column wssFullWidth">
-            <li class="accordion" id="wssAccordion">
-              <div class="card">
-                <div class="card-header wssAccordionPanel wssTopMenu"><a href="javascript:void(0);"> Menu Item 1</a></div>
-                <div class="collapse show" id="wssCollapseOrderItems1">
-                  <div class="wssSubMenu"><a href="javascript:void(0);"> Sub-Menu 1</a></div>
-                  <div class="card wssNoBorder">
-                    <div class="card-header wssAccordionPanel wssSecondaryAccordion" data-toggle="collapse" data-target="#wssCollapseOrderItemsSub2"><a href="javascript:void(0);">Sub-Menu 2 <i class="chevron fas fa-fw wssAccordionMenuIcon"></i></a></div>
-                    <div class="collapse show" id="wssCollapseOrderItemsSub2">
-                      <div class="wssSubSubMenu"><a href="javascript:void(0);">Sub-Menu 2.1</a></div>
-                      <div class="wssSubSubMenu"><a href="javascript:void(0);">Sub-Menu 2.2</a></div>
-                      <div class="wssSubSubMenu"><a href="javascript:void(0);">Sub-Menu 2.3</a></div>
+    <div class="col-md-2 intradoLeftNav">    
+      <nav class="navbar navbar-expand-md navbar-dark intradoSidebar col-md-2" id="intradoLeftSideBar">
+        <div class="collapse navbar-collapse" id="intradoInnerSideNavBar">
+          <ul class="navbar-nav flex-column intradoFullWidth">
+            <li class="nav-item">
+              <a class="nav-link active" href="javascript:void(0);">Menu 1</a>
+            </li>
+            <li class="accordion" id="intradoAccordion">
+                  <div class="card-header intradoAccordionPanel intradoSecondaryAccordion d-flex justify-content-between nav-link" data-toggle="collapse" data-target="#intradoCollapseOrderItems1"><a href="javascript:void(0);">Menu 2</a><i class="material-icons">expand_less</i></div>
+                    <div class="collapse show" id="intradoCollapseOrderItems1">
+                        <div class="nav-item intradoSubSubMenu"><a class="nav-link" href="javascript:void(0);">Sub-Menu 1</a></div>
+                        <div class="nav-item intradoSubSubMenu"><a class="nav-link" href="javascript:void(0);">Sub-Menu 2</a></div>
+                        <div class="nav-item intradoSubSubMenu"><a class="nav-link" href="javascript:void(0);">Sub-Menu 3</a></div>
                     </div>
+            </li>
+            <li class="accordion" id="intradoAccordion">
+                <div class="card-header intradoAccordionPanel intradoSecondaryAccordion d-flex justify-content-between" data-toggle="collapse" data-target="#intradoCollapseOrderItems2"><a href="javascript:void(0);">Menu 3</a><i class="material-icons">expand_less</i></div>
+                  <div class="collapse show" id="intradoCollapseOrderItems2">
+                      <div class="nav-item intradoSubSubMenu"><a class="nav-link" href="javascript:void(0);">Sub-Menu 1</a></div>
+                      <div class="nav-item intradoSubSubMenu"><a class="nav-link" href="javascript:void(0);">Sub-Menu 2</a></div>
+                      <div class="nav-item intradoSubSubMenu"><a class="nav-link" href="javascript:void(0);">Sub-Menu 3</a></div>
                   </div>
-                  <div class="card wssNoBorder">
-                  <div class="card-header wssAccordionPanel wssSecondaryAccordion" data-toggle="collapse" data-target="#wssCollapseOrderItemsSub3"><a href="javascript:void(0);">Sub-Menu 3<i class="chevron fas fa-fw wssAccordionMenuIcon"></i></a></div>
-                    <div class="collapse show" id="wssCollapseOrderItemsSub3">
-                      <div class="wssSubSubMenu"><a href="javascript:void(0);">Sub-Menu 3.1</a></div>
-                      <div class="wssSubSubMenu"><a href="javascript:void(0);">Sub-Menu 3.2</a></div>
-                      <div class="wssSubSubMenu active"><a href="javascript:void(0);">Sub-Menu 3.3</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </li>
           </ul>
 	    </div>	
       </nav>
     </div>
-	<div class="col-sm-10 wssVerticalPage">
+	<div class="col-md-10 intradoVerticalPage">
       <div class="container-fluid">
         <h1>Page Title</h1>
         <p>Example page content</p>
       </div>
-      <div style="height:350px" id="wssPlaceholderForFrontify"></div>
+      <div style="height:450px" id="intradoPlaceholderForFrontify"></div>
     </div>
   </div>
 </div>
 <body>
 </body>
 <!-- Footer -->
-<footer class="wssFooter text-left">
-  <p class="wssFooterText wssAccordionNavFooter">&copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.west.com" target="_blank">West Corporation</a>. All Rights Reserved.</p>		
+<footer class="intradoFooter text-left">
+  <p class="intradoFooterText intradoLeftNavFooter">&copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.intrado.com" target="_blank">Intrado</a>. All Rights Reserved.</p>		
 </footer>
 </html>
