@@ -1,9 +1,23 @@
-    $(function () {
-        $('#wssPopover1').popover({template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header wssSuccessPopoverHeader"></h3><div class="popover-body"></div></div>'});
-	    $('#wssPopover2').popover({template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header wssInfoPopoverHeader"></h3><div class="popover-body"></div></div>'});
-	    $('#wssPopover3').popover({template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header wssWarningPopoverHeader"></h3><div class="popover-body"></div></div>'});
-	    $('#wssPopover4').popover({template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header wssErrorPopoverHeader"></h3><div class="popover-body"></div></div>'});
-	    $('#wssPopover5').popover({template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header wssNeutralPopoverHeader"></h3><div class="popover-body"></div></div>'});
-	    $('#wssDarkPopover').popover({template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header wssInfoPopoverHeader"></h3><div class="popover-body"></div></div>'});
-      });
-	$('[data-toggle="popover"]').popover();
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+		$('body').tooltip({
+			selector: "[data-toggle='tooltip']",
+			trigger: "click"
+		});
+
+		/* Workaround for pre-filled text to not overlap with labels */
+		$('input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=time], textarea').each(function (element, i) {
+			if ((element.value !== undefined && element.value.length > 0) || $(this).attr('placeholder') !== null) {
+				$(this).siblings('label').addClass('active');
+			}
+			else {
+				$(this).siblings('label').removeClass('active');
+			}
+		});
+
+		/* Update the label color when validation fails (cannot be done via CSS alone) */
+		$('label[for=form3').css('color', '#F57F29');
+		$('label[for=formc').css('color', '#F57F29');
+	  })
+
+	  
