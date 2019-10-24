@@ -188,10 +188,6 @@ small {
 	}
 }
 
-.intradoSmallerIcon {
-	font-size: 20px;
-}
-
 /*****************************************
 *  
 *  Vertical Main Menu Tabs
@@ -281,7 +277,7 @@ small {
 }
 
 .intradoSubSubMenu {
-	padding: 5px 5px 5px 40px;
+	padding: 5px 5px 5px 20px;
 	background-color: #F5F5F5;
 }	
 
@@ -472,6 +468,7 @@ a:active, .intradoLinkVisited {
 .card-header i {
 	color: #8E99AB;
 	transition: transform 200ms;
+	line-height: 1;
 }
 
 /* Standard Accordions */
@@ -695,6 +692,7 @@ input[type="radio"] + label::before:focus {
 .intradoFooter {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 40px;
@@ -776,29 +774,31 @@ input[type="radio"] + label::before:focus {
 .alert-danger,
 .alert-info,
 .alert-warning {
-    color: #000000;
+    color: #FFFFFF;
     font-size: 16px;
     border: none;
 }
 
 .alert-danger {
-    background-color: #F57F29;
+	background-color: #C23934;
 }
 
 .alert-success {
-    background-color: #3DA1AE;
+	background-color: #04844B;
 }
 
 .alert-info {
-    background-color: #AFC5CD;
+    background-color: #706E6B;
 }
 
 .alert-warning {
-    background-color: #F9C20A;
+	background-color: #FFB75D;
+	color: #000000;
 }
 
 .close {
 	text-shadow: none;
+	color: #FFFFFF !important;
 }
 
 .alert .material-icons {
@@ -964,6 +964,9 @@ input[type="radio"] + label::before:focus {
 *  Dropdowns
 *  
 ******************************************/
+
+/* Hide browser default icon from IE */
+select::-ms-expand {	display: none; }
 
 /* Style Select Field */
 select {
