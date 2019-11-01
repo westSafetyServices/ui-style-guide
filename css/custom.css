@@ -774,35 +774,34 @@ input[type="radio"] + label::before:focus {
 .alert-danger,
 .alert-info,
 .alert-warning {
-    color: #FFFFFF;
+    color: #000000;
     font-size: 16px;
     border: none;
 }
 
 .alert-danger {
-	background-color: #C23934;
+	background-color: #DEBEBD;
 }
 
 .alert-success {
-	background-color: #04844B;
+	background-color: #C7E1A9;
 }
 
 .alert-info {
-    background-color: #706E6B;
+	background-color: #B8DCE6;
 }
 
 .alert-warning {
-	background-color: #FFB75D;
-	color: #000000;
+	background-color: #FFE79E;
 }
 
 .close {
 	text-shadow: none;
-	color: #FFFFFF !important;
 }
 
 .alert .material-icons {
 	padding-right: 10px;
+	color: #514F4D;
 }
 
 /*****************************************
