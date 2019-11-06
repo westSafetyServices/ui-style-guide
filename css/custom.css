@@ -164,6 +164,7 @@ small {
 .intradoDropdownIcon {
 	width: 0 !important;
 	margin-right: 15px !important;
+	margin-top: 10px;
 	color: #939393;
 }
 
@@ -297,10 +298,12 @@ small {
 
 .card-header.intradoAccordionPanel.intradoSecondaryAccordion:hover,
 .card-header.intradoAccordionPanel.intradoSecondaryAccordion:focus,
-.card-header.intradoAccordionPanel.intradoSecondaryAccordion > a:hover,
-.card-header.intradoAccordionPanel.intradoSecondaryAccordion > a:focus,
 .card-header.intradoAccordionPanel.intradoSecondaryAccordion:active {
 	background-color: #582D82 !important;
+}
+
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion:hover a,
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion:focus a {
 	color: #FFFFFF !important;
 	text-decoration: none;
 }
