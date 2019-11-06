@@ -16,7 +16,7 @@
   font-style: normal;
   font-size: 24px;  /* Preferred icon size (24px) but causes text misalignment */
   display: inline-block;
-  line-height: 1;
+  line-height: 0;
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;

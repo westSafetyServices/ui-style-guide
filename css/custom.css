@@ -164,6 +164,7 @@ small {
 .intradoDropdownIcon {
 	width: 0 !important;
 	margin-right: 15px !important;
+	margin-top: 10px;
 	color: #939393;
 }
 
@@ -186,10 +187,6 @@ small {
 	#intradoUserProfileBar {
 		padding: 0px;
 	}
-}
-
-.intradoSmallerIcon {
-	font-size: 20px;
 }
 
 /*****************************************
@@ -281,7 +278,7 @@ small {
 }
 
 .intradoSubSubMenu {
-	padding: 5px 5px 5px 40px;
+	padding: 5px 5px 5px 20px;
 	background-color: #F5F5F5;
 }	
 
@@ -301,10 +298,12 @@ small {
 
 .card-header.intradoAccordionPanel.intradoSecondaryAccordion:hover,
 .card-header.intradoAccordionPanel.intradoSecondaryAccordion:focus,
-.card-header.intradoAccordionPanel.intradoSecondaryAccordion > a:hover,
-.card-header.intradoAccordionPanel.intradoSecondaryAccordion > a:focus,
 .card-header.intradoAccordionPanel.intradoSecondaryAccordion:active {
 	background-color: #582D82 !important;
+}
+
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion:hover a,
+.card-header.intradoAccordionPanel.intradoSecondaryAccordion:focus a {
 	color: #FFFFFF !important;
 	text-decoration: none;
 }
@@ -472,6 +471,7 @@ a:active, .intradoLinkVisited {
 .card-header i {
 	color: #8E99AB;
 	transition: transform 200ms;
+	line-height: 1;
 }
 
 /* Standard Accordions */
@@ -695,6 +695,7 @@ input[type="radio"] + label::before:focus {
 .intradoFooter {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 40px;
@@ -782,19 +783,19 @@ input[type="radio"] + label::before:focus {
 }
 
 .alert-danger {
-    background-color: #F57F29;
+	background-color: #DEBEBD;
 }
 
 .alert-success {
-    background-color: #3DA1AE;
+	background-color: #C7E1A9;
 }
 
 .alert-info {
-    background-color: #AFC5CD;
+	background-color: #B8DCE6;
 }
 
 .alert-warning {
-    background-color: #F9C20A;
+	background-color: #FFE79E;
 }
 
 .close {
@@ -803,6 +804,7 @@ input[type="radio"] + label::before:focus {
 
 .alert .material-icons {
 	padding-right: 10px;
+	color: #514F4D;
 }
 
 /*****************************************
@@ -964,6 +966,9 @@ input[type="radio"] + label::before:focus {
 *  Dropdowns
 *  
 ******************************************/
+
+/* Hide browser default icon from IE */
+select::-ms-expand {	display: none; }
 
 /* Style Select Field */
 select {

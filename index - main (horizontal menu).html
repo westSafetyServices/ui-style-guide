@@ -18,7 +18,7 @@
   
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="lib/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
@@ -38,7 +38,7 @@
           <a class="nav-link intradoTopNavBarLink" href="javascript:void(0);">Help</a>
        </li>
        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="intradoUserProfileMenuTop" data-toggle="dropdown"><i class="material-icons intradoSmallerIcon" aria-hidden="true">person</i> username <i class="material-icons intradoSmallerIcon" aria-hidden="true">expand_more</i></a>
+          <a class="nav-link dropdown-toggle" href="#" id="intradoUserProfileMenuTop" data-toggle="dropdown"><i class="material-icons" aria-hidden="true">person</i> username <i class="material-icons" aria-hidden="true">expand_more</i></a>
           <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="intradoUserProfileMenuTop">
             <a href="javascript:void(0);" class="dropdown-item"><i class="material-icons" aria-hidden="true">exit_to_app</i> Sign Out</a>
           </div>
@@ -63,7 +63,7 @@
         <a class="nav-link" href="javascript:void(0);">Menu 3</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Menu 4<i class="material-icons intradoSmallerIcon" aria-hidden="true">expand_more</i></a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Menu 4<i class="material-icons" aria-hidden="true">expand_more</i></a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="javascript:void(0);">Page 1</a></li>
             <li><a class="dropdown-item" href="javascript:void(0);">Page 2</a></li>
@@ -324,7 +324,7 @@
                         <img src="images/intrado-color-with-tagline.png" id="westLogoBlackLetters" alt="West logo with black letters">
                     </div>
                     <div class="form-group col-sm-8 col-xs-12">
-                        <h2 class="intradoSignInTitle">Application Title</h2>
+                        <h2 class="intradoSignInTitle">Application Name</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -382,27 +382,27 @@
   <h2>07 Alerts</h2>
 <div>
   <h3>Success</h3>
-  <div class="alert alert-success"><i class="material-icons intradoDarkGreyText" aria-hidden="true">check_circle</i> Your password has been updated.
+  <div class="alert alert-success"><i class="material-icons" aria-hidden="true">check_circle</i> Your password has been updated.
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <i class="material-icons intradoDarkGreyText">clear</i>
+      <i class="material-icons">clear</i>
     </button>
   </div>
   <h3>Info</h3>
-  <div class="alert alert-info"><i class="material-icons intradoDarkGreyText" aria-hidden="true">info</i> You might be interested in doing this.
+  <div class="alert alert-info"><i class="material-icons" aria-hidden="true">info</i> You might be interested in doing this.
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <i class="material-icons intradoDarkGreyText">clear</i>
+      <i class="material-icons">clear</i>
     </button>
   </div>
   <h3>Warning</h3>
-  <div class="alert alert-warning"><i class="material-icons intradoDarkGreyText" aria-hidden="true">warning</i> Can't share "report-q3.pdf" with selected users.
+  <div class="alert alert-warning"><i class="material-icons" aria-hidden="true">warning</i> Can't share "report-q3.pdf" with selected users.
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <i class="material-icons intradoDarkGreyText">clear</i>
+      <i class="material-icons">clear</i>
     </button>
   </div>
   <h3>Error</h3>
-  <div class="alert alert-danger"><i class="material-icons intradoDarkGreyText" aria-hidden="true">block</i> Unable to save your account information.
+  <div class="alert alert-danger"><i class="material-icons" aria-hidden="true">block</i> Unable to save your account information.
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <i class="material-icons intradoDarkGreyText">clear</i>
+      <i class="material-icons">clear</i>
     </button>
   </div>
 </div>
@@ -445,7 +445,7 @@
     </div>
     <div class="md-form md-outline">
         <input type="text" id="formb" class="form-control" value="Filled value">
-        <label for="formb">Empty</label>
+        <label for="formb">Label</label>
         <small id="passwordHelpBlock" class="form-text text-muted">
             Some helper text.
         </small>
@@ -466,7 +466,7 @@
 <div class="form-group col-sm-2">
     <div class="mdl-selectfield">
     <label for="dropdown1">Fruit Dropdown</label>
-    <select class="form-control intradoDropdownCaret" id="dropdown1">
+    <select class="form-control" id="dropdown1">
         <option value="selected">Select</option>
         <option>Apple</option>
         <option>Banana</option>
